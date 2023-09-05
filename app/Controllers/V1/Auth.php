@@ -11,7 +11,7 @@ class Auth extends BaseController
 
     public function __construct()
     {   
-        $this->user    = model('App\Models\V1\Admin\Mdl_user');
+        $this->user    = model('App\Models\V1\Mdl_user');
 
 	}
 	
@@ -37,15 +37,23 @@ class Auth extends BaseController
             return $this->fail($validation->getErrors());
         }
         
-	    $data           = $this->request->getJSON();
-
-        
-		$response=[
-				"code"      => "5051",
-				"error"     => "04",
-				"message"   => $data
+	    $data   = $this->request->getJSON();
+		$result	= $this->user->get_single($data->uname,$data->passwd);
+        if ($result){
+			$response=[
+				"code"      => "200",
+				"error"     => NULL,
+				"message"   => "success"
 			];
-		return $this->respond($response);
+			return $this->respond($response);
+		}else{
+			$response=[
+				"code"      => "5051",
+				"error"     => NULL,
+				"message"   => "Invalid Login"
+			];
+			return $this->respond($response);
+		}
 
     }
 }
