@@ -1,0 +1,339 @@
+CRITICAL - 2022-10-28 00:08:44 --> Undefined variable: request
+in APPPATH/Controllers/V1/Auth.php on line 81.
+ 1 APPPATH/Controllers/V1/Auth.php(81): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: request', 'APPPATH/Controllers/V1/Auth.php', 81, [])
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Auth->activate()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Auth))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-28 00:10:37 --> Undefined variable: input
+in APPPATH/Controllers/V1/Auth.php on line 81.
+ 1 APPPATH/Controllers/V1/Auth.php(81): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: input', 'APPPATH/Controllers/V1/Auth.php', 81, [])
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Auth->activate()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Auth))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-28 00:10:48 --> Call to a member function getVar() on null
+in APPPATH/Controllers/V1/Auth.php on line 81.
+ 1 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Auth->activate()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Auth))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-28 00:12:38 --> Undefined variable: request
+in APPPATH/Controllers/V1/Auth.php on line 81.
+ 1 APPPATH/Controllers/V1/Auth.php(81): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: request', 'APPPATH/Controllers/V1/Auth.php', 81, [])
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Auth->activate()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Auth))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-28 00:18:31 --> mysqli_sql_exception: Unknown column 'activated' in 'field list' in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `id`, `u...', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id`, `u...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id`, `u...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Mdl_member.php(186): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `u...', Array)
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Auth.php(82): App\Models\Mdl_member->getby_token('6vkrm54z9ovjwpg...')
+#5 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(902): App\Controllers\V1\Auth->activate()
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Auth))
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-10-28 00:18:31 --> Call to a member function getRow() on bool
+in APPPATH/Models/V1/Mdl_member.php on line 186.
+ 1 APPPATH/Controllers/V1/Auth.php(82): App\Models\Mdl_member->getby_token('6vkrm54z9ovjwpg8xmulnlov2ohrknw520d8xy2l37n01q6n')
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Auth->activate()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Auth))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-28 00:20:36 --> mysqli_sql_exception: Unknown column 'activated' in 'field list' in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `id`, `u...', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id`, `u...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id`, `u...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Mdl_member.php(186): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `u...', '6vkrm54z9ovjwpg...')
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Auth.php(82): App\Models\Mdl_member->getby_token('6vkrm54z9ovjwpg...')
+#5 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(902): App\Controllers\V1\Auth->activate()
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Auth))
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-10-28 00:20:36 --> Call to a member function getRow() on bool
+in APPPATH/Models/V1/Mdl_member.php on line 186.
+ 1 APPPATH/Controllers/V1/Auth.php(82): App\Models\Mdl_member->getby_token('6vkrm54z9ovjwpg8xmulnlov2ohrknw520d8xy2l37n01q6n')
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Auth->activate()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Auth))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-28 00:21:32 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::where()
+in APPPATH/Models/V1/Mdl_member.php on line 273.
+ 1 APPPATH/Controllers/V1/Auth.php(87): App\Models\Mdl_member->activate('y7phkfq3')
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Auth->activate()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Auth))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-28 01:12:56 --> mysqli_sql_exception: Unknown column 'tbl_member' in 'field list' in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(292): mysqli->query('UPDATE `tbl_mem...', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tbl_mem...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tbl_mem...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_mem...', Array, false)
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Mdl_member.php(275): CodeIgniter\Database\BaseBuilder->update('tbl_member', Array)
+#5 /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Auth.php(87): App\Models\Mdl_member->activate('y7phkfq3')
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(902): App\Controllers\V1\Auth->activate()
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Auth))
+#8 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-10-28 01:13:42 --> mysqli_sql_exception: Unknown column 'tbl_member' in 'field list' in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(292): mysqli->query('UPDATE `tbl_mem...', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tbl_mem...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tbl_mem...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_mem...', Array, false)
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Mdl_member.php(275): CodeIgniter\Database\BaseBuilder->update('tbl_member', Array)
+#5 /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Auth.php(102): App\Models\Mdl_member->activate('y7phkfq3')
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(902): App\Controllers\V1\Auth->activate()
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Auth))
+#8 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-10-28 01:14:28 --> mysqli_sql_exception: Unknown column 'tbl_member' in 'field list' in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(292): mysqli->query('UPDATE `tbl_mem...', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tbl_mem...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tbl_mem...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_mem...', Array, false)
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Mdl_member.php(275): CodeIgniter\Database\BaseBuilder->update('tbl_member', Array)
+#5 /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Auth.php(102): App\Models\Mdl_member->activate('y7phkfq3')
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(902): App\Controllers\V1\Auth->activate()
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Auth))
+#8 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-10-28 01:16:25 --> mysqli_sql_exception: Unknown column 'tbl_member' in 'field list' in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(292): mysqli->query('UPDATE `tbl_mem...', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tbl_mem...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tbl_mem...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_mem...', Array, false)
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Mdl_member.php(275): CodeIgniter\Database\BaseBuilder->update('tbl_member', Array)
+#5 /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Auth.php(102): App\Models\Mdl_member->activate('y7phkfq3')
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(902): App\Controllers\V1\Auth->activate()
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Auth))
+#8 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-10-28 01:17:10 --> mysqli_sql_exception: Unknown column 'tbl_member' in 'field list' in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(292): mysqli->query('UPDATE `tbl_mem...', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tbl_mem...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tbl_mem...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_mem...', Array, false)
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Mdl_member.php(275): CodeIgniter\Database\BaseBuilder->update('tbl_member', Array)
+#5 /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Auth.php(102): App\Models\Mdl_member->activate('y7phkfq3')
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(902): App\Controllers\V1\Auth->activate()
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Auth))
+#8 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-10-28 01:17:50 --> Undefined property: stdClass::$status
+in APPPATH/Controllers/V1/Auth.php on line 86.
+ 1 APPPATH/Controllers/V1/Auth.php(86): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$status', 'APPPATH/Controllers/V1/Auth.php', 86, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Auth->activate()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Auth))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-28 01:18:15 --> Undefined property: stdClass::$status
+in APPPATH/Controllers/V1/Auth.php on line 93.
+ 1 APPPATH/Controllers/V1/Auth.php(93): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$status', 'APPPATH/Controllers/V1/Auth.php', 93, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Auth->activate()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Auth))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-28 01:18:26 --> Undefined property: stdClass::$ucode
+in APPPATH/Controllers/V1/Auth.php on line 102.
+ 1 APPPATH/Controllers/V1/Auth.php(102): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$ucode', 'APPPATH/Controllers/V1/Auth.php', 102, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Auth->activate()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Auth))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-28 02:56:21 --> json_decode() expects parameter 1 to be string, object given
+in APPPATH/Controllers/V1/Auth.php on line 49.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'json_decode() expects parameter 1 to be string, object given', 'APPPATH/Controllers/V1/Auth.php', 49, [...])
+ 2 APPPATH/Controllers/V1/Auth.php(49): json_decode(Object(stdClass), true)
+ 3 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Auth->register()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Auth))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-28 02:57:03 --> filter_var_array() expects parameter 1 to be array, object given
+in APPPATH/Controllers/V1/Auth.php on line 51.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'filter_var_array() expects parameter 1 to be array, object given', 'APPPATH/Controllers/V1/Auth.php', 51, [...])
+ 2 APPPATH/Controllers/V1/Auth.php(51): filter_var_array(Object(stdClass), [...])
+ 3 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Auth->register()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Auth))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-28 02:59:02 --> Undefined index: timezone
+in APPPATH/Controllers/V1/Auth.php on line 56.
+ 1 APPPATH/Controllers/V1/Auth.php(56): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: timezone', 'APPPATH/Controllers/V1/Auth.php', 56, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Auth->register()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Auth))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-28 02:59:32 --> Undefined index: timezone
+in APPPATH/Controllers/V1/Auth.php on line 57.
+ 1 APPPATH/Controllers/V1/Auth.php(57): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: timezone', 'APPPATH/Controllers/V1/Auth.php', 57, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Auth->register()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Auth))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-28 02:59:43 --> Undefined index: referral
+in APPPATH/Controllers/V1/Auth.php on line 57.
+ 1 APPPATH/Controllers/V1/Auth.php(57): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: referral', 'APPPATH/Controllers/V1/Auth.php', 57, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Auth->register()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Auth))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-28 03:13:38 --> filter_var() expects parameter 2 to be int, string given
+in APPPATH/Controllers/V1/Auth.php on line 58.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'filter_var() expects parameter 2 to be int, string given', 'APPPATH/Controllers/V1/Auth.php', 58, [...])
+ 2 APPPATH/Controllers/V1/Auth.php(58): filter_var('ak<br><script>alert(\'test\');</script>', 'ROOTPATH/public')
+ 3 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Auth->register()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Auth))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-28 03:15:21 --> Use of undefined constant NO_FILTER - assumed 'NO_FILTER' (this will throw an Error in a future version of PHP)
+in APPPATH/Controllers/V1/Auth.php on line 52.
+ 1 APPPATH/Controllers/V1/Auth.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Use of undefined constant NO_FILTER - assumed \'NO_FILTER\' (this will throw an Error in a future version of PHP)', 'APPPATH/Controllers/V1/Auth.php', 52, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Auth->register()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Auth))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-28 04:38:41 --> Undefined property: stdClass::$id
+in APPPATH/Controllers/V1/Auth.php on line 76.
+ 1 APPPATH/Controllers/V1/Auth.php(76): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$id', 'APPPATH/Controllers/V1/Auth.php', 76, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Auth->register()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Auth))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-28 06:52:59 --> Trying to get property 'id' of non-object
+in APPPATH/Models/V1/Mdl_member.php on line 306.
+ 1 APPPATH/Models/V1/Mdl_member.php(306): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'id\' of non-object', 'APPPATH/Models/V1/Mdl_member.php', 306, [...])
+ 2 APPPATH/Controllers/V1/Auth.php(226): App\Models\Mdl_member->resetToken('a@b.c')
+ 3 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Auth->resetpassword()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Auth))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-28 10:28:15 --> mysqli_sql_exception: Unknown column 'password' in 'field list' in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(292): mysqli->query('UPDATE `tbl_mem...', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tbl_mem...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tbl_mem...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_mem...', Array, false)
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Mdl_member.php(318): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Auth.php(297): App\Models\Mdl_member->change_password(Array, Array)
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(902): App\Controllers\V1\Auth->updatepassword()
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Auth))
+#8 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-10-28 10:28:15 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::affected_rows()
+in APPPATH/Models/V1/Mdl_member.php on line 319.
+ 1 APPPATH/Controllers/V1/Auth.php(297): App\Models\Mdl_member->change_password([...], [...])
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Auth->updatepassword()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Auth))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-28 10:30:43 --> mysqli_sql_exception: Unknown column 'password' in 'field list' in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(292): mysqli->query('UPDATE `tbl_mem...', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tbl_mem...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tbl_mem...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_mem...', Array, false)
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Mdl_member.php(318): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Auth.php(297): App\Models\Mdl_member->change_password(Array, Array)
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(902): App\Controllers\V1\Auth->updatepassword()
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Auth))
+#8 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-10-28 10:33:00 --> mysqli_sql_exception: Unknown column 'password' in 'field list' in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(292): mysqli->query('UPDATE `tbl_mem...', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tbl_mem...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tbl_mem...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_mem...', Array, false)
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Mdl_member.php(318): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Auth.php(297): App\Models\Mdl_member->change_password(Array, Array)
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(902): App\Controllers\V1\Auth->updatepassword()
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Auth))
+#8 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-10-28 10:33:00 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::affectedRows()
+in APPPATH/Models/V1/Mdl_member.php on line 319.
+ 1 APPPATH/Controllers/V1/Auth.php(297): App\Models\Mdl_member->change_password([...], [...])
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Auth->updatepassword()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Auth))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-28 10:34:05 --> mysqli_sql_exception: Unknown column 'password' in 'field list' in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(292): mysqli->query('UPDATE `tbl_mem...', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tbl_mem...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tbl_mem...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_mem...', Array, false)
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Mdl_member.php(318): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Auth.php(297): App\Models\Mdl_member->change_password(Array, Array)
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(902): App\Controllers\V1\Auth->updatepassword()
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Auth))
+#8 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-10-28 10:37:44 --> mysqli_sql_exception: Unknown column 'password' in 'field list' in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(292): mysqli->query('UPDATE `tbl_mem...', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tbl_mem...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tbl_mem...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_mem...', Array, false)
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Mdl_member.php(318): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Auth.php(298): App\Models\Mdl_member->change_password(Array, Array)
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(902): App\Controllers\V1\Auth->updatepassword()
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Auth))
+#8 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-10-28 10:38:57 --> Undefined property: stdClass::$email
+in APPPATH/Controllers/V1/Auth.php on line 280.
+ 1 APPPATH/Controllers/V1/Auth.php(280): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$email', 'APPPATH/Controllers/V1/Auth.php', 280, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Auth->updatepassword()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Auth))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-28 10:42:04 --> Undefined variable: uname
+in APPPATH/Controllers/V1/Auth.php on line 156.
+ 1 APPPATH/Controllers/V1/Auth.php(156): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: uname', 'APPPATH/Controllers/V1/Auth.php', 156, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Auth->signin()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Auth))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-28 18:17:51 --> Undefined variable: uname
+in APPPATH/Controllers/V1/Auth.php on line 156.
+ 1 APPPATH/Controllers/V1/Auth.php(156): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: uname', 'APPPATH/Controllers/V1/Auth.php', 156, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Auth->signin()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Auth))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-28 18:32:34 --> Undefined property: App\Controllers\V1\Auth::$input
+in APPPATH/Controllers/V1/Auth.php on line 175.
+ 1 APPPATH/Controllers/V1/Auth.php(175): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\V1\\Auth::$input', 'APPPATH/Controllers/V1/Auth.php', 175, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Auth->signin()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Auth))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-28 21:54:58 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::num_rows()
+in APPPATH/Models/V1/Mdl_currency.php on line 30.
+ 1 APPPATH/Controllers/V1/Currency.php(21): App\Models\Mdl_currency->get_active()
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Currency->getActiveCurrency()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Currency))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

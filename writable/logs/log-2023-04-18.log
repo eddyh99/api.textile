@@ -1,0 +1,117 @@
+ERROR - 2023-04-18 03:42:01 --> mysqli_sql_exception: Duplicate entry 'ceo@homedone.ltd-6' for key 'tbl_member.email' in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(292): mysqli->query('INSERT INTO `tb...', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Mdl_member.php(190): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Auth.php(82): App\Models\Mdl_member->add(Array)
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(902): App\Controllers\V1\Auth->register()
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Auth))
+#8 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-04-18 06:40:23 --> mysqli_sql_exception: Duplicate entry 'f.frange@libero.it-5' for key 'tbl_member.email' in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(292): mysqli->query('INSERT INTO `tb...', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Mdl_member.php(190): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Auth.php(82): App\Models\Mdl_member->add(Array)
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(902): App\Controllers\V1\Auth->register()
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Auth))
+#8 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-04-18 07:26:40 --> mysqli_sql_exception: Duplicate entry 'espositoluca385@gmail.com-6' for key 'tbl_member.email' in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(292): mysqli->query('INSERT INTO `tb...', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Mdl_member.php(190): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Auth.php(82): App\Models\Mdl_member->add(Array)
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(902): App\Controllers\V1\Auth->register()
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Auth))
+#8 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-04-18 08:00:21 --> mysqli_sql_exception: Duplicate entry 'costansino@tuta.io-5' for key 'tbl_member.email' in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(292): mysqli->query('INSERT INTO `tb...', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Mdl_member.php(190): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Auth.php(82): App\Models\Mdl_member->add(Array)
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(902): App\Controllers\V1\Auth->register()
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Auth))
+#8 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-04-18 08:15:39 --> mysqli_sql_exception: Duplicate entry 'marvi.78@libero.it-5' for key 'tbl_member.email' in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(292): mysqli->query('INSERT INTO `tb...', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Mdl_member.php(190): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Auth.php(82): App\Models\Mdl_member->add(Array)
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(902): App\Controllers\V1\Auth->register()
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Auth))
+#8 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-04-18 10:38:34 --> mysqli_sql_exception: Duplicate entry 'Fiamma999@protonmail.com-5' for key 'tbl_member.email' in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(292): mysqli->query('INSERT INTO `tb...', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Mdl_member.php(190): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Auth.php(82): App\Models\Mdl_member->add(Array)
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(902): App\Controllers\V1\Auth->register()
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Auth))
+#8 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-04-18 11:01:57 --> mysqli_sql_exception: Duplicate entry 'Fiamma999@protonmail.com-5' for key 'tbl_member.email' in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(292): mysqli->query('INSERT INTO `tb...', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Mdl_member.php(190): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Auth.php(82): App\Models\Mdl_member->add(Array)
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(902): App\Controllers\V1\Auth->register()
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Auth))
+#8 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-04-18 11:07:15 --> mysqli_sql_exception: Duplicate entry 'Fiamma999@protonmail.com-5' for key 'tbl_member.email' in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(292): mysqli->query('INSERT INTO `tb...', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Mdl_member.php(190): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Auth.php(82): App\Models\Mdl_member->add(Array)
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(902): App\Controllers\V1\Auth->register()
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Auth))
+#8 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-04-18 19:50:34 --> mysqli_sql_exception: Duplicate entry 'churdy@proton.me-2' for key 'tbl_member.email' in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(292): mysqli->query('INSERT INTO `tb...', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Mdl_member.php(190): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Auth.php(82): App\Models\Mdl_member->add(Array)
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(902): App\Controllers\V1\Auth->register()
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Auth))
+#8 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}

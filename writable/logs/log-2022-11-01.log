@@ -1,0 +1,7 @@
+CRITICAL - 2022-11-01 02:19:20 --> Undefined variable: userid
+in APPPATH/Controllers/V1/Admin/Member.php on line 117.
+ 1 APPPATH/Controllers/V1/Admin/Member.php(117): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: userid', 'APPPATH/Controllers/V1/Admin/Member.php', 117, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Admin\Member->updatepassword()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Admin\Member))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

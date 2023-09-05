@@ -1,0 +1,370 @@
+CRITICAL - 2022-11-09 09:41:40 --> Undefined index: bank_detail
+in APPPATH/Controllers/V1/Member/Wallet.php on line 235.
+ 1 APPPATH/Controllers/V1/Member/Wallet.php(235): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: bank_detail', 'APPPATH/Controllers/V1/Member/Wallet.php', 235, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Member\Wallet->bankTransfer()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Member\Wallet))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-09 09:42:55 --> Too few arguments to function apiwise(), 2 passed in /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Member/Wallet.php on line 265 and exactly 3 expected
+in APPPATH/Helpers/wise_helper.php on line 2.
+ 1 APPPATH/Controllers/V1/Member/Wallet.php(265): apiwise('https://api.sandbox.transferwise.tech/v2/quotes', '{"sourceCurrency":"EUR","targetCurrency":"EUR","sourceAmount":null,"targetAmount":10,"profile":"16324768"}')
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Member\Wallet->bankTransfer()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Member\Wallet))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-09 09:44:39 --> Call to undefined function App\Controllers\V1\Member\dataEUR()
+in APPPATH/Controllers/V1/Member/Wallet.php on line 269.
+ 1 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Member\Wallet->bankTransfer()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Member\Wallet))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-09 09:45:07 --> Trying to get property 'recipient' of non-object
+in APPPATH/Controllers/V1/Member/Wallet.php on line 161.
+ 1 APPPATH/Controllers/V1/Member/Wallet.php(161): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'recipient\' of non-object', 'APPPATH/Controllers/V1/Member/Wallet.php', 161, [...])
+ 2 APPPATH/Controllers/V1/Member/Wallet.php(269): App\Controllers\V1\Member\Wallet->dataEUR(Object(stdClass))
+ 3 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Member\Wallet->bankTransfer()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Member\Wallet))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-09 09:48:00 --> Trying to access array offset on value of type bool
+in APPPATH/Controllers/V1/Member/Wallet.php on line 243.
+ 1 APPPATH/Controllers/V1/Member/Wallet.php(243): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type bool', 'APPPATH/Controllers/V1/Member/Wallet.php', 243, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Member\Wallet->bankTransfer()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Member\Wallet))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-09 09:52:53 --> Trying to access array offset on value of type bool
+in APPPATH/Controllers/V1/Member/Wallet.php on line 243.
+ 1 APPPATH/Controllers/V1/Member/Wallet.php(243): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type bool', 'APPPATH/Controllers/V1/Member/Wallet.php', 243, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Member\Wallet->bankTransfer()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Member\Wallet))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-09 09:53:47 --> Trying to access array offset on value of type bool
+in APPPATH/Controllers/V1/Member/Wallet.php on line 243.
+ 1 APPPATH/Controllers/V1/Member/Wallet.php(243): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type bool', 'APPPATH/Controllers/V1/Member/Wallet.php', 243, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Member\Wallet->bankTransfer()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Member\Wallet))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-09 09:57:21 --> Trying to access array offset on value of type bool
+in APPPATH/Controllers/V1/Member/Wallet.php on line 243.
+ 1 APPPATH/Controllers/V1/Member/Wallet.php(243): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type bool', 'APPPATH/Controllers/V1/Member/Wallet.php', 243, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Member\Wallet->bankTransfer()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Member\Wallet))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-09 09:58:14 --> Undefined variable: filtered
+in APPPATH/Controllers/V1/Member/Wallet.php on line 224.
+ 1 APPPATH/Controllers/V1/Member/Wallet.php(224): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: filtered', 'APPPATH/Controllers/V1/Member/Wallet.php', 224, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Member\Wallet->bankTransfer()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Member\Wallet))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-09 10:07:28 --> Undefined index: bank_detail
+in APPPATH/Controllers/V1/Member/Wallet.php on line 237.
+ 1 APPPATH/Controllers/V1/Member/Wallet.php(237): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: bank_detail', 'APPPATH/Controllers/V1/Member/Wallet.php', 237, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Member\Wallet->bankTransfer()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Member\Wallet))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-09 10:13:16 --> Undefined property: stdClass::$bank_detail
+in APPPATH/Controllers/V1/Member/Wallet.php on line 246.
+ 1 APPPATH/Controllers/V1/Member/Wallet.php(246): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$bank_detail', 'APPPATH/Controllers/V1/Member/Wallet.php', 246, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Member\Wallet->bankTransfer()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Member\Wallet))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-09 10:14:26 --> Trying to get property 'recipient' of non-object
+in APPPATH/Controllers/V1/Member/Wallet.php on line 161.
+ 1 APPPATH/Controllers/V1/Member/Wallet.php(161): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'recipient\' of non-object', 'APPPATH/Controllers/V1/Member/Wallet.php', 161, [...])
+ 2 APPPATH/Controllers/V1/Member/Wallet.php(273): App\Controllers\V1\Member\Wallet->dataEUR(Object(stdClass))
+ 3 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Member\Wallet->bankTransfer()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Member\Wallet))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-09 10:16:15 --> Undefined property: stdClass::$iban
+in APPPATH/Controllers/V1/Member/Wallet.php on line 164.
+ 1 APPPATH/Controllers/V1/Member/Wallet.php(164): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$iban', 'APPPATH/Controllers/V1/Member/Wallet.php', 164, [...])
+ 2 APPPATH/Controllers/V1/Member/Wallet.php(273): App\Controllers\V1\Member\Wallet->dataEUR(Object(stdClass))
+ 3 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Member\Wallet->bankTransfer()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Member\Wallet))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-09 10:17:20 --> Undefined property: stdClass::$user_id
+in APPPATH/Controllers/V1/Member/Wallet.php on line 308.
+ 1 APPPATH/Controllers/V1/Member/Wallet.php(308): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$user_id', 'APPPATH/Controllers/V1/Member/Wallet.php', 308, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Member\Wallet->bankTransfer()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Member\Wallet))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-09 10:18:04 --> Undefined property: stdClass::$bic
+in APPPATH/Controllers/V1/Member/Wallet.php on line 312.
+ 1 APPPATH/Controllers/V1/Member/Wallet.php(312): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$bic', 'APPPATH/Controllers/V1/Member/Wallet.php', 312, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Member\Wallet->bankTransfer()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Member\Wallet))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-09 10:31:02 --> mysqli_sql_exception: Unknown column 'id_member' in 'field list' in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(292): mysqli->query('INSERT INTO `tb...', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Mdl_wallet.php(39): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Member/Wallet.php(321): App\Models\Mdl_wallet->wallet2bank(Array)
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(902): App\Controllers\V1\Member\Wallet->bankTransfer()
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Member\Wallet))
+#8 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-11-09 10:31:33 --> mysqli_sql_exception: Unknown column 'name_receiver' in 'field list' in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(292): mysqli->query('INSERT INTO `tb...', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Mdl_wallet.php(39): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Member/Wallet.php(321): App\Models\Mdl_wallet->wallet2bank(Array)
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(902): App\Controllers\V1\Member\Wallet->bankTransfer()
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Member\Wallet))
+#8 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-11-09 10:32:02 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`piggybankservice_tracklessbank`.`tbl_member_tobank`, CONSTRAINT `tbl_member_tobank_ibfk_2` FOREIGN KEY (`currency`) REFERENCES `tbl_currency` (`currency`)) in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(292): mysqli->query('INSERT INTO `tb...', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Mdl_wallet.php(39): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Member/Wallet.php(321): App\Models\Mdl_wallet->wallet2bank(Array)
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(902): App\Controllers\V1\Member\Wallet->bankTransfer()
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Member\Wallet))
+#8 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-11-09 17:29:02 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ',0) as amt, 0 as cost, 0 as fee, 0 as referral FROM tbl_member_tobank WHERE send' at line 11 in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT sum(x.am...', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT sum(x.am...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT sum(x.am...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Mdl_wallet.php(51): CodeIgniter\Database\BaseConnection->query('SELECT sum(x.am...', Array)
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Member/Wallet.php(23): App\Models\Mdl_wallet->get_balance('17', 'USD')
+#5 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(902): App\Controllers\V1\Member\Wallet->getBalance()
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Member\Wallet))
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-11-09 17:29:02 --> Call to a member function getRow() on bool
+in APPPATH/Models/V1/Mdl_wallet.php on line 51.
+ 1 APPPATH/Controllers/V1/Member/Wallet.php(23): App\Models\Mdl_wallet->get_balance('17', 'USD')
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Member\Wallet->getBalance()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Member\Wallet))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-09 17:34:05 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ',0) as amt, 0 as cost, 0 as fee, 0 as referral FROM tbl_member_tobank WHERE send' at line 11 in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT sum(x.am...', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT sum(x.am...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT sum(x.am...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Mdl_wallet.php(51): CodeIgniter\Database\BaseConnection->query('SELECT sum(x.am...', Array)
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Member/Wallet.php(23): App\Models\Mdl_wallet->get_balance('17', 'AED')
+#5 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(902): App\Controllers\V1\Member\Wallet->getBalance()
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Member\Wallet))
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-11-09 17:34:05 --> Call to a member function getRow() on bool
+in APPPATH/Models/V1/Mdl_wallet.php on line 51.
+ 1 APPPATH/Controllers/V1/Member/Wallet.php(23): App\Models\Mdl_wallet->get_balance('17', 'AED')
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Member\Wallet->getBalance()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Member\Wallet))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-09 17:36:16 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '0) as fee, 0 as referral FROM tbl_member_towallet WHERE receiver_id ='17' AND cu' at line 19 in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT sum(x.am...', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT sum(x.am...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT sum(x.am...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Mdl_wallet.php(51): CodeIgniter\Database\BaseConnection->query('SELECT sum(x.am...', Array)
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Member/Wallet.php(23): App\Models\Mdl_wallet->get_balance('17', 'AED')
+#5 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(902): App\Controllers\V1\Member\Wallet->getBalance()
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Member\Wallet))
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-11-09 17:36:16 --> Call to a member function getRow() on bool
+in APPPATH/Models/V1/Mdl_wallet.php on line 51.
+ 1 APPPATH/Controllers/V1/Member/Wallet.php(23): App\Models\Mdl_wallet->get_balance('17', 'AED')
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Member\Wallet->getBalance()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Member\Wallet))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-09 19:55:14 --> Undefined index: account_number
+in APPPATH/Controllers/V1/Member/Wallet.php on line 81.
+ 1 APPPATH/Controllers/V1/Member/Wallet.php(81): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: account_number', 'APPPATH/Controllers/V1/Member/Wallet.php', 81, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Member\Wallet->bankSummary()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Member\Wallet))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-09 20:09:04 --> Undefined index: account_number
+in APPPATH/Controllers/V1/Member/Wallet.php on line 81.
+ 1 APPPATH/Controllers/V1/Member/Wallet.php(81): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: account_number', 'APPPATH/Controllers/V1/Member/Wallet.php', 81, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Member\Wallet->bankSummary()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Member\Wallet))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-09 20:10:00 --> Undefined index: account_number
+in APPPATH/Controllers/V1/Member/Wallet.php on line 81.
+ 1 APPPATH/Controllers/V1/Member/Wallet.php(81): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: account_number', 'APPPATH/Controllers/V1/Member/Wallet.php', 81, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Member\Wallet->bankSummary()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Member\Wallet))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-09 20:20:18 --> Undefined index: account_number
+in APPPATH/Controllers/V1/Member/Wallet.php on line 81.
+ 1 APPPATH/Controllers/V1/Member/Wallet.php(81): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: account_number', 'APPPATH/Controllers/V1/Member/Wallet.php', 81, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Member\Wallet->bankSummary()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Member\Wallet))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-09 20:20:45 --> Undefined index: account_number
+in APPPATH/Controllers/V1/Member/Wallet.php on line 81.
+ 1 APPPATH/Controllers/V1/Member/Wallet.php(81): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: account_number', 'APPPATH/Controllers/V1/Member/Wallet.php', 81, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Member\Wallet->bankSummary()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Member\Wallet))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-09 21:16:38 --> Undefined variable: data_recipient
+in APPPATH/Controllers/V1/Member/Wallet.php on line 293.
+ 1 APPPATH/Controllers/V1/Member/Wallet.php(293): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: data_recipient', 'APPPATH/Controllers/V1/Member/Wallet.php', 293, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Member\Wallet->bankTransfer()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Member\Wallet))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-09 21:18:30 --> Undefined property: stdClass::$bank_address
+in APPPATH/Controllers/V1/Member/Wallet.php on line 335.
+ 1 APPPATH/Controllers/V1/Member/Wallet.php(335): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$bank_address', 'APPPATH/Controllers/V1/Member/Wallet.php', 335, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Member\Wallet->bankTransfer()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Member\Wallet))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-09 21:22:10 --> Undefined property: stdClass::$id
+in APPPATH/Controllers/V1/Member/Wallet.php on line 308.
+ 1 APPPATH/Controllers/V1/Member/Wallet.php(308): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$id', 'APPPATH/Controllers/V1/Member/Wallet.php', 308, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Member\Wallet->bankTransfer()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Member\Wallet))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-09 22:01:55 --> mysqli_sql_exception: Unknown column 'address' in 'field list' in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(292): mysqli->query('INSERT INTO `tb...', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Mdl_wallet.php(63): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Member/Wallet.php(362): App\Models\Mdl_wallet->wallet2bank(Array)
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(902): App\Controllers\V1\Member\Wallet->bankTransfer()
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Member\Wallet))
+#8 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-11-09 22:07:17 --> mysqli_sql_exception: Unknown column 'address' in 'field list' in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(292): mysqli->query('INSERT INTO `tb...', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Mdl_wallet.php(63): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Member/Wallet.php(362): App\Models\Mdl_wallet->wallet2bank(Array)
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(902): App\Controllers\V1\Member\Wallet->bankTransfer()
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Member\Wallet))
+#8 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-11-09 22:08:19 --> mysqli_sql_exception: Unknown column 'address' in 'field list' in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(292): mysqli->query('INSERT INTO `tb...', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Mdl_wallet.php(63): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Member/Wallet.php(362): App\Models\Mdl_wallet->wallet2bank(Array)
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(902): App\Controllers\V1\Member\Wallet->bankTransfer()
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Member\Wallet))
+#8 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-11-09 22:09:27 --> Undefined property: stdClass::$id
+in APPPATH/Controllers/V1/Member/Wallet.php on line 310.
+ 1 APPPATH/Controllers/V1/Member/Wallet.php(310): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$id', 'APPPATH/Controllers/V1/Member/Wallet.php', 310, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Member\Wallet->bankTransfer()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Member\Wallet))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-09 22:10:38 --> mysqli_sql_exception: Column 'BIC' cannot be null in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(292): mysqli->query('INSERT INTO `tb...', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Mdl_wallet.php(63): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Member/Wallet.php(362): App\Models\Mdl_wallet->wallet2bank(Array)
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(902): App\Controllers\V1\Member\Wallet->bankTransfer()
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Member\Wallet))
+#8 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-11-09 22:16:29 --> mysqli_sql_exception: Column 'BIC' cannot be null in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(292): mysqli->query('INSERT INTO `tb...', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Mdl_wallet.php(63): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Member/Wallet.php(370): App\Models\Mdl_wallet->wallet2bank(Array)
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(902): App\Controllers\V1\Member\Wallet->bankTransfer()
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Member\Wallet))
+#8 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-11-09 22:17:44 --> mysqli_sql_exception: Column 'causal' cannot be null in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(292): mysqli->query('INSERT INTO `tb...', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Mdl_wallet.php(63): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Member/Wallet.php(370): App\Models\Mdl_wallet->wallet2bank(Array)
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(902): App\Controllers\V1\Member\Wallet->bankTransfer()
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Member\Wallet))
+#8 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-11-09 22:20:40 --> mysqli_sql_exception: Column 'causal' cannot be null in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(292): mysqli->query('INSERT INTO `tb...', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Mdl_wallet.php(63): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Member/Wallet.php(370): App\Models\Mdl_wallet->wallet2bank(Array)
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(902): App\Controllers\V1\Member\Wallet->bankTransfer()
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Member\Wallet))
+#8 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-11-09 22:26:13 --> mysqli_sql_exception: Column 'causal' cannot be null in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(292): mysqli->query('INSERT INTO `tb...', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Mdl_wallet.php(63): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Member/Wallet.php(370): App\Models\Mdl_wallet->wallet2bank(Array)
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(902): App\Controllers\V1\Member\Wallet->bankTransfer()
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Member\Wallet))
+#8 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}

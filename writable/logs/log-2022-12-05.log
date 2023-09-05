@@ -1,0 +1,185 @@
+ERROR - 2022-12-05 18:40:45 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'piggybankservice_bank'@'localhost' to database 'piggybankservice_ssandbox' in /home/piggybankservice/sandbox/sandbox.tracklessbank.com/system/Database/MySQLi/Connection.php:171
+Stack trace:
+#0 /home/piggybankservice/sandbox/sandbox.tracklessbank.com/system/Database/MySQLi/Connection.php(171): mysqli->real_connect('localhost', 'piggybankservic...', '%t=dJkm_+7W1', 'piggybankservic...', 3306, '', 0)
+#1 /home/piggybankservice/sandbox/sandbox.tracklessbank.com/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /home/piggybankservice/sandbox/sandbox.tracklessbank.com/system/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/piggybankservice/sandbox/sandbox.tracklessbank.com/app/Models/ValidateToken.php(21): CodeIgniter\Database\BaseConnection->query('SELECT * FROM b...', Array)
+#4 /home/piggybankservice/sandbox/sandbox.tracklessbank.com/app/Helpers/preapi_helper.php(13): App\Models\ValidateToken->checkAPIkey('MgX7HTkke3KK70u...')
+#5 /home/piggybankservice/sandbox/sandbox.tracklessbank.com/app/Filters/FilterApi.php(19): validateKey('MgX7HTkke3KK70u...')
+#6 /home/piggybankservice/sandbox/sandbox.tracklessbank.com/system/Filters/Filters.php(173): App\Filters\FilterApi->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#7 /home/piggybankservice/sandbox/sandbox.tracklessbank.com/system/CodeIgniter.php(431): CodeIgniter\Filters\Filters->run('v1/auth/signin', 'before')
+#8 /home/piggybankservice/sandbox/sandbox.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home/piggybankservice/sandbox/sandbox.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' to database 'piggybankservice_ssandbox' in /home/piggybankservice/sandbox/sandbox.tracklessbank.com/system/Database/MySQLi/Connection.php:215
+Stack trace:
+#0 /home/piggybankservice/sandbox/sandbox.tracklessbank.com/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /home/piggybankservice/sandbox/sandbox.tracklessbank.com/system/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/piggybankservice/sandbox/sandbox.tracklessbank.com/app/Models/ValidateToken.php(21): CodeIgniter\Database\BaseConnection->query('SELECT * FROM b...', Array)
+#3 /home/piggybankservice/sandbox/sandbox.tracklessbank.com/app/Helpers/preapi_helper.php(13): App\Models\ValidateToken->checkAPIkey('MgX7HTkke3KK70u...')
+#4 /home/piggybankservice/sandbox/sandbox.tracklessbank.com/app/Filters/FilterApi.php(19): validateKey('MgX7HTkke3KK70u...')
+#5 /home/piggybankservice/sandbox/sandbox.tracklessbank.com/system/Filters/Filters.php(173): App\Filters\FilterApi->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#6 /home/piggybankservice/sandbox/sandbox.tracklessbank.com/system/CodeIgniter.php(431): CodeIgniter\Filters\Filters->run('v1/auth/signin', 'before')
+#7 /home/piggybankservice/sandbox/sandbox.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/piggybankservice/sandbox/sandbox.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-12-05 18:40:45 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' to database 'piggybankservice_ssandbox'
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH/Models/ValidateToken.php(21): CodeIgniter\Database\BaseConnection->query('SELECT * FROM bankmember WHERE apikey=?', [...])
+ 3 APPPATH/Helpers/preapi_helper.php(13): App\Models\ValidateToken->checkAPIkey('MgX7HTkke3KK70uVEwEc304ijKVcyoaaA4mjoFMT6Au3zXgoQM')
+ 4 APPPATH/Filters/FilterApi.php(19): validateKey('MgX7HTkke3KK70uVEwEc304ijKVcyoaaA4mjoFMT6Au3zXgoQM')
+ 5 SYSTEMPATH/Filters/Filters.php(173): App\Filters\FilterApi->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 6 SYSTEMPATH/CodeIgniter.php(431): CodeIgniter\Filters\Filters->run('v1/auth/signin', 'before')
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-05 18:41:12 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'piggybankservice_bank'@'localhost' to database 'piggybankservice_ssandbox' in /home/piggybankservice/sandbox/sandbox.tracklessbank.com/system/Database/MySQLi/Connection.php:171
+Stack trace:
+#0 /home/piggybankservice/sandbox/sandbox.tracklessbank.com/system/Database/MySQLi/Connection.php(171): mysqli->real_connect('localhost', 'piggybankservic...', '%t=dJkm_+7W1', 'piggybankservic...', 3306, '', 0)
+#1 /home/piggybankservice/sandbox/sandbox.tracklessbank.com/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /home/piggybankservice/sandbox/sandbox.tracklessbank.com/system/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/piggybankservice/sandbox/sandbox.tracklessbank.com/app/Models/ValidateToken.php(21): CodeIgniter\Database\BaseConnection->query('SELECT * FROM b...', Array)
+#4 /home/piggybankservice/sandbox/sandbox.tracklessbank.com/app/Helpers/preapi_helper.php(13): App\Models\ValidateToken->checkAPIkey('MgX7HTkke3KK70u...')
+#5 /home/piggybankservice/sandbox/sandbox.tracklessbank.com/app/Filters/FilterApi.php(19): validateKey('MgX7HTkke3KK70u...')
+#6 /home/piggybankservice/sandbox/sandbox.tracklessbank.com/system/Filters/Filters.php(173): App\Filters\FilterApi->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#7 /home/piggybankservice/sandbox/sandbox.tracklessbank.com/system/CodeIgniter.php(431): CodeIgniter\Filters\Filters->run('v1/auth/signin', 'before')
+#8 /home/piggybankservice/sandbox/sandbox.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home/piggybankservice/sandbox/sandbox.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' to database 'piggybankservice_ssandbox' in /home/piggybankservice/sandbox/sandbox.tracklessbank.com/system/Database/MySQLi/Connection.php:215
+Stack trace:
+#0 /home/piggybankservice/sandbox/sandbox.tracklessbank.com/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /home/piggybankservice/sandbox/sandbox.tracklessbank.com/system/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/piggybankservice/sandbox/sandbox.tracklessbank.com/app/Models/ValidateToken.php(21): CodeIgniter\Database\BaseConnection->query('SELECT * FROM b...', Array)
+#3 /home/piggybankservice/sandbox/sandbox.tracklessbank.com/app/Helpers/preapi_helper.php(13): App\Models\ValidateToken->checkAPIkey('MgX7HTkke3KK70u...')
+#4 /home/piggybankservice/sandbox/sandbox.tracklessbank.com/app/Filters/FilterApi.php(19): validateKey('MgX7HTkke3KK70u...')
+#5 /home/piggybankservice/sandbox/sandbox.tracklessbank.com/system/Filters/Filters.php(173): App\Filters\FilterApi->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#6 /home/piggybankservice/sandbox/sandbox.tracklessbank.com/system/CodeIgniter.php(431): CodeIgniter\Filters\Filters->run('v1/auth/signin', 'before')
+#7 /home/piggybankservice/sandbox/sandbox.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/piggybankservice/sandbox/sandbox.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-12-05 18:41:12 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' to database 'piggybankservice_ssandbox'
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH/Models/ValidateToken.php(21): CodeIgniter\Database\BaseConnection->query('SELECT * FROM bankmember WHERE apikey=?', [...])
+ 3 APPPATH/Helpers/preapi_helper.php(13): App\Models\ValidateToken->checkAPIkey('MgX7HTkke3KK70uVEwEc304ijKVcyoaaA4mjoFMT6Au3zXgoQM')
+ 4 APPPATH/Filters/FilterApi.php(19): validateKey('MgX7HTkke3KK70uVEwEc304ijKVcyoaaA4mjoFMT6Au3zXgoQM')
+ 5 SYSTEMPATH/Filters/Filters.php(173): App\Filters\FilterApi->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 6 SYSTEMPATH/CodeIgniter.php(431): CodeIgniter\Filters\Filters->run('v1/auth/signin', 'before')
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-05 18:42:18 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'piggybankservice_bank'@'localhost' to database 'piggybankservice_ssandbox' in /home/piggybankservice/sandbox/sandbox.tracklessbank.com/system/Database/MySQLi/Connection.php:171
+Stack trace:
+#0 /home/piggybankservice/sandbox/sandbox.tracklessbank.com/system/Database/MySQLi/Connection.php(171): mysqli->real_connect('localhost', 'piggybankservic...', '%t=dJkm_+7W1', 'piggybankservic...', 3306, '', 0)
+#1 /home/piggybankservice/sandbox/sandbox.tracklessbank.com/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /home/piggybankservice/sandbox/sandbox.tracklessbank.com/system/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/piggybankservice/sandbox/sandbox.tracklessbank.com/app/Models/ValidateToken.php(21): CodeIgniter\Database\BaseConnection->query('SELECT * FROM b...', Array)
+#4 /home/piggybankservice/sandbox/sandbox.tracklessbank.com/app/Helpers/preapi_helper.php(13): App\Models\ValidateToken->checkAPIkey('MgX7HTkke3KK70u...')
+#5 /home/piggybankservice/sandbox/sandbox.tracklessbank.com/app/Filters/FilterApi.php(19): validateKey('MgX7HTkke3KK70u...')
+#6 /home/piggybankservice/sandbox/sandbox.tracklessbank.com/system/Filters/Filters.php(173): App\Filters\FilterApi->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#7 /home/piggybankservice/sandbox/sandbox.tracklessbank.com/system/CodeIgniter.php(431): CodeIgniter\Filters\Filters->run('v1/auth/signin', 'before')
+#8 /home/piggybankservice/sandbox/sandbox.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home/piggybankservice/sandbox/sandbox.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' to database 'piggybankservice_ssandbox' in /home/piggybankservice/sandbox/sandbox.tracklessbank.com/system/Database/MySQLi/Connection.php:215
+Stack trace:
+#0 /home/piggybankservice/sandbox/sandbox.tracklessbank.com/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /home/piggybankservice/sandbox/sandbox.tracklessbank.com/system/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/piggybankservice/sandbox/sandbox.tracklessbank.com/app/Models/ValidateToken.php(21): CodeIgniter\Database\BaseConnection->query('SELECT * FROM b...', Array)
+#3 /home/piggybankservice/sandbox/sandbox.tracklessbank.com/app/Helpers/preapi_helper.php(13): App\Models\ValidateToken->checkAPIkey('MgX7HTkke3KK70u...')
+#4 /home/piggybankservice/sandbox/sandbox.tracklessbank.com/app/Filters/FilterApi.php(19): validateKey('MgX7HTkke3KK70u...')
+#5 /home/piggybankservice/sandbox/sandbox.tracklessbank.com/system/Filters/Filters.php(173): App\Filters\FilterApi->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#6 /home/piggybankservice/sandbox/sandbox.tracklessbank.com/system/CodeIgniter.php(431): CodeIgniter\Filters\Filters->run('v1/auth/signin', 'before')
+#7 /home/piggybankservice/sandbox/sandbox.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/piggybankservice/sandbox/sandbox.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-12-05 18:42:18 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' to database 'piggybankservice_ssandbox'
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH/Models/ValidateToken.php(21): CodeIgniter\Database\BaseConnection->query('SELECT * FROM bankmember WHERE apikey=?', [...])
+ 3 APPPATH/Helpers/preapi_helper.php(13): App\Models\ValidateToken->checkAPIkey('MgX7HTkke3KK70uVEwEc304ijKVcyoaaA4mjoFMT6Au3zXgoQM')
+ 4 APPPATH/Filters/FilterApi.php(19): validateKey('MgX7HTkke3KK70uVEwEc304ijKVcyoaaA4mjoFMT6Au3zXgoQM')
+ 5 SYSTEMPATH/Filters/Filters.php(173): App\Filters\FilterApi->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 6 SYSTEMPATH/CodeIgniter.php(431): CodeIgniter\Filters\Filters->run('v1/auth/signin', 'before')
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-05 18:48:21 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'piggybankservice_bank'@'localhost' to database 'piggybankservice_ssandbox' in /home/piggybankservice/sandbox/sandbox.tracklessbank.com/system/Database/MySQLi/Connection.php:171
+Stack trace:
+#0 /home/piggybankservice/sandbox/sandbox.tracklessbank.com/system/Database/MySQLi/Connection.php(171): mysqli->real_connect('localhost', 'piggybankservic...', '%t=dJkm_+7W1', 'piggybankservic...', 3306, '', 0)
+#1 /home/piggybankservice/sandbox/sandbox.tracklessbank.com/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /home/piggybankservice/sandbox/sandbox.tracklessbank.com/system/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/piggybankservice/sandbox/sandbox.tracklessbank.com/app/Models/ValidateToken.php(21): CodeIgniter\Database\BaseConnection->query('SELECT * FROM b...', Array)
+#4 /home/piggybankservice/sandbox/sandbox.tracklessbank.com/app/Helpers/preapi_helper.php(13): App\Models\ValidateToken->checkAPIkey('MgX7HTkke3KK70u...')
+#5 /home/piggybankservice/sandbox/sandbox.tracklessbank.com/app/Filters/FilterApi.php(19): validateKey('MgX7HTkke3KK70u...')
+#6 /home/piggybankservice/sandbox/sandbox.tracklessbank.com/system/Filters/Filters.php(173): App\Filters\FilterApi->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#7 /home/piggybankservice/sandbox/sandbox.tracklessbank.com/system/CodeIgniter.php(431): CodeIgniter\Filters\Filters->run('v1/auth/signin', 'before')
+#8 /home/piggybankservice/sandbox/sandbox.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home/piggybankservice/sandbox/sandbox.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' to database 'piggybankservice_ssandbox' in /home/piggybankservice/sandbox/sandbox.tracklessbank.com/system/Database/MySQLi/Connection.php:215
+Stack trace:
+#0 /home/piggybankservice/sandbox/sandbox.tracklessbank.com/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /home/piggybankservice/sandbox/sandbox.tracklessbank.com/system/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/piggybankservice/sandbox/sandbox.tracklessbank.com/app/Models/ValidateToken.php(21): CodeIgniter\Database\BaseConnection->query('SELECT * FROM b...', Array)
+#3 /home/piggybankservice/sandbox/sandbox.tracklessbank.com/app/Helpers/preapi_helper.php(13): App\Models\ValidateToken->checkAPIkey('MgX7HTkke3KK70u...')
+#4 /home/piggybankservice/sandbox/sandbox.tracklessbank.com/app/Filters/FilterApi.php(19): validateKey('MgX7HTkke3KK70u...')
+#5 /home/piggybankservice/sandbox/sandbox.tracklessbank.com/system/Filters/Filters.php(173): App\Filters\FilterApi->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#6 /home/piggybankservice/sandbox/sandbox.tracklessbank.com/system/CodeIgniter.php(431): CodeIgniter\Filters\Filters->run('v1/auth/signin', 'before')
+#7 /home/piggybankservice/sandbox/sandbox.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/piggybankservice/sandbox/sandbox.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-12-05 18:48:21 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' to database 'piggybankservice_ssandbox'
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH/Models/ValidateToken.php(21): CodeIgniter\Database\BaseConnection->query('SELECT * FROM bankmember WHERE apikey=?', [...])
+ 3 APPPATH/Helpers/preapi_helper.php(13): App\Models\ValidateToken->checkAPIkey('MgX7HTkke3KK70uVEwEc304ijKVcyoaaA4mjoFMT6Au3zXgoQM')
+ 4 APPPATH/Filters/FilterApi.php(19): validateKey('MgX7HTkke3KK70uVEwEc304ijKVcyoaaA4mjoFMT6Au3zXgoQM')
+ 5 SYSTEMPATH/Filters/Filters.php(173): App\Filters\FilterApi->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 6 SYSTEMPATH/CodeIgniter.php(431): CodeIgniter\Filters\Filters->run('v1/auth/signin', 'before')
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-05 18:51:07 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'piggybankservice_bank'@'localhost' to database 'piggybankservice_ssandbox' in /home/piggybankservice/sandbox/sandbox.tracklessbank.com/system/Database/MySQLi/Connection.php:171
+Stack trace:
+#0 /home/piggybankservice/sandbox/sandbox.tracklessbank.com/system/Database/MySQLi/Connection.php(171): mysqli->real_connect('localhost', 'piggybankservic...', '%t=dJkm_+7W1', 'piggybankservic...', 3306, '', 0)
+#1 /home/piggybankservice/sandbox/sandbox.tracklessbank.com/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /home/piggybankservice/sandbox/sandbox.tracklessbank.com/system/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/piggybankservice/sandbox/sandbox.tracklessbank.com/app/Models/ValidateToken.php(21): CodeIgniter\Database\BaseConnection->query('SELECT * FROM b...', Array)
+#4 /home/piggybankservice/sandbox/sandbox.tracklessbank.com/app/Helpers/preapi_helper.php(13): App\Models\ValidateToken->checkAPIkey('MgX7HTkke3KK70u...')
+#5 /home/piggybankservice/sandbox/sandbox.tracklessbank.com/app/Filters/FilterApi.php(19): validateKey('MgX7HTkke3KK70u...')
+#6 /home/piggybankservice/sandbox/sandbox.tracklessbank.com/system/Filters/Filters.php(173): App\Filters\FilterApi->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#7 /home/piggybankservice/sandbox/sandbox.tracklessbank.com/system/CodeIgniter.php(431): CodeIgniter\Filters\Filters->run('v1/auth/signin', 'before')
+#8 /home/piggybankservice/sandbox/sandbox.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home/piggybankservice/sandbox/sandbox.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' to database 'piggybankservice_ssandbox' in /home/piggybankservice/sandbox/sandbox.tracklessbank.com/system/Database/MySQLi/Connection.php:215
+Stack trace:
+#0 /home/piggybankservice/sandbox/sandbox.tracklessbank.com/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /home/piggybankservice/sandbox/sandbox.tracklessbank.com/system/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/piggybankservice/sandbox/sandbox.tracklessbank.com/app/Models/ValidateToken.php(21): CodeIgniter\Database\BaseConnection->query('SELECT * FROM b...', Array)
+#3 /home/piggybankservice/sandbox/sandbox.tracklessbank.com/app/Helpers/preapi_helper.php(13): App\Models\ValidateToken->checkAPIkey('MgX7HTkke3KK70u...')
+#4 /home/piggybankservice/sandbox/sandbox.tracklessbank.com/app/Filters/FilterApi.php(19): validateKey('MgX7HTkke3KK70u...')
+#5 /home/piggybankservice/sandbox/sandbox.tracklessbank.com/system/Filters/Filters.php(173): App\Filters\FilterApi->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#6 /home/piggybankservice/sandbox/sandbox.tracklessbank.com/system/CodeIgniter.php(431): CodeIgniter\Filters\Filters->run('v1/auth/signin', 'before')
+#7 /home/piggybankservice/sandbox/sandbox.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/piggybankservice/sandbox/sandbox.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-12-05 18:51:07 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' to database 'piggybankservice_ssandbox'
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH/Models/ValidateToken.php(21): CodeIgniter\Database\BaseConnection->query('SELECT * FROM bankmember WHERE apikey=?', [...])
+ 3 APPPATH/Helpers/preapi_helper.php(13): App\Models\ValidateToken->checkAPIkey('MgX7HTkke3KK70uVEwEc304ijKVcyoaaA4mjoFMT6Au3zXgoQM')
+ 4 APPPATH/Filters/FilterApi.php(19): validateKey('MgX7HTkke3KK70uVEwEc304ijKVcyoaaA4mjoFMT6Au3zXgoQM')
+ 5 SYSTEMPATH/Filters/Filters.php(173): App\Filters\FilterApi->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 6 SYSTEMPATH/CodeIgniter.php(431): CodeIgniter\Filters\Filters->run('v1/auth/signin', 'before')
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

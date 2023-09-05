@@ -1,0 +1,235 @@
+ERROR - 2022-11-24 02:01:51 --> mysqli_sql_exception: Unknown column 'bank_id' in 'field list' in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `bank_id...', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `bank_id...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `bank_id...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Trackless/Mdl_cost.php(20): CodeIgniter\Database\BaseConnection->query('SELECT `bank_id...', Array)
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Trackless/Cost.php(20): App\Models\Mdl_cost->get_single('2', 'USD')
+#5 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(902): App\Controllers\V1\Trackless\Cost->getCost()
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Trackless\Cost))
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-11-24 02:01:51 --> Call to a member function getRow() on bool
+in APPPATH/Models/V1/Trackless/Mdl_cost.php on line 20.
+ 1 APPPATH/Controllers/V1/Trackless/Cost.php(20): App\Models\Mdl_cost->get_single('2', 'USD')
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Trackless\Cost->getCost()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Trackless\Cost))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-24 02:02:06 --> mysqli_sql_exception: Unknown column 'bank_id' in 'field list' in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `bank_id...', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `bank_id...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `bank_id...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Trackless/Mdl_cost.php(20): CodeIgniter\Database\BaseConnection->query('SELECT `bank_id...', Array)
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Trackless/Cost.php(20): App\Models\Mdl_cost->get_single('2', 'US')
+#5 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(902): App\Controllers\V1\Trackless\Cost->getCost()
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Trackless\Cost))
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-11-24 02:02:06 --> Call to a member function getRow() on bool
+in APPPATH/Models/V1/Trackless/Mdl_cost.php on line 20.
+ 1 APPPATH/Controllers/V1/Trackless/Cost.php(20): App\Models\Mdl_cost->get_single('2', 'US')
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Trackless\Cost->getCost()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Trackless\Cost))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-24 02:12:38 --> mysqli_sql_exception: Unknown column 'bank_id' in 'field list' in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `bank_id...', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `bank_id...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `bank_id...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Trackless/Mdl_cost.php(20): CodeIgniter\Database\BaseConnection->query('SELECT `bank_id...', Array)
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Trackless/Cost.php(20): App\Models\Mdl_cost->get_single('2', 'USD')
+#5 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(902): App\Controllers\V1\Trackless\Cost->getCost()
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Trackless\Cost))
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-11-24 02:12:38 --> Call to a member function getRow() on bool
+in APPPATH/Models/V1/Trackless/Mdl_cost.php on line 20.
+ 1 APPPATH/Controllers/V1/Trackless/Cost.php(20): App\Models\Mdl_cost->get_single('2', 'USD')
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Trackless\Cost->getCost()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Trackless\Cost))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-24 09:16:46 --> mysqli_sql_exception: Unknown column 'bank_id' in 'field list' in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `bank_id...', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `bank_id...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `bank_id...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Trackless/Mdl_cost.php(20): CodeIgniter\Database\BaseConnection->query('SELECT `bank_id...', Array)
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Trackless/Cost.php(20): App\Models\Mdl_cost->get_single('', 'USD')
+#5 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(902): App\Controllers\V1\Trackless\Cost->getCost()
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Trackless\Cost))
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-11-24 09:16:46 --> Call to a member function getRow() on bool
+in APPPATH/Models/V1/Trackless/Mdl_cost.php on line 20.
+ 1 APPPATH/Controllers/V1/Trackless/Cost.php(20): App\Models\Mdl_cost->get_single('ROOTPATH/public', 'USD')
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Trackless\Cost->getCost()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Trackless\Cost))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-24 09:16:48 --> mysqli_sql_exception: Unknown column 'bank_id' in 'field list' in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `bank_id...', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `bank_id...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `bank_id...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Trackless/Mdl_cost.php(20): CodeIgniter\Database\BaseConnection->query('SELECT `bank_id...', Array)
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Trackless/Cost.php(20): App\Models\Mdl_cost->get_single('2', 'USD')
+#5 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(902): App\Controllers\V1\Trackless\Cost->getCost()
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Trackless\Cost))
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-11-24 09:16:48 --> Call to a member function getRow() on bool
+in APPPATH/Models/V1/Trackless/Mdl_cost.php on line 20.
+ 1 APPPATH/Controllers/V1/Trackless/Cost.php(20): App\Models\Mdl_cost->get_single('2', 'USD')
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Trackless\Cost->getCost()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Trackless\Cost))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-24 09:19:21 --> mysqli_sql_exception: Unknown column 'bank_id' in 'field list' in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `bank_id...', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `bank_id...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `bank_id...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Trackless/Mdl_cost.php(20): CodeIgniter\Database\BaseConnection->query('SELECT `bank_id...', Array)
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Trackless/Cost.php(20): App\Models\Mdl_cost->get_single(NULL, 'USD')
+#5 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(902): App\Controllers\V1\Trackless\Cost->getCost()
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Trackless\Cost))
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-11-24 09:19:21 --> Call to a member function getRow() on bool
+in APPPATH/Models/V1/Trackless/Mdl_cost.php on line 20.
+ 1 APPPATH/Controllers/V1/Trackless/Cost.php(20): App\Models\Mdl_cost->get_single(null, 'USD')
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Trackless\Cost->getCost()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Trackless\Cost))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-24 09:19:58 --> mysqli_sql_exception: Unknown column 'bank_id' in 'field list' in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `bank_id...', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `bank_id...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `bank_id...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Trackless/Mdl_cost.php(20): CodeIgniter\Database\BaseConnection->query('SELECT `bank_id...', Array)
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Trackless/Cost.php(20): App\Models\Mdl_cost->get_single(NULL, 'NGN')
+#5 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(902): App\Controllers\V1\Trackless\Cost->getCost()
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Trackless\Cost))
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-11-24 09:19:58 --> Call to a member function getRow() on bool
+in APPPATH/Models/V1/Trackless/Mdl_cost.php on line 20.
+ 1 APPPATH/Controllers/V1/Trackless/Cost.php(20): App\Models\Mdl_cost->get_single(null, 'NGN')
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Trackless\Cost->getCost()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Trackless\Cost))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-24 09:21:08 --> mysqli_sql_exception: Unknown column 'bank_id' in 'field list' in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `bank_id...', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `bank_id...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `bank_id...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Trackless/Mdl_cost.php(20): CodeIgniter\Database\BaseConnection->query('SELECT `bank_id...', Array)
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Trackless/Cost.php(20): App\Models\Mdl_cost->get_single(NULL, 'USD')
+#5 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(902): App\Controllers\V1\Trackless\Cost->getCost()
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Trackless\Cost))
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-11-24 09:21:08 --> Call to a member function getRow() on bool
+in APPPATH/Models/V1/Trackless/Mdl_cost.php on line 20.
+ 1 APPPATH/Controllers/V1/Trackless/Cost.php(20): App\Models\Mdl_cost->get_single(null, 'USD')
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Trackless\Cost->getCost()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Trackless\Cost))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-24 09:22:31 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1 in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `bank_id...', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `bank_id...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `bank_id...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Trackless/Mdl_cost.php(20): CodeIgniter\Database\BaseConnection->query('SELECT `bank_id...', Array)
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Trackless/Cost.php(20): App\Models\Mdl_cost->get_single(NULL, 'USD')
+#5 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(902): App\Controllers\V1\Trackless\Cost->getCost()
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Trackless\Cost))
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-11-24 09:22:31 --> Call to a member function getRow() on bool
+in APPPATH/Models/V1/Trackless/Mdl_cost.php on line 20.
+ 1 APPPATH/Controllers/V1/Trackless/Cost.php(20): App\Models\Mdl_cost->get_single(null, 'USD')
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Trackless\Cost->getCost()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Trackless\Cost))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-24 09:23:46 --> Undefined variable: bank_id
+in APPPATH/Models/V1/Trackless/Mdl_cost.php on line 20.
+ 1 APPPATH/Models/V1/Trackless/Mdl_cost.php(20): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: bank_id', 'APPPATH/Models/V1/Trackless/Mdl_cost.php', 20, [...])
+ 2 APPPATH/Controllers/V1/Trackless/Cost.php(19): App\Models\Mdl_cost->get_single('USD')
+ 3 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Trackless\Cost->getCost()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Trackless\Cost))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-24 09:26:21 --> Undefined property: stdClass::$bank_id
+in APPPATH/Controllers/V1/Trackless/Cost.php on line 106.
+ 1 APPPATH/Controllers/V1/Trackless/Cost.php(106): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$bank_id', 'APPPATH/Controllers/V1/Trackless/Cost.php', 106, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Trackless\Cost->setBankcost()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Trackless\Cost))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-24 18:07:28 --> Too few arguments to function App\Models\Mdl_user::get_all(), 1 passed in /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Trackless/User.php on line 33 and exactly 2 expected
+in APPPATH/Models/V1/Trackless/Mdl_user.php on line 17.
+ 1 APPPATH/Controllers/V1/Trackless/User.php(33): App\Models\Mdl_user->get_all('Asia/Singapore')
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Trackless\User->getAll()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Trackless\User))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-24 18:27:02 --> Too few arguments to function App\Models\Mdl_user::get_all(), 1 passed in /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Trackless/User.php on line 33 and exactly 2 expected
+in APPPATH/Models/V1/Trackless/Mdl_user.php on line 17.
+ 1 APPPATH/Controllers/V1/Trackless/User.php(33): App\Models\Mdl_user->get_all('Asia/Singapore')
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Trackless\User->getAll()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Trackless\User))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-24 18:35:12 --> Trying to get property 'ucode_mwallet' of non-object
+in APPPATH/Models/V1/Trackless/Mdl_user.php on line 24.
+ 1 APPPATH/Models/V1/Trackless/Mdl_user.php(24): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'ucode_mwallet\' of non-object', 'APPPATH/Models/V1/Trackless/Mdl_user.php', 24, [...])
+ 2 APPPATH/Controllers/V1/Trackless/User.php(33): App\Models\Mdl_user->get_all('Asia/Singapore')
+ 3 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Trackless\User->getAll()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Trackless\User))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-24 18:37:53 --> Undefined variable: mwallet
+in APPPATH/Models/V1/Trackless/Mdl_user.php on line 21.
+ 1 APPPATH/Models/V1/Trackless/Mdl_user.php(21): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: mwallet', 'APPPATH/Models/V1/Trackless/Mdl_user.php', 21, [...])
+ 2 APPPATH/Controllers/V1/Trackless/User.php(33): App\Models\Mdl_user->get_all(null, 'Asia/Singapore')
+ 3 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Trackless\User->getAll()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Trackless\User))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-24 18:38:35 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?) AS date_created, convert_tz(m1.`last_accessed`, 'Asia/Singapore', ?) AS last_' at line 1 in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT m1.`id`,...', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT m1.`id`,...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT m1.`id`,...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Trackless/Mdl_user.php(21): CodeIgniter\Database\BaseConnection->query('SELECT m1.`id`,...', Array)
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Trackless/User.php(33): App\Models\Mdl_user->get_all(NULL, 'Asia/Singapore')
+#5 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(902): App\Controllers\V1\Trackless\User->getAll()
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Trackless\User))
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-11-24 18:38:35 --> Call to a member function getResult() on bool
+in APPPATH/Models/V1/Trackless/Mdl_user.php on line 21.
+ 1 APPPATH/Controllers/V1/Trackless/User.php(33): App\Models\Mdl_user->get_all(null, 'Asia/Singapore')
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Trackless\User->getAll()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Trackless\User))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

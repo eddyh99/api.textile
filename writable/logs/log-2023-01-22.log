@@ -1,0 +1,108 @@
+ERROR - 2023-01-22 01:16:41 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'as referral,convert_tz(a.date_created, 'Asia/Singapore', 'Asia/Makassar') AS dat' at line 1 in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT amount, ...', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT amount, ...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT amount, ...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Admin/Mdl_wallet.php(164): CodeIgniter\Database\BaseConnection->query('SELECT amount, ...', Array)
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Admin/Wallet.php(282): App\Models\Mdl_wallet->history_tobank('IDR', '2023-01-22', '2023-01-22', 'Asia/Makassar', '3')
+#5 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(902): App\Controllers\V1\Admin\Wallet->gethistory_tobank()
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Admin\Wallet))
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2023-01-22 01:16:44 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'as referral,convert_tz(a.date_created, 'Asia/Singapore', 'Asia/Makassar') AS dat' at line 1 in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT amount, ...', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT amount, ...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT amount, ...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Admin/Mdl_wallet.php(164): CodeIgniter\Database\BaseConnection->query('SELECT amount, ...', Array)
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Admin/Wallet.php(282): App\Models\Mdl_wallet->history_tobank('IDR', '2023-01-15', '2023-01-22', 'Asia/Makassar', '3')
+#5 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(902): App\Controllers\V1\Admin\Wallet->gethistory_tobank()
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Admin\Wallet))
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2023-01-22 01:16:47 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'as referral,convert_tz(a.date_created, 'Asia/Singapore', 'Asia/Makassar') AS dat' at line 1 in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT amount, ...', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT amount, ...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT amount, ...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Admin/Mdl_wallet.php(164): CodeIgniter\Database\BaseConnection->query('SELECT amount, ...', Array)
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Admin/Wallet.php(282): App\Models\Mdl_wallet->history_tobank('IDR', '2022-12-24', '2023-01-22', 'Asia/Makassar', '3')
+#5 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(902): App\Controllers\V1\Admin\Wallet->gethistory_tobank()
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Admin\Wallet))
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2023-01-22 01:17:21 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'as referral,convert_tz(a.date_created, 'Asia/Singapore', 'Asia/Makassar') AS dat' at line 1 in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT amount, ...', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT amount, ...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT amount, ...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Admin/Mdl_wallet.php(164): CodeIgniter\Database\BaseConnection->query('SELECT amount, ...', Array)
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Admin/Wallet.php(282): App\Models\Mdl_wallet->history_tobank('IDR', '2023-01-22', '2023-01-22', 'Asia/Makassar', '3')
+#5 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(902): App\Controllers\V1\Admin\Wallet->gethistory_tobank()
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Admin\Wallet))
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2023-01-22 01:17:24 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'as referral,convert_tz(a.date_created, 'Asia/Singapore', 'Asia/Makassar') AS dat' at line 1 in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT amount, ...', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT amount, ...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT amount, ...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Admin/Mdl_wallet.php(164): CodeIgniter\Database\BaseConnection->query('SELECT amount, ...', Array)
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Admin/Wallet.php(282): App\Models\Mdl_wallet->history_tobank('IDR', '2022-12-24', '2023-01-22', 'Asia/Makassar', '3')
+#5 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(902): App\Controllers\V1\Admin\Wallet->gethistory_tobank()
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Admin\Wallet))
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2023-01-22 01:21:42 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') as referral,convert_tz(a.date_created, 'Asia/Singapore', 'Asia/Makassar') AS d' at line 1 in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT amount, ...', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT amount, ...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT amount, ...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Admin/Mdl_wallet.php(166): CodeIgniter\Database\BaseConnection->query('SELECT amount, ...', Array)
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Admin/Wallet.php(282): App\Models\Mdl_wallet->history_tobank('IDR', '2023-01-22', '2023-01-22', 'Asia/Makassar', '3')
+#5 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(902): App\Controllers\V1\Admin\Wallet->gethistory_tobank()
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Admin\Wallet))
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2023-01-22 01:21:45 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') as referral,convert_tz(a.date_created, 'Asia/Singapore', 'Asia/Makassar') AS d' at line 1 in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT amount, ...', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT amount, ...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT amount, ...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Admin/Mdl_wallet.php(166): CodeIgniter\Database\BaseConnection->query('SELECT amount, ...', Array)
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Admin/Wallet.php(282): App\Models\Mdl_wallet->history_tobank('IDR', '2023-01-15', '2023-01-22', 'Asia/Makassar', '3')
+#5 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(902): App\Controllers\V1\Admin\Wallet->gethistory_tobank()
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Admin\Wallet))
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2023-01-22 01:23:24 --> mysqli_sql_exception: Incorrect parameter count in the call to native function 'IFNULL' in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT amount, ...', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT amount, ...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT amount, ...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Admin/Mdl_wallet.php(166): CodeIgniter\Database\BaseConnection->query('SELECT amount, ...', Array)
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Admin/Wallet.php(282): App\Models\Mdl_wallet->history_tobank('IDR', '2023-01-22', '2023-01-22', 'Asia/Makassar', '3')
+#5 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(902): App\Controllers\V1\Admin\Wallet->gethistory_tobank()
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Admin\Wallet))
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2023-01-22 01:23:28 --> mysqli_sql_exception: Incorrect parameter count in the call to native function 'IFNULL' in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT amount, ...', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT amount, ...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT amount, ...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Admin/Mdl_wallet.php(166): CodeIgniter\Database\BaseConnection->query('SELECT amount, ...', Array)
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Admin/Wallet.php(282): App\Models\Mdl_wallet->history_tobank('IDR', '2022-12-24', '2023-01-22', 'Asia/Makassar', '3')
+#5 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(902): App\Controllers\V1\Admin\Wallet->gethistory_tobank()
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Admin\Wallet))
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}

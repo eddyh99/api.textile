@@ -1,0 +1,617 @@
+ERROR - 2022-12-07 03:24:04 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?) AS date_created FROM tbl_member_topup a INNER JOIN tbl_member b ON a.id_membe' at line 1 in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT amount, ...', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT amount, ...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT amount, ...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Admin/Mdl_wallet.php(125): CodeIgniter\Database\BaseConnection->query('SELECT amount, ...', Array)
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Admin/Wallet.php(100): App\Models\Mdl_wallet->get_historybycurrency('EUR', '2022-12-07', '2022-12-07', 'Asia/Makassar')
+#5 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(902): App\Controllers\V1\Admin\Wallet->gethistory_bycurrency()
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Admin\Wallet))
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-12-07 03:24:11 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?) AS date_created FROM tbl_member_topup a INNER JOIN tbl_member b ON a.id_membe' at line 1 in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT amount, ...', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT amount, ...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT amount, ...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Admin/Mdl_wallet.php(125): CodeIgniter\Database\BaseConnection->query('SELECT amount, ...', Array)
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Admin/Wallet.php(100): App\Models\Mdl_wallet->get_historybycurrency('EUR', '2022-12-06', '2022-12-07', 'Asia/Makassar')
+#5 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(902): App\Controllers\V1\Admin\Wallet->gethistory_bycurrency()
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Admin\Wallet))
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-12-07 03:24:13 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?) AS date_created FROM tbl_member_topup a INNER JOIN tbl_member b ON a.id_membe' at line 1 in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT amount, ...', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT amount, ...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT amount, ...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Admin/Mdl_wallet.php(125): CodeIgniter\Database\BaseConnection->query('SELECT amount, ...', Array)
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Admin/Wallet.php(100): App\Models\Mdl_wallet->get_historybycurrency('EUR', '2022-12-07', '2022-12-07', 'Asia/Makassar')
+#5 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(902): App\Controllers\V1\Admin\Wallet->gethistory_bycurrency()
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Admin\Wallet))
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-12-07 03:28:38 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? AND a.currency=? 
+                    UNION ALL
+                    SELECT sum' at line 2 in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT IFNULL(s...', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT IFNULL(s...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT IFNULL(s...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Admin/Mdl_wallet.php(57): CodeIgniter\Database\BaseConnection->query('SELECT IFNULL(s...', Array)
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Admin/Wallet.php(20): App\Models\Mdl_wallet->get_all('2')
+#5 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(902): App\Controllers\V1\Admin\Wallet->getAll_Balance()
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Admin\Wallet))
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-12-07 03:28:38 --> Call to a member function getRow() on bool
+in APPPATH/Models/V1/Admin/Mdl_wallet.php on line 58.
+ 1 APPPATH/Controllers/V1/Admin/Wallet.php(20): App\Models\Mdl_wallet->get_all('2')
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Admin\Wallet->getAll_Balance()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Admin\Wallet))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-07 03:28:42 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? AND a.currency=? 
+                    UNION ALL
+                    SELECT sum' at line 2 in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT IFNULL(s...', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT IFNULL(s...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT IFNULL(s...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Admin/Mdl_wallet.php(57): CodeIgniter\Database\BaseConnection->query('SELECT IFNULL(s...', Array)
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Admin/Wallet.php(20): App\Models\Mdl_wallet->get_all('2')
+#5 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(902): App\Controllers\V1\Admin\Wallet->getAll_Balance()
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Admin\Wallet))
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-12-07 03:28:42 --> Call to a member function getRow() on bool
+in APPPATH/Models/V1/Admin/Mdl_wallet.php on line 58.
+ 1 APPPATH/Controllers/V1/Admin/Wallet.php(20): App\Models\Mdl_wallet->get_all('2')
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Admin\Wallet->getAll_Balance()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Admin\Wallet))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-07 03:28:54 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? AND a.currency=? 
+                    UNION ALL
+                    SELECT sum' at line 2 in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT IFNULL(s...', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT IFNULL(s...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT IFNULL(s...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Admin/Mdl_wallet.php(57): CodeIgniter\Database\BaseConnection->query('SELECT IFNULL(s...', Array)
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Admin/Wallet.php(20): App\Models\Mdl_wallet->get_all('2')
+#5 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(902): App\Controllers\V1\Admin\Wallet->getAll_Balance()
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Admin\Wallet))
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-12-07 03:28:54 --> Call to a member function getRow() on bool
+in APPPATH/Models/V1/Admin/Mdl_wallet.php on line 58.
+ 1 APPPATH/Controllers/V1/Admin/Wallet.php(20): App\Models\Mdl_wallet->get_all('2')
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Admin\Wallet->getAll_Balance()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Admin\Wallet))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-07 03:28:57 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? AND a.currency=? 
+                    UNION ALL
+                    SELECT sum' at line 2 in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT IFNULL(s...', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT IFNULL(s...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT IFNULL(s...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Admin/Mdl_wallet.php(57): CodeIgniter\Database\BaseConnection->query('SELECT IFNULL(s...', Array)
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Admin/Wallet.php(20): App\Models\Mdl_wallet->get_all('2')
+#5 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(902): App\Controllers\V1\Admin\Wallet->getAll_Balance()
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Admin\Wallet))
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-12-07 03:28:57 --> Call to a member function getRow() on bool
+in APPPATH/Models/V1/Admin/Mdl_wallet.php on line 58.
+ 1 APPPATH/Controllers/V1/Admin/Wallet.php(20): App\Models\Mdl_wallet->get_all('2')
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Admin\Wallet->getAll_Balance()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Admin\Wallet))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-07 03:29:00 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? AND a.currency=? 
+                    UNION ALL
+                    SELECT sum' at line 2 in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT IFNULL(s...', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT IFNULL(s...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT IFNULL(s...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Admin/Mdl_wallet.php(57): CodeIgniter\Database\BaseConnection->query('SELECT IFNULL(s...', Array)
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Admin/Wallet.php(20): App\Models\Mdl_wallet->get_all('2')
+#5 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(902): App\Controllers\V1\Admin\Wallet->getAll_Balance()
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Admin\Wallet))
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-12-07 03:29:00 --> Call to a member function getRow() on bool
+in APPPATH/Models/V1/Admin/Mdl_wallet.php on line 58.
+ 1 APPPATH/Controllers/V1/Admin/Wallet.php(20): App\Models\Mdl_wallet->get_all('2')
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Admin\Wallet->getAll_Balance()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Admin\Wallet))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-07 03:29:02 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? AND a.currency=? 
+                    UNION ALL
+                    SELECT sum' at line 2 in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT IFNULL(s...', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT IFNULL(s...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT IFNULL(s...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Admin/Mdl_wallet.php(57): CodeIgniter\Database\BaseConnection->query('SELECT IFNULL(s...', Array)
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Admin/Wallet.php(20): App\Models\Mdl_wallet->get_all('2')
+#5 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(902): App\Controllers\V1\Admin\Wallet->getAll_Balance()
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Admin\Wallet))
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-12-07 03:29:02 --> Call to a member function getRow() on bool
+in APPPATH/Models/V1/Admin/Mdl_wallet.php on line 58.
+ 1 APPPATH/Controllers/V1/Admin/Wallet.php(20): App\Models\Mdl_wallet->get_all('2')
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Admin\Wallet->getAll_Balance()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Admin\Wallet))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-07 03:29:04 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? AND a.currency=? 
+                    UNION ALL
+                    SELECT sum' at line 2 in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT IFNULL(s...', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT IFNULL(s...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT IFNULL(s...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Admin/Mdl_wallet.php(57): CodeIgniter\Database\BaseConnection->query('SELECT IFNULL(s...', Array)
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Admin/Wallet.php(20): App\Models\Mdl_wallet->get_all('2')
+#5 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(902): App\Controllers\V1\Admin\Wallet->getAll_Balance()
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Admin\Wallet))
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-12-07 03:29:04 --> Call to a member function getRow() on bool
+in APPPATH/Models/V1/Admin/Mdl_wallet.php on line 58.
+ 1 APPPATH/Controllers/V1/Admin/Wallet.php(20): App\Models\Mdl_wallet->get_all('2')
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Admin\Wallet->getAll_Balance()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Admin\Wallet))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-07 03:29:06 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? AND a.currency=? 
+                    UNION ALL
+                    SELECT sum' at line 2 in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT IFNULL(s...', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT IFNULL(s...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT IFNULL(s...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Admin/Mdl_wallet.php(57): CodeIgniter\Database\BaseConnection->query('SELECT IFNULL(s...', Array)
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Admin/Wallet.php(20): App\Models\Mdl_wallet->get_all('2')
+#5 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(902): App\Controllers\V1\Admin\Wallet->getAll_Balance()
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Admin\Wallet))
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-12-07 03:29:06 --> Call to a member function getRow() on bool
+in APPPATH/Models/V1/Admin/Mdl_wallet.php on line 58.
+ 1 APPPATH/Controllers/V1/Admin/Wallet.php(20): App\Models\Mdl_wallet->get_all('2')
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Admin\Wallet->getAll_Balance()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Admin\Wallet))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-07 03:29:18 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? AND a.currency=? 
+                    UNION ALL
+                    SELECT sum' at line 2 in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT IFNULL(s...', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT IFNULL(s...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT IFNULL(s...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Admin/Mdl_wallet.php(57): CodeIgniter\Database\BaseConnection->query('SELECT IFNULL(s...', Array)
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Admin/Wallet.php(20): App\Models\Mdl_wallet->get_all('2')
+#5 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(902): App\Controllers\V1\Admin\Wallet->getAll_Balance()
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Admin\Wallet))
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-12-07 03:29:18 --> Call to a member function getRow() on bool
+in APPPATH/Models/V1/Admin/Mdl_wallet.php on line 58.
+ 1 APPPATH/Controllers/V1/Admin/Wallet.php(20): App\Models\Mdl_wallet->get_all('2')
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Admin\Wallet->getAll_Balance()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Admin\Wallet))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-07 03:31:11 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? AND a.currency=? 
+                    UNION ALL
+                    SELECT sum' at line 2 in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT IFNULL(s...', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT IFNULL(s...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT IFNULL(s...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Admin/Mdl_wallet.php(57): CodeIgniter\Database\BaseConnection->query('SELECT IFNULL(s...', Array)
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Admin/Wallet.php(20): App\Models\Mdl_wallet->get_all('2')
+#5 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(902): App\Controllers\V1\Admin\Wallet->getAll_Balance()
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Admin\Wallet))
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-12-07 03:31:11 --> Call to a member function getRow() on bool
+in APPPATH/Models/V1/Admin/Mdl_wallet.php on line 58.
+ 1 APPPATH/Controllers/V1/Admin/Wallet.php(20): App\Models\Mdl_wallet->get_all('2')
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Admin\Wallet->getAll_Balance()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Admin\Wallet))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-07 03:31:14 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? AND a.currency=? 
+                    UNION ALL
+                    SELECT sum' at line 2 in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT IFNULL(s...', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT IFNULL(s...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT IFNULL(s...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Admin/Mdl_wallet.php(57): CodeIgniter\Database\BaseConnection->query('SELECT IFNULL(s...', Array)
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Admin/Wallet.php(20): App\Models\Mdl_wallet->get_all('2')
+#5 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(902): App\Controllers\V1\Admin\Wallet->getAll_Balance()
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Admin\Wallet))
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-12-07 03:31:14 --> Call to a member function getRow() on bool
+in APPPATH/Models/V1/Admin/Mdl_wallet.php on line 58.
+ 1 APPPATH/Controllers/V1/Admin/Wallet.php(20): App\Models\Mdl_wallet->get_all('2')
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Admin\Wallet->getAll_Balance()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Admin\Wallet))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-07 03:31:15 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? AND a.currency=? 
+                    UNION ALL
+                    SELECT sum' at line 2 in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT IFNULL(s...', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT IFNULL(s...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT IFNULL(s...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Admin/Mdl_wallet.php(57): CodeIgniter\Database\BaseConnection->query('SELECT IFNULL(s...', Array)
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Admin/Wallet.php(20): App\Models\Mdl_wallet->get_all('2')
+#5 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(902): App\Controllers\V1\Admin\Wallet->getAll_Balance()
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Admin\Wallet))
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-12-07 03:31:15 --> Call to a member function getRow() on bool
+in APPPATH/Models/V1/Admin/Mdl_wallet.php on line 58.
+ 1 APPPATH/Controllers/V1/Admin/Wallet.php(20): App\Models\Mdl_wallet->get_all('2')
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Admin\Wallet->getAll_Balance()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Admin\Wallet))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-07 03:31:20 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? AND a.currency=? 
+                    UNION ALL
+                    SELECT sum' at line 2 in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT IFNULL(s...', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT IFNULL(s...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT IFNULL(s...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Admin/Mdl_wallet.php(57): CodeIgniter\Database\BaseConnection->query('SELECT IFNULL(s...', Array)
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Admin/Wallet.php(20): App\Models\Mdl_wallet->get_all('2')
+#5 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(902): App\Controllers\V1\Admin\Wallet->getAll_Balance()
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Admin\Wallet))
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-12-07 03:31:20 --> Call to a member function getRow() on bool
+in APPPATH/Models/V1/Admin/Mdl_wallet.php on line 58.
+ 1 APPPATH/Controllers/V1/Admin/Wallet.php(20): App\Models\Mdl_wallet->get_all('2')
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Admin\Wallet->getAll_Balance()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Admin\Wallet))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-07 03:31:26 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? AND a.currency=? 
+                    UNION ALL
+                    SELECT sum' at line 2 in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT IFNULL(s...', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT IFNULL(s...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT IFNULL(s...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Admin/Mdl_wallet.php(57): CodeIgniter\Database\BaseConnection->query('SELECT IFNULL(s...', Array)
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Admin/Wallet.php(20): App\Models\Mdl_wallet->get_all('2')
+#5 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(902): App\Controllers\V1\Admin\Wallet->getAll_Balance()
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Admin\Wallet))
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-12-07 03:31:26 --> Call to a member function getRow() on bool
+in APPPATH/Models/V1/Admin/Mdl_wallet.php on line 58.
+ 1 APPPATH/Controllers/V1/Admin/Wallet.php(20): App\Models\Mdl_wallet->get_all('2')
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Admin\Wallet->getAll_Balance()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Admin\Wallet))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-07 03:31:47 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? AND a.currency=? 
+                    UNION ALL
+                    SELECT sum' at line 2 in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT IFNULL(s...', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT IFNULL(s...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT IFNULL(s...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Admin/Mdl_wallet.php(57): CodeIgniter\Database\BaseConnection->query('SELECT IFNULL(s...', Array)
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Admin/Wallet.php(20): App\Models\Mdl_wallet->get_all('2')
+#5 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(902): App\Controllers\V1\Admin\Wallet->getAll_Balance()
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Admin\Wallet))
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-12-07 03:31:47 --> Call to a member function getRow() on bool
+in APPPATH/Models/V1/Admin/Mdl_wallet.php on line 58.
+ 1 APPPATH/Controllers/V1/Admin/Wallet.php(20): App\Models\Mdl_wallet->get_all('2')
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Admin\Wallet->getAll_Balance()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Admin\Wallet))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-07 03:31:48 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? AND a.currency=? 
+                    UNION ALL
+                    SELECT sum' at line 2 in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT IFNULL(s...', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT IFNULL(s...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT IFNULL(s...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Admin/Mdl_wallet.php(57): CodeIgniter\Database\BaseConnection->query('SELECT IFNULL(s...', Array)
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Admin/Wallet.php(20): App\Models\Mdl_wallet->get_all('2')
+#5 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(902): App\Controllers\V1\Admin\Wallet->getAll_Balance()
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Admin\Wallet))
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-12-07 03:31:48 --> Call to a member function getRow() on bool
+in APPPATH/Models/V1/Admin/Mdl_wallet.php on line 58.
+ 1 APPPATH/Controllers/V1/Admin/Wallet.php(20): App\Models\Mdl_wallet->get_all('2')
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Admin\Wallet->getAll_Balance()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Admin\Wallet))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-07 03:32:01 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? AND a.currency=? 
+                    UNION ALL
+                    SELECT sum' at line 2 in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT IFNULL(s...', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT IFNULL(s...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT IFNULL(s...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Admin/Mdl_wallet.php(57): CodeIgniter\Database\BaseConnection->query('SELECT IFNULL(s...', Array)
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Admin/Wallet.php(20): App\Models\Mdl_wallet->get_all('2')
+#5 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(902): App\Controllers\V1\Admin\Wallet->getAll_Balance()
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Admin\Wallet))
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-12-07 03:32:01 --> Call to a member function getRow() on bool
+in APPPATH/Models/V1/Admin/Mdl_wallet.php on line 58.
+ 1 APPPATH/Controllers/V1/Admin/Wallet.php(20): App\Models\Mdl_wallet->get_all('2')
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Admin\Wallet->getAll_Balance()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Admin\Wallet))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-07 03:37:21 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'as referral,convert_tz(a.date_created, 'Asia/Singapore', 'Asia/Makassar') AS dat' at line 1 in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT amount, ...', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT amount, ...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT amount, ...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Admin/Mdl_wallet.php(160): CodeIgniter\Database\BaseConnection->query('SELECT amount, ...', Array)
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Admin/Wallet.php(280): App\Models\Mdl_wallet->history_tobank('EUR', '2022-12-07', '2022-12-07', 'Asia/Makassar', '2')
+#5 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(902): App\Controllers\V1\Admin\Wallet->gethistory_tobank()
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Admin\Wallet))
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-12-07 06:20:11 --> Call to undefined function sandbox()
+in APPPATH/Helpers/wise_helper.php on line 103.
+ 1 APPPATH/Controllers/V1/Member/Wallet.php(203): dataEUR(Object(stdClass))
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Member\Wallet->bankTransfer()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Member\Wallet))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-07 06:25:15 --> Call to undefined function sandbox()
+in APPPATH/Helpers/wise_helper.php on line 114.
+ 1 APPPATH/Controllers/V1/Member/Wallet.php(203): dataEUR(Object(stdClass))
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Member\Wallet->bankTransfer()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Member\Wallet))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-07 06:34:35 --> Call to undefined function sandbox()
+in APPPATH/Helpers/wise_helper.php on line 103.
+ 1 APPPATH/Controllers/V1/Member/Wallet.php(203): dataEUR(Object(stdClass))
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Member\Wallet->bankTransfer()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Member\Wallet))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-07 09:48:45 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '('Transfer from ',b.ucode, ' to ', c.ucode) as ket, IFNULL(sender_fee,0) as send' at line 1 in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT DISTINC ...', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT DISTINC ...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT DISTINC ...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Admin/Mdl_wallet.php(151): CodeIgniter\Database\BaseConnection->query('SELECT DISTINC ...')
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Admin/Wallet.php(220): App\Models\Mdl_wallet->history_wallet('EUR', '2022-12-07', '2022-12-07', 'Asia/Makassar', '2')
+#5 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(902): App\Controllers\V1\Admin\Wallet->gethistory_wallet()
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Admin\Wallet))
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-12-07 09:48:48 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '('Transfer from ',b.ucode, ' to ', c.ucode) as ket, IFNULL(sender_fee,0) as send' at line 1 in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT DISTINC ...', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT DISTINC ...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT DISTINC ...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Admin/Mdl_wallet.php(151): CodeIgniter\Database\BaseConnection->query('SELECT DISTINC ...')
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Admin/Wallet.php(220): App\Models\Mdl_wallet->history_wallet('EUR', '2022-12-06', '2022-12-07', 'Asia/Makassar', '2')
+#5 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(902): App\Controllers\V1\Admin\Wallet->gethistory_wallet()
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Admin\Wallet))
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-12-07 09:48:50 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '('Transfer from ',b.ucode, ' to ', c.ucode) as ket, IFNULL(sender_fee,0) as send' at line 1 in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT DISTINC ...', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT DISTINC ...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT DISTINC ...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Admin/Mdl_wallet.php(151): CodeIgniter\Database\BaseConnection->query('SELECT DISTINC ...')
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Admin/Wallet.php(220): App\Models\Mdl_wallet->history_wallet('EUR', '2022-11-30', '2022-12-07', 'Asia/Makassar', '2')
+#5 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(902): App\Controllers\V1\Admin\Wallet->gethistory_wallet()
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Admin\Wallet))
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-12-07 09:48:52 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '('Transfer from ',b.ucode, ' to ', c.ucode) as ket, IFNULL(sender_fee,0) as send' at line 1 in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT DISTINC ...', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT DISTINC ...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT DISTINC ...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Admin/Mdl_wallet.php(151): CodeIgniter\Database\BaseConnection->query('SELECT DISTINC ...')
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Admin/Wallet.php(220): App\Models\Mdl_wallet->history_wallet('EUR', '2022-11-08', '2022-12-07', 'Asia/Makassar', '2')
+#5 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(902): App\Controllers\V1\Admin\Wallet->gethistory_wallet()
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Admin\Wallet))
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-12-07 09:49:09 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '('Transfer from ',b.ucode, ' to ', c.ucode) as ket, IFNULL(sender_fee,0) as send' at line 1 in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT DISTINC ...', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT DISTINC ...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT DISTINC ...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Admin/Mdl_wallet.php(151): CodeIgniter\Database\BaseConnection->query('SELECT DISTINC ...')
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Admin/Wallet.php(220): App\Models\Mdl_wallet->history_wallet('EUR', '2022-12-07', '2022-12-07', 'Asia/Makassar', '2')
+#5 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(902): App\Controllers\V1\Admin\Wallet->gethistory_wallet()
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Admin\Wallet))
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-12-07 09:50:19 --> mysqli_sql_exception: Every derived table must have its own alias in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT DISTINC ...', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT DISTINC ...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT DISTINC ...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Admin/Mdl_wallet.php(151): CodeIgniter\Database\BaseConnection->query('SELECT DISTINC ...')
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Admin/Wallet.php(220): App\Models\Mdl_wallet->history_wallet('EUR', '2022-12-07', '2022-12-07', 'Asia/Makassar', '2')
+#5 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(902): App\Controllers\V1\Admin\Wallet->gethistory_wallet()
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Admin\Wallet))
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-12-07 09:50:22 --> mysqli_sql_exception: Every derived table must have its own alias in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT DISTINC ...', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT DISTINC ...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT DISTINC ...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Admin/Mdl_wallet.php(151): CodeIgniter\Database\BaseConnection->query('SELECT DISTINC ...')
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Admin/Wallet.php(220): App\Models\Mdl_wallet->history_wallet('EUR', '2022-12-06', '2022-12-07', 'Asia/Makassar', '2')
+#5 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(902): App\Controllers\V1\Admin\Wallet->gethistory_wallet()
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Admin\Wallet))
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-12-07 09:50:24 --> mysqli_sql_exception: Every derived table must have its own alias in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT DISTINC ...', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT DISTINC ...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT DISTINC ...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Admin/Mdl_wallet.php(151): CodeIgniter\Database\BaseConnection->query('SELECT DISTINC ...')
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Admin/Wallet.php(220): App\Models\Mdl_wallet->history_wallet('EUR', '2022-11-30', '2022-12-07', 'Asia/Makassar', '2')
+#5 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(902): App\Controllers\V1\Admin\Wallet->gethistory_wallet()
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Admin\Wallet))
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-12-07 22:00:37 --> mysqli_sql_exception: Column 'status' in where clause is ambiguous in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT m1.`id`,...', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT m1.`id`,...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT m1.`id`,...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Trackless/Mdl_user.php(28): CodeIgniter\Database\BaseConnection->query('SELECT m1.`id`,...', Array)
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Trackless/User.php(35): App\Models\Mdl_user->get_all(2, 'Asia/Singapore')
+#5 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(902): App\Controllers\V1\Trackless\User->getAll()
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Trackless\User))
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-12-07 22:00:37 --> Call to a member function getResult() on bool
+in APPPATH/Models/V1/Trackless/Mdl_user.php on line 28.
+ 1 APPPATH/Controllers/V1/Trackless/User.php(35): App\Models\Mdl_user->get_all(2, 'Asia/Singapore')
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Trackless\User->getAll()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Trackless\User))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-07 22:00:48 --> mysqli_sql_exception: Column 'status' in where clause is ambiguous in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT m1.`id`,...', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT m1.`id`,...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT m1.`id`,...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Trackless/Mdl_user.php(28): CodeIgniter\Database\BaseConnection->query('SELECT m1.`id`,...', Array)
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Trackless/User.php(35): App\Models\Mdl_user->get_all(2, 'Asia/Singapore')
+#5 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(902): App\Controllers\V1\Trackless\User->getAll()
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Trackless\User))
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-12-07 22:00:48 --> Call to a member function getResult() on bool
+in APPPATH/Models/V1/Trackless/Mdl_user.php on line 28.
+ 1 APPPATH/Controllers/V1/Trackless/User.php(35): App\Models\Mdl_user->get_all(2, 'Asia/Singapore')
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Trackless\User->getAll()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Trackless\User))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-07 23:44:07 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?) AS last_login, m1.`location`, IFNULL(m2.ucode, c.ucode_mwallet) AS referral F' at line 1 in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT m1.`id`,...', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT m1.`id`,...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT m1.`id`,...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Trackless/Mdl_user.php(21): CodeIgniter\Database\BaseConnection->query('SELECT m1.`id`,...', Array)
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Trackless/User.php(33): App\Models\Mdl_user->get_all(NULL, 'Asia/Makassar')
+#5 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(902): App\Controllers\V1\Trackless\User->getAll()
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Trackless\User))
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-12-07 23:44:07 --> Call to a member function getResult() on bool
+in APPPATH/Models/V1/Trackless/Mdl_user.php on line 21.
+ 1 APPPATH/Controllers/V1/Trackless/User.php(33): App\Models\Mdl_user->get_all(null, 'Asia/Makassar')
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Trackless\User->getAll()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Trackless\User))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-07 23:44:32 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?) AS last_login, m1.`location`, IFNULL(m2.ucode, c.ucode_mwallet) AS referral F' at line 1 in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT m1.`id`,...', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT m1.`id`,...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT m1.`id`,...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Trackless/Mdl_user.php(21): CodeIgniter\Database\BaseConnection->query('SELECT m1.`id`,...', Array)
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Trackless/User.php(33): App\Models\Mdl_user->get_all(NULL, 'Asia/Makassar')
+#5 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(902): App\Controllers\V1\Trackless\User->getAll()
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Trackless\User))
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-12-07 23:44:32 --> Call to a member function getResult() on bool
+in APPPATH/Models/V1/Trackless/Mdl_user.php on line 21.
+ 1 APPPATH/Controllers/V1/Trackless/User.php(33): App\Models\Mdl_user->get_all(null, 'Asia/Makassar')
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Trackless\User->getAll()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Trackless\User))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-07 23:44:40 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?) AS last_login, m1.`location`, IFNULL(m2.ucode, c.ucode_mwallet) AS referral F' at line 1 in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT m1.`id`,...', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT m1.`id`,...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT m1.`id`,...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Trackless/Mdl_user.php(21): CodeIgniter\Database\BaseConnection->query('SELECT m1.`id`,...', Array)
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Trackless/User.php(33): App\Models\Mdl_user->get_all(NULL, 'Asia/Makassar')
+#5 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(902): App\Controllers\V1\Trackless\User->getAll()
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Trackless\User))
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-12-07 23:44:40 --> Call to a member function getResult() on bool
+in APPPATH/Models/V1/Trackless/Mdl_user.php on line 21.
+ 1 APPPATH/Controllers/V1/Trackless/User.php(33): App\Models\Mdl_user->get_all(null, 'Asia/Makassar')
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Trackless\User->getAll()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Trackless\User))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

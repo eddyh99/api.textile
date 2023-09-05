@@ -1,0 +1,91 @@
+CRITICAL - 2022-11-20 01:18:44 --> Cannot redeclare App\Models\Mdl_currency::get_single()
+in APPPATH/Models/V1/Admin/Mdl_currency.php on line 37.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2022-11-20 02:36:23 --> mysqli_sql_exception: Unknown column 'token' in 'field list' in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(292): mysqli->query('UPDATE `bankmem...', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `bankmem...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `bankmem...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `bankmem...', Array, false)
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Trackless/Mdl_member.php(74): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Trackless/Member.php(62): App\Models\Mdl_member->disable_member('2')
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(902): App\Controllers\V1\Trackless\Member->setMember()
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Trackless\Member))
+#8 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-11-20 02:38:13 --> You must set the database table to be used with your query.
+in SYSTEMPATH/Database/BaseConnection.php on line 872.
+ 1 SYSTEMPATH/Model.php(587): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH/Model.php(764): CodeIgniter\Model->builder()
+ 3 APPPATH/Controllers/V1/Trackless/Member.php(52): CodeIgniter\Model->__call('enable_member', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Trackless\Member->setMember()
+ 5 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Trackless\Member))
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-20 02:38:15 --> You must set the database table to be used with your query.
+in SYSTEMPATH/Database/BaseConnection.php on line 872.
+ 1 SYSTEMPATH/Model.php(587): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH/Model.php(764): CodeIgniter\Model->builder()
+ 3 APPPATH/Controllers/V1/Trackless/Member.php(52): CodeIgniter\Model->__call('enable_member', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Trackless\Member->setMember()
+ 5 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Trackless\Member))
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-20 02:57:39 --> Too few arguments to function App\Models\Mdl_wallet::get_all(), 0 passed in /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Trackless/Wallet.php on line 19 and exactly 1 expected
+in APPPATH/Models/V1/Trackless/Mdl_wallet.php on line 18.
+ 1 APPPATH/Controllers/V1/Trackless/Wallet.php(19): App\Models\Mdl_wallet->get_all()
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Trackless\Wallet->getAll_Balance()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Trackless\Wallet))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-20 06:29:34 --> Undefined variable: bank
+in APPPATH/Controllers/V1/Trackless/Cost.php on line 20.
+ 1 APPPATH/Controllers/V1/Trackless/Cost.php(20): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: bank', 'APPPATH/Controllers/V1/Trackless/Cost.php', 20, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Trackless\Cost->getCost()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Trackless\Cost))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-20 06:30:12 --> mysqli_sql_exception: Unknown column 'a.currency' in 'where clause' in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `bank_id...', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `bank_id...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `bank_id...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Trackless/Mdl_cost.php(20): CodeIgniter\Database\BaseConnection->query('SELECT `bank_id...', Array)
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Trackless/Cost.php(20): App\Models\Mdl_cost->get_single('2', 'USD')
+#5 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(902): App\Controllers\V1\Trackless\Cost->getCost()
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Trackless\Cost))
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-11-20 06:30:12 --> Call to a member function getRow() on bool
+in APPPATH/Models/V1/Trackless/Mdl_cost.php on line 20.
+ 1 APPPATH/Controllers/V1/Trackless/Cost.php(20): App\Models\Mdl_cost->get_single('2', 'USD')
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Trackless\Cost->getCost()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Trackless\Cost))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-20 15:38:51 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?) AS date_created FROM tbl_member_topup a INNER JOIN tbl_member b ON a.id_membe' at line 1 in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT amount, ...', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT amount, ...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT amount, ...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Trackless/Mdl_wallet.php(122): CodeIgniter\Database\BaseConnection->query('SELECT amount, ...', Array)
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Trackless/Wallet.php(164): App\Models\Mdl_wallet->history_topup('2', 'USD', '2022-10-18', '2022-11-20', 'Asia/Makassar')
+#5 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(902): App\Controllers\V1\Trackless\Wallet->gethistory_banktopup()
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Trackless\Wallet))
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-11-20 15:46:47 --> mysqli_sql_exception: Column 'bank_id' in where clause is ambiguous in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT amount, ...', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT amount, ...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT amount, ...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Trackless/Mdl_wallet.php(132): CodeIgniter\Database\BaseConnection->query('SELECT amount, ...', Array)
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Trackless/Wallet.php(230): App\Models\Mdl_wallet->history_wallet('2', 'USD', '2022-10-18', '2022-11-16', 'Asia/Makassar')
+#5 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(902): App\Controllers\V1\Trackless\Wallet->gethistory_bankwallet()
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Trackless\Wallet))
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}

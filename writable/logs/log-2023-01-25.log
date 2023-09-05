@@ -1,0 +1,105 @@
+ERROR - 2023-01-25 02:55:46 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?) AS date_created FROM tbl_member_topup a INNER JOIN tbl_member b ON a.id_membe' at line 2 in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT amount, ...', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT amount, ...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT amount, ...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Admin/Mdl_wallet.php(130): CodeIgniter\Database\BaseConnection->query('SELECT amount, ...', Array)
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Admin/Wallet.php(104): App\Models\Mdl_wallet->get_historybycurrency('EUR', '2023-01-25', '2023-01-25', 'Asia/Makassar', '3')
+#5 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(902): App\Controllers\V1\Admin\Wallet->gethistory_bycurrency()
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Admin\Wallet))
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2023-01-25 02:55:56 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?) AS date_created FROM tbl_member_topup a INNER JOIN tbl_member b ON a.id_membe' at line 2 in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT amount, ...', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT amount, ...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT amount, ...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Admin/Mdl_wallet.php(130): CodeIgniter\Database\BaseConnection->query('SELECT amount, ...', Array)
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Admin/Wallet.php(104): App\Models\Mdl_wallet->get_historybycurrency('EUR', '2022-11-01', '2023-01-25', 'Asia/Makassar', '3')
+#5 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(902): App\Controllers\V1\Admin\Wallet->gethistory_bycurrency()
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Admin\Wallet))
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2023-01-25 06:52:59 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?) AS date_created FROM tbl_member_topup a INNER JOIN tbl_member b ON a.id_membe' at line 2 in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT amount, ...', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT amount, ...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT amount, ...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Admin/Mdl_wallet.php(131): CodeIgniter\Database\BaseConnection->query('SELECT amount, ...', Array)
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Admin/Wallet.php(104): App\Models\Mdl_wallet->get_historybycurrency('EUR', '2023-01-25', '2023-01-25', 'Asia/Makassar', '3')
+#5 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(902): App\Controllers\V1\Admin\Wallet->gethistory_bycurrency()
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Admin\Wallet))
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2023-01-25 06:53:04 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?) AS date_created FROM tbl_member_topup a INNER JOIN tbl_member b ON a.id_membe' at line 2 in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT amount, ...', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT amount, ...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT amount, ...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Admin/Mdl_wallet.php(131): CodeIgniter\Database\BaseConnection->query('SELECT amount, ...', Array)
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Admin/Wallet.php(104): App\Models\Mdl_wallet->get_historybycurrency('EUR', '2022-12-27', '2023-01-25', 'Asia/Makassar', '3')
+#5 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(902): App\Controllers\V1\Admin\Wallet->gethistory_bycurrency()
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Admin\Wallet))
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2023-01-25 07:21:04 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?) AS date_created FROM tbl_member_towallet a INNER JOIN tbl_member b ON a.sende' at line 2 in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT ket, sum...', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT ket, sum...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT ket, sum...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Admin/Mdl_wallet.php(162): CodeIgniter\Database\BaseConnection->query('SELECT ket, sum...', Array)
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Admin/Wallet.php(224): App\Models\Mdl_wallet->history_wallet('EUR', '2023-01-25', '2023-01-25', 'Asia/Makassar', '3')
+#5 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(902): App\Controllers\V1\Admin\Wallet->gethistory_wallet()
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Admin\Wallet))
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-01-25 07:21:04 --> Call to a member function getResult() on bool
+in APPPATH/Models/V1/Admin/Mdl_wallet.php on line 164.
+ 1 APPPATH/Controllers/V1/Admin/Wallet.php(224): App\Models\Mdl_wallet->history_wallet('EUR', '2023-01-25', '2023-01-25', 'Asia/Makassar', '3')
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Admin\Wallet->gethistory_wallet()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Admin\Wallet))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-25 07:22:08 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?) AS date_created FROM tbl_member_towallet a INNER JOIN tbl_member b ON a.sende' at line 2 in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT ket, sum...', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT ket, sum...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT ket, sum...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Admin/Mdl_wallet.php(162): CodeIgniter\Database\BaseConnection->query('SELECT ket, sum...', Array)
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Admin/Wallet.php(224): App\Models\Mdl_wallet->history_wallet('EUR', '2023-01-25', '2023-01-25', 'Asia/Makassar', '3')
+#5 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(902): App\Controllers\V1\Admin\Wallet->gethistory_wallet()
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Admin\Wallet))
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-01-25 07:22:08 --> Call to a member function getResult() on bool
+in APPPATH/Models/V1/Admin/Mdl_wallet.php on line 164.
+ 1 APPPATH/Controllers/V1/Admin/Wallet.php(224): App\Models\Mdl_wallet->history_wallet('EUR', '2023-01-25', '2023-01-25', 'Asia/Makassar', '3')
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Admin\Wallet->gethistory_wallet()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Admin\Wallet))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-25 07:24:55 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?) AS date_created FROM tbl_member_towallet a INNER JOIN tbl_member b ON a.sende' at line 2 in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT ket, sum...', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT ket, sum...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT ket, sum...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Admin/Mdl_wallet.php(161): CodeIgniter\Database\BaseConnection->query('SELECT ket, sum...', Array)
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Admin/Wallet.php(224): App\Models\Mdl_wallet->history_wallet('EUR', '2023-01-25', '2023-01-25', 'Asia/Makassar', '3')
+#5 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(902): App\Controllers\V1\Admin\Wallet->gethistory_wallet()
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Admin\Wallet))
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-01-25 07:24:55 --> Call to a member function getResult() on bool
+in APPPATH/Models/V1/Admin/Mdl_wallet.php on line 163.
+ 1 APPPATH/Controllers/V1/Admin/Wallet.php(224): App\Models\Mdl_wallet->history_wallet('EUR', '2023-01-25', '2023-01-25', 'Asia/Makassar', '3')
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Admin\Wallet->gethistory_wallet()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Admin\Wallet))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

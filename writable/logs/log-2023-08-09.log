@@ -1,0 +1,309 @@
+ERROR - 2023-08-09 01:30:07 --> mysqli_sql_exception: Duplicate entry 'manishlahre86@gmail.com-5' for key 'tbl_member.email' in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(292): mysqli->query('INSERT INTO `tb...', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Mdl_member.php(193): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Auth.php(82): App\Models\Mdl_member->add(Array)
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(902): App\Controllers\V1\Auth->register()
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Auth))
+#8 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-08-09 09:26:24 --> Error connecting to the database: mysqli_sql_exception: Resource temporarily unavailable in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:171
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(171): mysqli->real_connect('localhost', 'piggybankservic...', '%t=dJkm_+7W1', 'piggybankservic...', 3306, '', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/piggybankservice/api/api.tracklessbank.com/app/Models/ValidateToken.php(21): CodeIgniter\Database\BaseConnection->query('SELECT * FROM b...', Array)
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Helpers/preapi_helper.php(13): App\Models\ValidateToken->checkAPIkey('pPaqjxUmeiwXb9a...')
+#5 /home/piggybankservice/api/api.tracklessbank.com/app/Filters/FilterApi.php(35): validateKey('pPaqjxUmeiwXb9a...')
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/Filters/Filters.php(173): App\Filters\FilterApi->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(431): CodeIgniter\Filters\Filters->run('v1/member/walle...', 'before')
+#8 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Resource temporarily unavailable in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:215
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/piggybankservice/api/api.tracklessbank.com/app/Models/ValidateToken.php(21): CodeIgniter\Database\BaseConnection->query('SELECT * FROM b...', Array)
+#3 /home/piggybankservice/api/api.tracklessbank.com/app/Helpers/preapi_helper.php(13): App\Models\ValidateToken->checkAPIkey('pPaqjxUmeiwXb9a...')
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Filters/FilterApi.php(35): validateKey('pPaqjxUmeiwXb9a...')
+#5 /home/piggybankservice/api/api.tracklessbank.com/system/Filters/Filters.php(173): App\Filters\FilterApi->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(431): CodeIgniter\Filters\Filters->run('v1/member/walle...', 'before')
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-08-09 09:26:24 --> Unable to connect to the database.
+Main connection [MySQLi]: Resource temporarily unavailable
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH/Models/ValidateToken.php(21): CodeIgniter\Database\BaseConnection->query('SELECT * FROM bankmember WHERE apikey=?', [...])
+ 3 APPPATH/Helpers/preapi_helper.php(13): App\Models\ValidateToken->checkAPIkey('pPaqjxUmeiwXb9aqfWVREKvNzKOUh5ei5DQPHXCMkIluGCwkXu')
+ 4 APPPATH/Filters/FilterApi.php(35): validateKey('pPaqjxUmeiwXb9aqfWVREKvNzKOUh5ei5DQPHXCMkIluGCwkXu')
+ 5 SYSTEMPATH/Filters/Filters.php(173): App\Filters\FilterApi->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 6 SYSTEMPATH/CodeIgniter.php(431): CodeIgniter\Filters\Filters->run('v1/member/wallet/getAllbank', 'before')
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-08-09 09:29:57 --> Error connecting to the database: mysqli_sql_exception: Resource temporarily unavailable in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:171
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(171): mysqli->real_connect('localhost', 'piggybankservic...', '%t=dJkm_+7W1', 'piggybankservic...', 3306, '', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/piggybankservice/api/api.tracklessbank.com/app/Models/ValidateToken.php(21): CodeIgniter\Database\BaseConnection->query('SELECT * FROM b...', Array)
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Helpers/preapi_helper.php(13): App\Models\ValidateToken->checkAPIkey('be68YFkvztcaQGL...')
+#5 /home/piggybankservice/api/api.tracklessbank.com/app/Filters/FilterApi.php(35): validateKey('be68YFkvztcaQGL...')
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/Filters/Filters.php(173): App\Filters\FilterApi->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(431): CodeIgniter\Filters\Filters->run('v1/admin/cost/g...', 'before')
+#8 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Resource temporarily unavailable in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:215
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/piggybankservice/api/api.tracklessbank.com/app/Models/ValidateToken.php(21): CodeIgniter\Database\BaseConnection->query('SELECT * FROM b...', Array)
+#3 /home/piggybankservice/api/api.tracklessbank.com/app/Helpers/preapi_helper.php(13): App\Models\ValidateToken->checkAPIkey('be68YFkvztcaQGL...')
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Filters/FilterApi.php(35): validateKey('be68YFkvztcaQGL...')
+#5 /home/piggybankservice/api/api.tracklessbank.com/system/Filters/Filters.php(173): App\Filters\FilterApi->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(431): CodeIgniter\Filters\Filters->run('v1/admin/cost/g...', 'before')
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-08-09 09:29:57 --> Unable to connect to the database.
+Main connection [MySQLi]: Resource temporarily unavailable
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH/Models/ValidateToken.php(21): CodeIgniter\Database\BaseConnection->query('SELECT * FROM bankmember WHERE apikey=?', [...])
+ 3 APPPATH/Helpers/preapi_helper.php(13): App\Models\ValidateToken->checkAPIkey('be68YFkvztcaQGLNIXxPdA2jf3uUC79HgVBMW4KsmhwTJDSZEy')
+ 4 APPPATH/Filters/FilterApi.php(35): validateKey('be68YFkvztcaQGLNIXxPdA2jf3uUC79HgVBMW4KsmhwTJDSZEy')
+ 5 SYSTEMPATH/Filters/Filters.php(173): App\Filters\FilterApi->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 6 SYSTEMPATH/CodeIgniter.php(431): CodeIgniter\Filters\Filters->run('v1/admin/cost/getCost', 'before')
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-08-09 09:29:57 --> Error connecting to the database: mysqli_sql_exception: Resource temporarily unavailable in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:171
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(171): mysqli->real_connect('localhost', 'piggybankservic...', '%t=dJkm_+7W1', 'piggybankservic...', 3306, '', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/piggybankservice/api/api.tracklessbank.com/app/Models/ValidateToken.php(21): CodeIgniter\Database\BaseConnection->query('SELECT * FROM b...', Array)
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Helpers/preapi_helper.php(13): App\Models\ValidateToken->checkAPIkey('be68YFkvztcaQGL...')
+#5 /home/piggybankservice/api/api.tracklessbank.com/app/Filters/FilterApi.php(35): validateKey('be68YFkvztcaQGL...')
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/Filters/Filters.php(173): App\Filters\FilterApi->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(431): CodeIgniter\Filters\Filters->run('v1/admin/fee/ge...', 'before')
+#8 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Resource temporarily unavailable in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:215
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/piggybankservice/api/api.tracklessbank.com/app/Models/ValidateToken.php(21): CodeIgniter\Database\BaseConnection->query('SELECT * FROM b...', Array)
+#3 /home/piggybankservice/api/api.tracklessbank.com/app/Helpers/preapi_helper.php(13): App\Models\ValidateToken->checkAPIkey('be68YFkvztcaQGL...')
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Filters/FilterApi.php(35): validateKey('be68YFkvztcaQGL...')
+#5 /home/piggybankservice/api/api.tracklessbank.com/system/Filters/Filters.php(173): App\Filters\FilterApi->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(431): CodeIgniter\Filters\Filters->run('v1/admin/fee/ge...', 'before')
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-08-09 09:29:57 --> Unable to connect to the database.
+Main connection [MySQLi]: Resource temporarily unavailable
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH/Models/ValidateToken.php(21): CodeIgniter\Database\BaseConnection->query('SELECT * FROM bankmember WHERE apikey=?', [...])
+ 3 APPPATH/Helpers/preapi_helper.php(13): App\Models\ValidateToken->checkAPIkey('be68YFkvztcaQGLNIXxPdA2jf3uUC79HgVBMW4KsmhwTJDSZEy')
+ 4 APPPATH/Filters/FilterApi.php(35): validateKey('be68YFkvztcaQGLNIXxPdA2jf3uUC79HgVBMW4KsmhwTJDSZEy')
+ 5 SYSTEMPATH/Filters/Filters.php(173): App\Filters\FilterApi->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 6 SYSTEMPATH/CodeIgniter.php(431): CodeIgniter\Filters\Filters->run('v1/admin/fee/getFee', 'before')
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-08-09 09:29:57 --> Error connecting to the database: mysqli_sql_exception: Resource temporarily unavailable in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:171
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(171): mysqli->real_connect('localhost', 'piggybankservic...', '%t=dJkm_+7W1', 'piggybankservic...', 3306, '', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/piggybankservice/api/api.tracklessbank.com/app/Models/ValidateToken.php(21): CodeIgniter\Database\BaseConnection->query('SELECT * FROM b...', Array)
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Helpers/preapi_helper.php(13): App\Models\ValidateToken->checkAPIkey('be68YFkvztcaQGL...')
+#5 /home/piggybankservice/api/api.tracklessbank.com/app/Filters/FilterApi.php(35): validateKey('be68YFkvztcaQGL...')
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/Filters/Filters.php(173): App\Filters\FilterApi->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(431): CodeIgniter\Filters\Filters->run('v1/trackless/cu...', 'before')
+#8 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Resource temporarily unavailable in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:215
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/piggybankservice/api/api.tracklessbank.com/app/Models/ValidateToken.php(21): CodeIgniter\Database\BaseConnection->query('SELECT * FROM b...', Array)
+#3 /home/piggybankservice/api/api.tracklessbank.com/app/Helpers/preapi_helper.php(13): App\Models\ValidateToken->checkAPIkey('be68YFkvztcaQGL...')
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Filters/FilterApi.php(35): validateKey('be68YFkvztcaQGL...')
+#5 /home/piggybankservice/api/api.tracklessbank.com/system/Filters/Filters.php(173): App\Filters\FilterApi->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(431): CodeIgniter\Filters\Filters->run('v1/trackless/cu...', 'before')
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-08-09 09:29:57 --> Unable to connect to the database.
+Main connection [MySQLi]: Resource temporarily unavailable
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH/Models/ValidateToken.php(21): CodeIgniter\Database\BaseConnection->query('SELECT * FROM bankmember WHERE apikey=?', [...])
+ 3 APPPATH/Helpers/preapi_helper.php(13): App\Models\ValidateToken->checkAPIkey('be68YFkvztcaQGLNIXxPdA2jf3uUC79HgVBMW4KsmhwTJDSZEy')
+ 4 APPPATH/Filters/FilterApi.php(35): validateKey('be68YFkvztcaQGLNIXxPdA2jf3uUC79HgVBMW4KsmhwTJDSZEy')
+ 5 SYSTEMPATH/Filters/Filters.php(173): App\Filters\FilterApi->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 6 SYSTEMPATH/CodeIgniter.php(431): CodeIgniter\Filters\Filters->run('v1/trackless/currency/getAllCurrency', 'before')
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-08-09 10:08:18 --> Error connecting to the database: mysqli_sql_exception: Resource temporarily unavailable in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:171
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(171): mysqli->real_connect('localhost', 'piggybankservic...', '%t=dJkm_+7W1', 'piggybankservic...', 3306, '', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/piggybankservice/api/api.tracklessbank.com/app/Models/ValidateToken.php(21): CodeIgniter\Database\BaseConnection->query('SELECT * FROM b...', Array)
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Helpers/preapi_helper.php(13): App\Models\ValidateToken->checkAPIkey('TmbCDtA38RqDYSr...')
+#5 /home/piggybankservice/api/api.tracklessbank.com/app/Filters/FilterApi.php(35): validateKey('TmbCDtA38RqDYSr...')
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/Filters/Filters.php(173): App\Filters\FilterApi->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(431): CodeIgniter\Filters\Filters->run('v1/admin/cost/g...', 'before')
+#8 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Resource temporarily unavailable in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:215
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/piggybankservice/api/api.tracklessbank.com/app/Models/ValidateToken.php(21): CodeIgniter\Database\BaseConnection->query('SELECT * FROM b...', Array)
+#3 /home/piggybankservice/api/api.tracklessbank.com/app/Helpers/preapi_helper.php(13): App\Models\ValidateToken->checkAPIkey('TmbCDtA38RqDYSr...')
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Filters/FilterApi.php(35): validateKey('TmbCDtA38RqDYSr...')
+#5 /home/piggybankservice/api/api.tracklessbank.com/system/Filters/Filters.php(173): App\Filters\FilterApi->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(431): CodeIgniter\Filters\Filters->run('v1/admin/cost/g...', 'before')
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-08-09 10:08:18 --> Unable to connect to the database.
+Main connection [MySQLi]: Resource temporarily unavailable
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH/Models/ValidateToken.php(21): CodeIgniter\Database\BaseConnection->query('SELECT * FROM bankmember WHERE apikey=?', [...])
+ 3 APPPATH/Helpers/preapi_helper.php(13): App\Models\ValidateToken->checkAPIkey('TmbCDtA38RqDYSrtmqN4nh6uYQ5hNefBMD5cETF7F7g7RuJBww')
+ 4 APPPATH/Filters/FilterApi.php(35): validateKey('TmbCDtA38RqDYSrtmqN4nh6uYQ5hNefBMD5cETF7F7g7RuJBww')
+ 5 SYSTEMPATH/Filters/Filters.php(173): App\Filters\FilterApi->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 6 SYSTEMPATH/CodeIgniter.php(431): CodeIgniter\Filters\Filters->run('v1/admin/cost/getCost', 'before')
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-08-09 10:08:18 --> Error connecting to the database: mysqli_sql_exception: Resource temporarily unavailable in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:171
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(171): mysqli->real_connect('localhost', 'piggybankservic...', '%t=dJkm_+7W1', 'piggybankservic...', 3306, '', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/piggybankservice/api/api.tracklessbank.com/app/Models/ValidateToken.php(21): CodeIgniter\Database\BaseConnection->query('SELECT * FROM b...', Array)
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Helpers/preapi_helper.php(13): App\Models\ValidateToken->checkAPIkey('TmbCDtA38RqDYSr...')
+#5 /home/piggybankservice/api/api.tracklessbank.com/app/Filters/FilterApi.php(35): validateKey('TmbCDtA38RqDYSr...')
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/Filters/Filters.php(173): App\Filters\FilterApi->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(431): CodeIgniter\Filters\Filters->run('v1/admin/fee/ge...', 'before')
+#8 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Resource temporarily unavailable in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:215
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/piggybankservice/api/api.tracklessbank.com/app/Models/ValidateToken.php(21): CodeIgniter\Database\BaseConnection->query('SELECT * FROM b...', Array)
+#3 /home/piggybankservice/api/api.tracklessbank.com/app/Helpers/preapi_helper.php(13): App\Models\ValidateToken->checkAPIkey('TmbCDtA38RqDYSr...')
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Filters/FilterApi.php(35): validateKey('TmbCDtA38RqDYSr...')
+#5 /home/piggybankservice/api/api.tracklessbank.com/system/Filters/Filters.php(173): App\Filters\FilterApi->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(431): CodeIgniter\Filters\Filters->run('v1/admin/fee/ge...', 'before')
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-08-09 10:08:18 --> Unable to connect to the database.
+Main connection [MySQLi]: Resource temporarily unavailable
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH/Models/ValidateToken.php(21): CodeIgniter\Database\BaseConnection->query('SELECT * FROM bankmember WHERE apikey=?', [...])
+ 3 APPPATH/Helpers/preapi_helper.php(13): App\Models\ValidateToken->checkAPIkey('TmbCDtA38RqDYSrtmqN4nh6uYQ5hNefBMD5cETF7F7g7RuJBww')
+ 4 APPPATH/Filters/FilterApi.php(35): validateKey('TmbCDtA38RqDYSrtmqN4nh6uYQ5hNefBMD5cETF7F7g7RuJBww')
+ 5 SYSTEMPATH/Filters/Filters.php(173): App\Filters\FilterApi->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 6 SYSTEMPATH/CodeIgniter.php(431): CodeIgniter\Filters\Filters->run('v1/admin/fee/getFee', 'before')
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-08-09 10:08:19 --> Error connecting to the database: mysqli_sql_exception: Resource temporarily unavailable in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:171
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(171): mysqli->real_connect('localhost', 'piggybankservic...', '%t=dJkm_+7W1', 'piggybankservic...', 3306, '', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/piggybankservice/api/api.tracklessbank.com/app/Models/ValidateToken.php(21): CodeIgniter\Database\BaseConnection->query('SELECT * FROM b...', Array)
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Helpers/preapi_helper.php(13): App\Models\ValidateToken->checkAPIkey('TmbCDtA38RqDYSr...')
+#5 /home/piggybankservice/api/api.tracklessbank.com/app/Filters/FilterApi.php(35): validateKey('TmbCDtA38RqDYSr...')
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/Filters/Filters.php(173): App\Filters\FilterApi->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(431): CodeIgniter\Filters\Filters->run('v1/trackless/cu...', 'before')
+#8 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Resource temporarily unavailable in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:215
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/piggybankservice/api/api.tracklessbank.com/app/Models/ValidateToken.php(21): CodeIgniter\Database\BaseConnection->query('SELECT * FROM b...', Array)
+#3 /home/piggybankservice/api/api.tracklessbank.com/app/Helpers/preapi_helper.php(13): App\Models\ValidateToken->checkAPIkey('TmbCDtA38RqDYSr...')
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Filters/FilterApi.php(35): validateKey('TmbCDtA38RqDYSr...')
+#5 /home/piggybankservice/api/api.tracklessbank.com/system/Filters/Filters.php(173): App\Filters\FilterApi->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(431): CodeIgniter\Filters\Filters->run('v1/trackless/cu...', 'before')
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-08-09 10:08:19 --> Unable to connect to the database.
+Main connection [MySQLi]: Resource temporarily unavailable
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH/Models/ValidateToken.php(21): CodeIgniter\Database\BaseConnection->query('SELECT * FROM bankmember WHERE apikey=?', [...])
+ 3 APPPATH/Helpers/preapi_helper.php(13): App\Models\ValidateToken->checkAPIkey('TmbCDtA38RqDYSrtmqN4nh6uYQ5hNefBMD5cETF7F7g7RuJBww')
+ 4 APPPATH/Filters/FilterApi.php(35): validateKey('TmbCDtA38RqDYSrtmqN4nh6uYQ5hNefBMD5cETF7F7g7RuJBww')
+ 5 SYSTEMPATH/Filters/Filters.php(173): App\Filters\FilterApi->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 6 SYSTEMPATH/CodeIgniter.php(431): CodeIgniter\Filters\Filters->run('v1/trackless/currency/getAllCurrency', 'before')
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-08-09 10:26:53 --> Error connecting to the database: mysqli_sql_exception: Resource temporarily unavailable in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:171
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(171): mysqli->real_connect('localhost', 'piggybankservic...', '%t=dJkm_+7W1', 'piggybankservic...', 3306, '', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/piggybankservice/api/api.tracklessbank.com/app/Models/ValidateToken.php(21): CodeIgniter\Database\BaseConnection->query('SELECT * FROM b...', Array)
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Helpers/preapi_helper.php(13): App\Models\ValidateToken->checkAPIkey('pPaqjxUmeiwXb9a...')
+#5 /home/piggybankservice/api/api.tracklessbank.com/app/Filters/FilterApi.php(35): validateKey('pPaqjxUmeiwXb9a...')
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/Filters/Filters.php(173): App\Filters\FilterApi->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(431): CodeIgniter\Filters\Filters->run('v1/member/walle...', 'before')
+#8 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Resource temporarily unavailable in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:215
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/piggybankservice/api/api.tracklessbank.com/app/Models/ValidateToken.php(21): CodeIgniter\Database\BaseConnection->query('SELECT * FROM b...', Array)
+#3 /home/piggybankservice/api/api.tracklessbank.com/app/Helpers/preapi_helper.php(13): App\Models\ValidateToken->checkAPIkey('pPaqjxUmeiwXb9a...')
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Filters/FilterApi.php(35): validateKey('pPaqjxUmeiwXb9a...')
+#5 /home/piggybankservice/api/api.tracklessbank.com/system/Filters/Filters.php(173): App\Filters\FilterApi->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(431): CodeIgniter\Filters\Filters->run('v1/member/walle...', 'before')
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-08-09 10:26:53 --> Unable to connect to the database.
+Main connection [MySQLi]: Resource temporarily unavailable
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH/Models/ValidateToken.php(21): CodeIgniter\Database\BaseConnection->query('SELECT * FROM bankmember WHERE apikey=?', [...])
+ 3 APPPATH/Helpers/preapi_helper.php(13): App\Models\ValidateToken->checkAPIkey('pPaqjxUmeiwXb9aqfWVREKvNzKOUh5ei5DQPHXCMkIluGCwkXu')
+ 4 APPPATH/Filters/FilterApi.php(35): validateKey('pPaqjxUmeiwXb9aqfWVREKvNzKOUh5ei5DQPHXCMkIluGCwkXu')
+ 5 SYSTEMPATH/Filters/Filters.php(173): App\Filters\FilterApi->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 6 SYSTEMPATH/CodeIgniter.php(431): CodeIgniter\Filters\Filters->run('v1/member/wallet/getAllbank', 'before')
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

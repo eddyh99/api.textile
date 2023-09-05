@@ -1,0 +1,161 @@
+ERROR - 2022-11-07 00:37:23 --> mysqli_sql_exception: Duplicate entry 'principe.nerini@gmail.com' for key 'tbl_member.email' in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(292): mysqli->query('INSERT INTO `tb...', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Mdl_member.php(211): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Auth.php(81): App\Models\Mdl_member->add(Array)
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(902): App\Controllers\V1\Auth->register()
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Auth))
+#8 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-11-07 08:54:47 --> mysqli_sql_exception: Unknown column 'referral_sender' in 'field list' in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(292): mysqli->query('REPLACE INTO `t...', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('REPLACE INTO `t...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('REPLACE INTO `t...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseBuilder.php(2002): CodeIgniter\Database\BaseConnection->query('REPLACE INTO `t...', Array, false)
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Admin/Mdl_fee.php(19): CodeIgniter\Database\BaseBuilder->replace(Array)
+#5 /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Admin/Fee.php(136): App\Models\Mdl_fee->setfee(Array)
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(902): App\Controllers\V1\Admin\Fee->setfee()
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Admin\Fee))
+#8 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-11-07 08:55:29 --> mysqli_sql_exception: Unknown column 'referral_sender' in 'field list' in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(292): mysqli->query('REPLACE INTO `t...', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('REPLACE INTO `t...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('REPLACE INTO `t...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseBuilder.php(2002): CodeIgniter\Database\BaseConnection->query('REPLACE INTO `t...', Array, false)
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Admin/Mdl_fee.php(19): CodeIgniter\Database\BaseBuilder->replace(Array)
+#5 /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Admin/Fee.php(136): App\Models\Mdl_fee->setfee(Array)
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(902): App\Controllers\V1\Admin\Fee->setfee()
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Admin\Fee))
+#8 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-11-07 08:57:40 --> mysqli_sql_exception: Unknown column 'referral_sender' in 'field list' in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(292): mysqli->query('REPLACE INTO `t...', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('REPLACE INTO `t...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('REPLACE INTO `t...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseBuilder.php(2002): CodeIgniter\Database\BaseConnection->query('REPLACE INTO `t...', Array, false)
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Admin/Mdl_fee.php(22): CodeIgniter\Database\BaseBuilder->replace(Array)
+#5 /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Admin/Fee.php(136): App\Models\Mdl_fee->setfee(Array)
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(902): App\Controllers\V1\Admin\Fee->setfee()
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Admin\Fee))
+#8 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-11-07 08:58:30 --> mysqli_sql_exception: Unknown column 'referral_sender' in 'field list' in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(292): mysqli->query('REPLACE INTO `t...', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('REPLACE INTO `t...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('REPLACE INTO `t...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseBuilder.php(2002): CodeIgniter\Database\BaseConnection->query('REPLACE INTO `t...', Array, false)
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Admin/Mdl_fee.php(19): CodeIgniter\Database\BaseBuilder->replace(Array)
+#5 /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Admin/Fee.php(136): App\Models\Mdl_fee->setfee(Array)
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(902): App\Controllers\V1\Admin\Fee->setfee()
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Admin\Fee))
+#8 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-11-07 09:48:15 --> Undefined property: App\Controllers\V1\Admin\Cost::$fee
+in APPPATH/Controllers/V1/Admin/Cost.php on line 20.
+ 1 APPPATH/Controllers/V1/Admin/Cost.php(20): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\V1\\Admin\\Cost::$fee', 'APPPATH/Controllers/V1/Admin/Cost.php', 20, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Admin\Cost->getCost()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Admin\Cost))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-07 09:48:21 --> Undefined property: App\Controllers\V1\Admin\Cost::$fee
+in APPPATH/Controllers/V1/Admin/Cost.php on line 20.
+ 1 APPPATH/Controllers/V1/Admin/Cost.php(20): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\V1\\Admin\\Cost::$fee', 'APPPATH/Controllers/V1/Admin/Cost.php', 20, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Admin\Cost->getCost()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Admin\Cost))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-07 09:48:59 --> Undefined property: App\Controllers\V1\Admin\Cost::$fee
+in APPPATH/Controllers/V1/Admin/Cost.php on line 20.
+ 1 APPPATH/Controllers/V1/Admin/Cost.php(20): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\V1\\Admin\\Cost::$fee', 'APPPATH/Controllers/V1/Admin/Cost.php', 20, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Admin\Cost->getCost()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Admin\Cost))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-07 09:49:19 --> Undefined property: App\Controllers\V1\Admin\Cost::$fee
+in APPPATH/Controllers/V1/Admin/Cost.php on line 20.
+ 1 APPPATH/Controllers/V1/Admin/Cost.php(20): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\V1\\Admin\\Cost::$fee', 'APPPATH/Controllers/V1/Admin/Cost.php', 20, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Admin\Cost->getCost()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Admin\Cost))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-07 09:49:40 --> mysqli_sql_exception: Column 'currency' in where clause is ambiguous in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT a.id, a....', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT a.id, a....')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT a.id, a....')
+#3 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Admin/Mdl_cost.php(20): CodeIgniter\Database\BaseConnection->query('SELECT a.id, a....', Array)
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Admin/Cost.php(20): App\Models\Mdl_cost->get_single('1', 'USD')
+#5 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(902): App\Controllers\V1\Admin\Cost->getCost()
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Admin\Cost))
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-11-07 09:49:40 --> Call to a member function getRow() on bool
+in APPPATH/Models/V1/Admin/Mdl_cost.php on line 20.
+ 1 APPPATH/Controllers/V1/Admin/Cost.php(20): App\Models\Mdl_cost->get_single('1', 'USD')
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Admin\Cost->getCost()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Admin\Cost))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-07 23:18:14 --> Undefined variable: amount
+in APPPATH/Controllers/V1/Member/Swap.php on line 71.
+ 1 APPPATH/Controllers/V1/Member/Swap.php(71): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: amount', 'APPPATH/Controllers/V1/Member/Swap.php', 71, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Member\Swap->getSummary()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Member\Swap))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-07 23:18:56 --> Trying to get property 'swap' of non-object
+in APPPATH/Controllers/V1/Member/Swap.php on line 145.
+ 1 APPPATH/Controllers/V1/Member/Swap.php(145): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'swap\' of non-object', 'APPPATH/Controllers/V1/Member/Swap.php', 145, [...])
+ 2 APPPATH/Controllers/V1/Member/Swap.php(71): App\Controllers\V1\Member\Swap->compute(50.0, 'EUR')
+ 3 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Member\Swap->getSummary()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Member\Swap))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-07 23:20:10 --> Undefined variable: amount
+in APPPATH/Controllers/V1/Member/Swap.php on line 72.
+ 1 APPPATH/Controllers/V1/Member/Swap.php(72): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: amount', 'APPPATH/Controllers/V1/Member/Swap.php', 72, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Member\Swap->getSummary()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Member\Swap))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-07 23:30:31 --> Undefined property: App\Controllers\V1\Member\Swap::$amount
+in APPPATH/Controllers/V1/Member/Swap.php on line 72.
+ 1 APPPATH/Controllers/V1/Member/Swap.php(72): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\V1\\Member\\Swap::$amount', 'APPPATH/Controllers/V1/Member/Swap.php', 72, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Member\Swap->getSummary()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Member\Swap))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-07 23:30:58 --> Undefined variable: amount
+in APPPATH/Controllers/V1/Member/Swap.php on line 74.
+ 1 APPPATH/Controllers/V1/Member/Swap.php(74): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: amount', 'APPPATH/Controllers/V1/Member/Swap.php', 74, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Member\Swap->getSummary()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Member\Swap))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-07 23:34:12 --> Call to undefined method App\Controllers\V1\Member\Swap::apiwise()
+in APPPATH/Controllers/V1/Member/Swap.php on line 97.
+ 1 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Member\Swap->getSummary()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Member\Swap))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-07 23:37:26 --> Undefined property: stdClass::$paymentOptions
+in APPPATH/Controllers/V1/Member/Swap.php on line 109.
+ 1 APPPATH/Controllers/V1/Member/Swap.php(109): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$paymentOptions', 'APPPATH/Controllers/V1/Member/Swap.php', 109, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Member\Swap->getSummary()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Member\Swap))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

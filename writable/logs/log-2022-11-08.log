@@ -1,0 +1,453 @@
+ERROR - 2022-11-08 00:12:16 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? AND currency=?                    
+                    UNION ALL
+             ' at line 3 in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT sum(x.am...', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT sum(x.am...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT sum(x.am...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Mdl_wallet.php(25): CodeIgniter\Database\BaseConnection->query('SELECT sum(x.am...', Array)
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Member/Swap.php(70): App\Models\Mdl_wallet->get_balance('17', 'USD')
+#5 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(902): App\Controllers\V1\Member\Swap->getSummary()
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Member\Swap))
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-11-08 00:12:16 --> Call to a member function getRow() on bool
+in APPPATH/Models/V1/Mdl_wallet.php on line 25.
+ 1 APPPATH/Controllers/V1/Member/Swap.php(70): App\Models\Mdl_wallet->get_balance('17', 'USD')
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Member\Swap->getSummary()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Member\Swap))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-08 00:12:32 --> mysqli_sql_exception: Incorrect parameter count in the call to native function 'IFNULL' in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT sum(x.am...', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT sum(x.am...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT sum(x.am...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Mdl_wallet.php(25): CodeIgniter\Database\BaseConnection->query('SELECT sum(x.am...', Array)
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Member/Swap.php(70): App\Models\Mdl_wallet->get_balance('17', 'USD')
+#5 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(902): App\Controllers\V1\Member\Swap->getSummary()
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Member\Swap))
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-11-08 00:12:32 --> Call to a member function getRow() on bool
+in APPPATH/Models/V1/Mdl_wallet.php on line 25.
+ 1 APPPATH/Controllers/V1/Member/Swap.php(70): App\Models\Mdl_wallet->get_balance('17', 'USD')
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Member\Swap->getSummary()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Member\Swap))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-08 00:14:38 --> mysqli_sql_exception: Incorrect parameter count in the call to native function 'IFNULL' in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT sum(x.am...', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT sum(x.am...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT sum(x.am...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Mdl_wallet.php(25): CodeIgniter\Database\BaseConnection->query('SELECT sum(x.am...', Array)
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Member/Swap.php(70): App\Models\Mdl_wallet->get_balance('17', 'USD')
+#5 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(902): App\Controllers\V1\Member\Swap->getSummary()
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Member\Swap))
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-11-08 00:14:38 --> Call to a member function getRow() on bool
+in APPPATH/Models/V1/Mdl_wallet.php on line 25.
+ 1 APPPATH/Controllers/V1/Member/Swap.php(70): App\Models\Mdl_wallet->get_balance('17', 'USD')
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Member\Swap->getSummary()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Member\Swap))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-08 00:20:07 --> Undefined variable: id_member
+in APPPATH/Controllers/V1/Member/Swap.php on line 117.
+ 1 APPPATH/Controllers/V1/Member/Swap.php(117): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: id_member', 'APPPATH/Controllers/V1/Member/Swap.php', 117, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Member\Swap->getSummary()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Member\Swap))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-08 00:20:48 --> Undefined variable: amount
+in APPPATH/Controllers/V1/Member/Swap.php on line 118.
+ 1 APPPATH/Controllers/V1/Member/Swap.php(118): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: amount', 'APPPATH/Controllers/V1/Member/Swap.php', 118, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Member\Swap->getSummary()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Member\Swap))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-08 09:22:18 --> Undefined variable: quoteid
+in APPPATH/Controllers/V1/Member/Swap.php on line 211.
+ 1 APPPATH/Controllers/V1/Member/Swap.php(211): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: quoteid', 'APPPATH/Controllers/V1/Member/Swap.php', 211, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Member\Swap->swapCurrency()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Member\Swap))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-08 09:22:57 --> Undefined variable: quoteid
+in APPPATH/Controllers/V1/Member/Swap.php on line 233.
+ 1 APPPATH/Controllers/V1/Member/Swap.php(233): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: quoteid', 'APPPATH/Controllers/V1/Member/Swap.php', 233, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Member\Swap->swapCurrency()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Member\Swap))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-08 09:22:57 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in /home/piggybankservice/api/api.tracklessbank.com/system/Format/JSONFormatter.php:41
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Format/JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/API/ResponseTrait.php(348): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/API/ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 /home/piggybankservice/api/api.tracklessbank.com/system/Debug/Exceptions.php(132): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+in SYSTEMPATH/Format/JSONFormatter.php on line 41.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-11-08 09:28:09 --> Undefined variable: quoteid
+in APPPATH/Controllers/V1/Member/Swap.php on line 234.
+ 1 APPPATH/Controllers/V1/Member/Swap.php(234): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: quoteid', 'APPPATH/Controllers/V1/Member/Swap.php', 234, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Member\Swap->swapCurrency()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Member\Swap))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-08 09:28:09 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in /home/piggybankservice/api/api.tracklessbank.com/system/Format/JSONFormatter.php:41
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Format/JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/API/ResponseTrait.php(348): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/API/ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 /home/piggybankservice/api/api.tracklessbank.com/system/Debug/Exceptions.php(132): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+in SYSTEMPATH/Format/JSONFormatter.php on line 41.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-11-08 09:35:13 --> Undefined variable: id_member
+in APPPATH/Controllers/V1/Member/Swap.php on line 266.
+ 1 APPPATH/Controllers/V1/Member/Swap.php(266): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: id_member', 'APPPATH/Controllers/V1/Member/Swap.php', 266, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Member\Swap->swapCurrency()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Member\Swap))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-08 09:35:13 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in /home/piggybankservice/api/api.tracklessbank.com/system/Format/JSONFormatter.php:41
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Format/JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/API/ResponseTrait.php(348): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/API/ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 /home/piggybankservice/api/api.tracklessbank.com/system/Debug/Exceptions.php(132): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+in SYSTEMPATH/Format/JSONFormatter.php on line 41.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-11-08 09:36:40 --> Undefined variable: id_member
+in APPPATH/Controllers/V1/Member/Swap.php on line 266.
+ 1 APPPATH/Controllers/V1/Member/Swap.php(266): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: id_member', 'APPPATH/Controllers/V1/Member/Swap.php', 266, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Member\Swap->swapCurrency()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Member\Swap))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-08 09:36:40 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in /home/piggybankservice/api/api.tracklessbank.com/system/Format/JSONFormatter.php:41
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Format/JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/API/ResponseTrait.php(348): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/API/ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 /home/piggybankservice/api/api.tracklessbank.com/system/Debug/Exceptions.php(132): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+in SYSTEMPATH/Format/JSONFormatter.php on line 41.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-11-08 09:38:08 --> Undefined variable: id_member
+in APPPATH/Controllers/V1/Member/Swap.php on line 267.
+ 1 APPPATH/Controllers/V1/Member/Swap.php(267): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: id_member', 'APPPATH/Controllers/V1/Member/Swap.php', 267, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Member\Swap->swapCurrency()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Member\Swap))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-08 09:38:08 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in /home/piggybankservice/api/api.tracklessbank.com/system/Format/JSONFormatter.php:41
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Format/JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/API/ResponseTrait.php(348): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/API/ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 /home/piggybankservice/api/api.tracklessbank.com/system/Debug/Exceptions.php(132): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+in SYSTEMPATH/Format/JSONFormatter.php on line 41.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2022-11-08 09:40:17 --> mysqli_sql_exception: Unknown column 'cur_target' in 'field list' in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(292): mysqli->query('INSERT INTO `tb...', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Mdl_swap.php(19): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Member/Swap.php(276): App\Models\Mdl_swap->add(Array)
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(902): App\Controllers\V1\Member\Swap->swapCurrency()
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Member\Swap))
+#8 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-11-08 09:42:40 --> mysqli_sql_exception: Unknown column 'cur_target' in 'field list' in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(292): mysqli->query('INSERT INTO `tb...', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Mdl_swap.php(19): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Member/Swap.php(276): App\Models\Mdl_swap->add(Array)
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(902): App\Controllers\V1\Member\Swap->swapCurrency()
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Member\Swap))
+#8 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-11-08 09:43:03 --> mysqli_sql_exception: Unknown column 'cur_target' in 'field list' in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(292): mysqli->query('INSERT INTO `tb...', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Mdl_swap.php(19): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Member/Swap.php(276): App\Models\Mdl_swap->add(Array)
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(902): App\Controllers\V1\Member\Swap->swapCurrency()
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Member\Swap))
+#8 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-11-08 09:44:53 --> Trying to get property 'swap' of non-object
+in APPPATH/Controllers/V1/Member/Swap.php on line 136.
+ 1 APPPATH/Controllers/V1/Member/Swap.php(136): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'swap\' of non-object', 'APPPATH/Controllers/V1/Member/Swap.php', 136, [...])
+ 2 APPPATH/Controllers/V1/Member/Swap.php(72): App\Controllers\V1\Member\Swap->getFee('AED')
+ 3 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Member\Swap->getSummary()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Member\Swap))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-08 09:45:26 --> Trying to get property 'swap' of non-object
+in APPPATH/Controllers/V1/Member/Swap.php on line 136.
+ 1 APPPATH/Controllers/V1/Member/Swap.php(136): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'swap\' of non-object', 'APPPATH/Controllers/V1/Member/Swap.php', 136, [...])
+ 2 APPPATH/Controllers/V1/Member/Swap.php(72): App\Controllers\V1\Member\Swap->getFee('AED')
+ 3 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Member\Swap->getSummary()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Member\Swap))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-08 09:47:35 --> Trying to get property 'swap' of non-object
+in APPPATH/Controllers/V1/Member/Swap.php on line 136.
+ 1 APPPATH/Controllers/V1/Member/Swap.php(136): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'swap\' of non-object', 'APPPATH/Controllers/V1/Member/Swap.php', 136, [...])
+ 2 APPPATH/Controllers/V1/Member/Swap.php(72): App\Controllers\V1\Member\Swap->getFee('AED')
+ 3 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Member\Swap->getSummary()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Member\Swap))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-08 09:51:22 --> mysqli_sql_exception: Column 'fee' cannot be null in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(292): mysqli->query('INSERT INTO `tb...', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Mdl_swap.php(19): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Member/Swap.php(276): App\Models\Mdl_swap->add(Array)
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(902): App\Controllers\V1\Member\Swap->swapCurrency()
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Member\Swap))
+#8 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-11-08 10:20:30 --> Undefined variable: data
+in APPPATH/Controllers/V1/Member/Wallet.php on line 21.
+ 1 APPPATH/Controllers/V1/Member/Wallet.php(21): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: data', 'APPPATH/Controllers/V1/Member/Wallet.php', 21, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Member\Wallet->getBalance()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Member\Wallet))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-08 10:34:20 --> mysqli_sql_exception: Unknown column 'symbol' in 'field list' in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `currenc...', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `currenc...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `currenc...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Mdl_currency.php(72): CodeIgniter\Database\BaseConnection->query('SELECT `currenc...', Array)
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Member/Currency.php(44): App\Models\Mdl_currency->get_single('GBP', '17')
+#5 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(902): App\Controllers\V1\Member\Currency->getByCurrency()
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Member\Currency))
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-11-08 10:35:36 --> mysqli_sql_exception: Unknown column 'symbol' in 'field list' in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `currenc...', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `currenc...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `currenc...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Mdl_currency.php(72): CodeIgniter\Database\BaseConnection->query('SELECT `currenc...', Array)
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Member/Currency.php(44): App\Models\Mdl_currency->get_single('GBP', '17')
+#5 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(902): App\Controllers\V1\Member\Currency->getByCurrency()
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Member\Currency))
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-11-08 10:36:50 --> mysqli_sql_exception: Unknown column 'symbol' in 'field list' in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `currenc...', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `currenc...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `currenc...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Mdl_currency.php(72): CodeIgniter\Database\BaseConnection->query('SELECT `currenc...', Array)
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Member/Currency.php(44): App\Models\Mdl_currency->get_single('GBP', '17')
+#5 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(902): App\Controllers\V1\Member\Currency->getByCurrency()
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Member\Currency))
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-11-08 10:37:01 --> mysqli_sql_exception: Unknown column 'symbol' in 'field list' in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `currenc...', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `currenc...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `currenc...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Mdl_currency.php(72): CodeIgniter\Database\BaseConnection->query('SELECT `currenc...', Array)
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Member/Currency.php(44): App\Models\Mdl_currency->get_single('AED', '17')
+#5 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(902): App\Controllers\V1\Member\Currency->getByCurrency()
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Member\Currency))
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-11-08 10:37:45 --> mysqli_sql_exception: Unknown column 'symbol' in 'field list' in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `currenc...', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `currenc...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `currenc...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Mdl_currency.php(72): CodeIgniter\Database\BaseConnection->query('SELECT `currenc...', Array)
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Member/Currency.php(44): App\Models\Mdl_currency->get_single('AED', '17')
+#5 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(902): App\Controllers\V1\Member\Currency->getByCurrency()
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Member\Currency))
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-11-08 10:38:07 --> mysqli_sql_exception: Unknown column 'symbol' in 'field list' in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `currenc...', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `currenc...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `currenc...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Mdl_currency.php(72): CodeIgniter\Database\BaseConnection->query('SELECT `currenc...', Array)
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Member/Currency.php(44): App\Models\Mdl_currency->get_single('AED', '17')
+#5 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(902): App\Controllers\V1\Member\Currency->getByCurrency()
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Member\Currency))
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-11-08 10:38:22 --> mysqli_sql_exception: Unknown column 'symbol' in 'field list' in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `currenc...', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `currenc...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `currenc...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Mdl_currency.php(72): CodeIgniter\Database\BaseConnection->query('SELECT `currenc...', Array)
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Member/Currency.php(44): App\Models\Mdl_currency->get_single('AED', '17')
+#5 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(902): App\Controllers\V1\Member\Currency->getByCurrency()
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Member\Currency))
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-11-08 10:38:59 --> mysqli_sql_exception: Unknown column 'symbol' in 'field list' in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `currenc...', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `currenc...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `currenc...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Mdl_currency.php(72): CodeIgniter\Database\BaseConnection->query('SELECT `currenc...', Array)
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Member/Currency.php(44): App\Models\Mdl_currency->get_single('AED', '17')
+#5 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(902): App\Controllers\V1\Member\Currency->getByCurrency()
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Member\Currency))
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-11-08 10:39:44 --> mysqli_sql_exception: Unknown column 'symbol' in 'field list' in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `currenc...', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `currenc...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `currenc...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Mdl_currency.php(72): CodeIgniter\Database\BaseConnection->query('SELECT `currenc...', Array)
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Member/Currency.php(44): App\Models\Mdl_currency->get_single('AED', '17')
+#5 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(902): App\Controllers\V1\Member\Currency->getByCurrency()
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Member\Currency))
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-11-08 10:40:43 --> mysqli_sql_exception: Column 'currency' in where clause is ambiguous in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT b.curren...', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT b.curren...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT b.curren...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Mdl_currency.php(72): CodeIgniter\Database\BaseConnection->query('SELECT b.curren...', Array)
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Member/Currency.php(44): App\Models\Mdl_currency->get_single('AED', '17')
+#5 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(902): App\Controllers\V1\Member\Currency->getByCurrency()
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Member\Currency))
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-11-08 10:55:46 --> Undefined variable: sql
+in APPPATH/Models/V1/Mdl_currency.php on line 72.
+ 1 APPPATH/Models/V1/Mdl_currency.php(72): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: sql', 'APPPATH/Models/V1/Mdl_currency.php', 72, [...])
+ 2 APPPATH/Controllers/V1/Member/Currency.php(44): App\Models\Mdl_currency->get_single('USD', '17')
+ 3 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Member\Currency->getByCurrency()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Member\Currency))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-08 10:55:51 --> Undefined variable: sql
+in APPPATH/Models/V1/Mdl_currency.php on line 72.
+ 1 APPPATH/Models/V1/Mdl_currency.php(72): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: sql', 'APPPATH/Models/V1/Mdl_currency.php', 72, [...])
+ 2 APPPATH/Controllers/V1/Member/Currency.php(44): App\Models\Mdl_currency->get_single('EUR', '17')
+ 3 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Member\Currency->getByCurrency()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Member\Currency))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-08 10:56:05 --> Undefined variable: sql
+in APPPATH/Models/V1/Mdl_currency.php on line 72.
+ 1 APPPATH/Models/V1/Mdl_currency.php(72): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: sql', 'APPPATH/Models/V1/Mdl_currency.php', 72, [...])
+ 2 APPPATH/Controllers/V1/Member/Currency.php(44): App\Models\Mdl_currency->get_single('EUR', '17')
+ 3 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Member\Currency->getByCurrency()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Member\Currency))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-08 10:56:42 --> Undefined variable: sql
+in APPPATH/Models/V1/Mdl_currency.php on line 72.
+ 1 APPPATH/Models/V1/Mdl_currency.php(72): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: sql', 'APPPATH/Models/V1/Mdl_currency.php', 72, [...])
+ 2 APPPATH/Controllers/V1/Member/Currency.php(44): App\Models\Mdl_currency->get_single('EUR', '17')
+ 3 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Member\Currency->getByCurrency()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Member\Currency))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-08 10:57:48 --> Undefined variable: sql
+in APPPATH/Models/V1/Mdl_currency.php on line 76.
+ 1 APPPATH/Models/V1/Mdl_currency.php(76): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: sql', 'APPPATH/Models/V1/Mdl_currency.php', 76, [...])
+ 2 APPPATH/Controllers/V1/Member/Currency.php(44): App\Models\Mdl_currency->get_single('EUR', '17')
+ 3 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Member\Currency->getByCurrency()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Member\Currency))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-08 10:57:53 --> Undefined variable: sql
+in APPPATH/Models/V1/Mdl_currency.php on line 76.
+ 1 APPPATH/Models/V1/Mdl_currency.php(76): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: sql', 'APPPATH/Models/V1/Mdl_currency.php', 76, [...])
+ 2 APPPATH/Controllers/V1/Member/Currency.php(44): App\Models\Mdl_currency->get_single('EUR', '17')
+ 3 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Member\Currency->getByCurrency()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Member\Currency))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-08 10:58:30 --> Undefined variable: sql
+in APPPATH/Models/V1/Mdl_currency.php on line 76.
+ 1 APPPATH/Models/V1/Mdl_currency.php(76): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: sql', 'APPPATH/Models/V1/Mdl_currency.php', 76, [...])
+ 2 APPPATH/Controllers/V1/Member/Currency.php(44): App\Models\Mdl_currency->get_single('EUR', '17')
+ 3 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Member\Currency->getByCurrency()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Member\Currency))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-08 23:21:35 --> Undefined property: App\Controllers\V1\Member\Wallet::$fee
+in APPPATH/Controllers/V1/Member/Wallet.php on line 95.
+ 1 APPPATH/Controllers/V1/Member/Wallet.php(95): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\V1\\Member\\Wallet::$fee', 'APPPATH/Controllers/V1/Member/Wallet.php', 95, [...])
+ 2 APPPATH/Controllers/V1/Member/Wallet.php(79): App\Controllers\V1\Member\Wallet->getFee('AED')
+ 3 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Member\Wallet->bankSummary()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Member\Wallet))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-08 23:23:27 --> Trying to get property 'swap' of non-object
+in APPPATH/Controllers/V1/Member/Wallet.php on line 100.
+ 1 APPPATH/Controllers/V1/Member/Wallet.php(100): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'swap\' of non-object', 'APPPATH/Controllers/V1/Member/Wallet.php', 100, [...])
+ 2 APPPATH/Controllers/V1/Member/Wallet.php(81): App\Controllers\V1\Member\Wallet->getFee('AED')
+ 3 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Member\Wallet->bankSummary()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Member\Wallet))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-08 23:32:43 --> Trying to get property 'walletbank_circuit' of non-object
+in APPPATH/Controllers/V1/Member/Wallet.php on line 111.
+ 1 APPPATH/Controllers/V1/Member/Wallet.php(111): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'walletbank_circuit\' of non-object', 'APPPATH/Controllers/V1/Member/Wallet.php', 111, [...])
+ 2 APPPATH/Controllers/V1/Member/Wallet.php(88): App\Controllers\V1\Member\Wallet->getFee('AED')
+ 3 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Member\Wallet->bankSummary()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Member\Wallet))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

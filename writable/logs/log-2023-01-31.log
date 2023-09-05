@@ -1,0 +1,98 @@
+CRITICAL - 2023-01-31 18:06:42 --> Call to a member function get_single() on null
+in APPPATH/Controllers/V1/Trackless/Operations.php on line 51.
+ 1 APPPATH/Controllers/V1/Trackless/Operations.php(27): App\Controllers\V1\Trackless\Operations->getFee('EUR', '4000', '3')
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Trackless\Operations->topup()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Trackless\Operations))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-31 18:09:14 --> Call to a member function get_single() on null
+in APPPATH/Controllers/V1/Trackless/Operations.php on line 51.
+ 1 APPPATH/Controllers/V1/Trackless/Operations.php(27): App\Controllers\V1\Trackless\Operations->getFee('EUR', '4000', '3')
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Trackless\Operations->topup()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Trackless\Operations))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-31 18:11:32 --> Call to a member function get_single() on null
+in APPPATH/Controllers/V1/Trackless/Operations.php on line 51.
+ 1 APPPATH/Controllers/V1/Trackless/Operations.php(27): App\Controllers\V1\Trackless\Operations->getFee('EUR', '4000.00', '3')
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Trackless\Operations->topup()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Trackless\Operations))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-31 18:11:58 --> Call to a member function get_single() on null
+in APPPATH/Controllers/V1/Trackless/Operations.php on line 51.
+ 1 APPPATH/Controllers/V1/Trackless/Operations.php(27): App\Controllers\V1\Trackless\Operations->getFee('EUR', '4000.00', '3')
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Trackless\Operations->topup()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Trackless\Operations))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-31 18:13:28 --> Call to a member function get_single() on null
+in APPPATH/Controllers/V1/Trackless/Operations.php on line 51.
+ 1 APPPATH/Controllers/V1/Trackless/Operations.php(27): App\Controllers\V1\Trackless\Operations->getFee('EUR', '4000.00', '3')
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Trackless\Operations->topup()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Trackless\Operations))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-31 19:23:37 --> Call to a member function get_single() on null
+in APPPATH/Controllers/V1/Trackless/Operations.php on line 51.
+ 1 APPPATH/Controllers/V1/Trackless/Operations.php(27): App\Controllers\V1\Trackless\Operations->getFee('EUR', '4000.00', '3')
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Trackless\Operations->topup()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Trackless\Operations))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-31 19:32:40 --> Call to a member function get_single() on null
+in APPPATH/Controllers/V1/Trackless/Operations.php on line 51.
+ 1 APPPATH/Controllers/V1/Trackless/Operations.php(27): App\Controllers\V1\Trackless\Operations->getFee('EUR', '4000.00', '3')
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Trackless\Operations->topup()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Trackless\Operations))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-31 19:35:29 --> Call to a member function get_single() on null
+in APPPATH/Controllers/V1/Trackless/Operations.php on line 51.
+ 1 APPPATH/Controllers/V1/Trackless/Operations.php(27): App\Controllers\V1\Trackless\Operations->getFee('EUR', '4000.00', '3')
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Trackless\Operations->topup()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Trackless\Operations))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-31 19:44:42 --> Call to a member function get_single() on null
+in APPPATH/Controllers/V1/Trackless/Operations.php on line 57.
+ 1 APPPATH/Controllers/V1/Trackless/Operations.php(27): App\Controllers\V1\Trackless\Operations->getFee('EUR', '4000.00', '3')
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Trackless\Operations->topup()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Trackless\Operations))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-31 19:48:23 --> Call to a member function get_single() on null
+in APPPATH/Controllers/V1/Trackless/Operations.php on line 57.
+ 1 APPPATH/Controllers/V1/Trackless/Operations.php(27): App\Controllers\V1\Trackless\Operations->getFee('EUR', '4000.00', '3')
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Trackless\Operations->topup()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Trackless\Operations))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-31 19:53:55 --> Call to a member function get_single() on null
+in APPPATH/Controllers/V1/Trackless/Operations.php on line 58.
+ 1 APPPATH/Controllers/V1/Trackless/Operations.php(28): App\Controllers\V1\Trackless\Operations->getFee('EUR', '4000.00', '3')
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Trackless\Operations->topup()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Trackless\Operations))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-31 19:54:37 --> Call to a member function get_single() on null
+in APPPATH/Controllers/V1/Trackless/Operations.php on line 58.
+ 1 APPPATH/Controllers/V1/Trackless/Operations.php(28): App\Controllers\V1\Trackless\Operations->getFee('EUR', '4000.00', '3')
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Trackless\Operations->topup()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Trackless\Operations))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-31 19:56:49 --> Call to a member function get_single() on null
+in APPPATH/Controllers/V1/Trackless/Operations.php on line 59.
+ 1 APPPATH/Controllers/V1/Trackless/Operations.php(26): App\Controllers\V1\Trackless\Operations->getFee('EUR', '4000.00', '3')
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Trackless\Operations->topup()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Trackless\Operations))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-31 19:57:41 --> Call to a member function get_single() on null
+in APPPATH/Controllers/V1/Trackless/Operations.php on line 59.
+ 1 APPPATH/Controllers/V1/Trackless/Operations.php(26): App\Controllers\V1\Trackless\Operations->getFee('EUR', '4000.00', '3')
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Trackless\Operations->topup()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Trackless\Operations))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

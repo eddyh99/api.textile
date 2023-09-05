@@ -1,0 +1,89 @@
+CRITICAL - 2022-11-26 04:48:49 --> Trying to get property 'currency' of non-object
+in APPPATH/Controllers/V1/Trackless/Currency.php on line 52.
+ 1 APPPATH/Controllers/V1/Trackless/Currency.php(52): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'currency\' of non-object', 'APPPATH/Controllers/V1/Trackless/Currency.php', 52, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Trackless\Currency->currencyStatus()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Trackless\Currency))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-26 04:52:40 --> Undefined variable: postData
+in APPPATH/Controllers/V1/Trackless/Currency.php on line 60.
+ 1 APPPATH/Controllers/V1/Trackless/Currency.php(60): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: postData', 'APPPATH/Controllers/V1/Trackless/Currency.php', 60, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Trackless\Currency->currencyStatus()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Trackless\Currency))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-26 04:52:40 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in /home/piggybankservice/api/api.tracklessbank.com/system/Format/JSONFormatter.php:41
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Format/JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/API/ResponseTrait.php(348): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/API/ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 /home/piggybankservice/api/api.tracklessbank.com/system/Debug/Exceptions.php(132): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+in SYSTEMPATH/Format/JSONFormatter.php on line 41.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-11-26 04:56:19 --> Undefined variable: result
+in APPPATH/Controllers/V1/Trackless/Currency.php on line 54.
+ 1 APPPATH/Controllers/V1/Trackless/Currency.php(54): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: result', 'APPPATH/Controllers/V1/Trackless/Currency.php', 54, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Trackless\Currency->currencyStatus()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Trackless\Currency))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-26 20:56:59 --> mysqli_sql_exception: Unknown column 'transfer_cf' in 'field list' in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT currency...', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT currency...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT currency...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Trackless/Mdl_cost.php(47): CodeIgniter\Database\BaseConnection->query('SELECT currency...', Array)
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Trackless/Cost.php(131): App\Models\Mdl_cost->get_wise('USD')
+#5 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(902): App\Controllers\V1\Trackless\Cost->getWiseCost()
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Trackless\Cost))
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-11-26 20:56:59 --> Call to a member function getRow() on bool
+in APPPATH/Models/V1/Trackless/Mdl_cost.php on line 47.
+ 1 APPPATH/Controllers/V1/Trackless/Cost.php(131): App\Models\Mdl_cost->get_wise('USD')
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Trackless\Cost->getWiseCost()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Trackless\Cost))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-26 21:17:47 --> mysqli_sql_exception: Unknown column 'a.topup' in 'field list' in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT a.curren...', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT a.curren...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT a.curren...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Admin/Mdl_cost.php(20): CodeIgniter\Database\BaseConnection->query('SELECT a.curren...', Array)
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Admin/Cost.php(19): App\Models\Mdl_cost->get_single('EUR')
+#5 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(902): App\Controllers\V1\Admin\Cost->getCost()
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Admin\Cost))
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-11-26 21:17:47 --> Call to a member function getRow() on bool
+in APPPATH/Models/V1/Admin/Mdl_cost.php on line 20.
+ 1 APPPATH/Controllers/V1/Admin/Cost.php(19): App\Models\Mdl_cost->get_single('EUR')
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Admin\Cost->getCost()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Admin\Cost))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-26 21:17:53 --> mysqli_sql_exception: Unknown column 'a.topup' in 'field list' in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT a.curren...', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT a.curren...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT a.curren...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Admin/Mdl_cost.php(20): CodeIgniter\Database\BaseConnection->query('SELECT a.curren...', Array)
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Admin/Cost.php(19): App\Models\Mdl_cost->get_single('USD')
+#5 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(902): App\Controllers\V1\Admin\Cost->getCost()
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Admin\Cost))
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-11-26 21:17:53 --> Call to a member function getRow() on bool
+in APPPATH/Models/V1/Admin/Mdl_cost.php on line 20.
+ 1 APPPATH/Controllers/V1/Admin/Cost.php(19): App\Models\Mdl_cost->get_single('USD')
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Admin\Cost->getCost()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Admin\Cost))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

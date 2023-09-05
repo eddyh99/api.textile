@@ -1,0 +1,563 @@
+CRITICAL - 2022-10-26 21:53:09 --> Undefined variable: token
+in APPPATH\Controllers\v1.php on line 11.
+ 1 APPPATH\Controllers\v1.php(11): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: token', 'APPPATH\\Controllers\\v1.php', 11, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\v1->registermember()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\v1))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-26 21:53:30 --> Undefined property: App\Controllers\v1::$client
+in APPPATH\Controllers\v1.php on line 14.
+ 1 APPPATH\Controllers\v1.php(14): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\v1::$client', 'APPPATH\\Controllers\\v1.php', 14, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\v1->registermember()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\v1))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-26 21:54:19 --> 22 : The requested URL returned error: 401 Unauthorized
+in SYSTEMPATH\HTTP\CURLRequest.php on line 655.
+ 1 SYSTEMPATH\HTTP\CURLRequest.php(655): CodeIgniter\HTTP\Exceptions\HTTPException::forCurlError('22', 'The requested URL returned error: 401 Unauthorized')
+ 2 SYSTEMPATH\HTTP\CURLRequest.php(363): CodeIgniter\HTTP\CURLRequest->sendRequest([...])
+ 3 SYSTEMPATH\HTTP\CURLRequest.php(136): CodeIgniter\HTTP\CURLRequest->send('GET', 'http://localhost/auth/register')
+ 4 APPPATH\Controllers\v1.php(14): CodeIgniter\HTTP\CURLRequest->request('GET', 'http://localhost/auth/register', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\v1->registermember()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\v1))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-26 22:00:00 --> 22 : The requested URL returned error: 401 Unauthorized
+in SYSTEMPATH\HTTP\CURLRequest.php on line 655.
+ 1 SYSTEMPATH\HTTP\CURLRequest.php(655): CodeIgniter\HTTP\Exceptions\HTTPException::forCurlError('22', 'The requested URL returned error: 401 Unauthorized')
+ 2 SYSTEMPATH\HTTP\CURLRequest.php(363): CodeIgniter\HTTP\CURLRequest->sendRequest([...])
+ 3 SYSTEMPATH\HTTP\CURLRequest.php(136): CodeIgniter\HTTP\CURLRequest->send('GET', 'http://localhost/auth/register')
+ 4 APPPATH\Controllers\v1.php(14): CodeIgniter\HTTP\CURLRequest->request('GET', 'http://localhost/auth/register', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\v1->registermember()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\v1))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-26 22:00:34 --> 22 : The requested URL returned error: 401 Unauthorized
+in SYSTEMPATH\HTTP\CURLRequest.php on line 655.
+ 1 SYSTEMPATH\HTTP\CURLRequest.php(655): CodeIgniter\HTTP\Exceptions\HTTPException::forCurlError('22', 'The requested URL returned error: 401 Unauthorized')
+ 2 SYSTEMPATH\HTTP\CURLRequest.php(363): CodeIgniter\HTTP\CURLRequest->sendRequest([...])
+ 3 SYSTEMPATH\HTTP\CURLRequest.php(136): CodeIgniter\HTTP\CURLRequest->send('GET', 'http://localhost/auth/register')
+ 4 APPPATH\Controllers\v1.php(14): CodeIgniter\HTTP\CURLRequest->request('GET', 'http://localhost/auth/register', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\v1->registermember()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\v1))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-26 22:00:41 --> 22 : The requested URL returned error: 401 Unauthorized
+in SYSTEMPATH\HTTP\CURLRequest.php on line 655.
+ 1 SYSTEMPATH\HTTP\CURLRequest.php(655): CodeIgniter\HTTP\Exceptions\HTTPException::forCurlError('22', 'The requested URL returned error: 401 Unauthorized')
+ 2 SYSTEMPATH\HTTP\CURLRequest.php(363): CodeIgniter\HTTP\CURLRequest->sendRequest([...])
+ 3 SYSTEMPATH\HTTP\CURLRequest.php(136): CodeIgniter\HTTP\CURLRequest->send('GET', 'http://localhost/auth/register')
+ 4 APPPATH\Controllers\v1.php(14): CodeIgniter\HTTP\CURLRequest->request('GET', 'http://localhost/auth/register', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\v1->registermember()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\v1))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-26 22:00:48 --> 22 : The requested URL returned error: 401 Unauthorized
+in SYSTEMPATH\HTTP\CURLRequest.php on line 655.
+ 1 SYSTEMPATH\HTTP\CURLRequest.php(655): CodeIgniter\HTTP\Exceptions\HTTPException::forCurlError('22', 'The requested URL returned error: 401 Unauthorized')
+ 2 SYSTEMPATH\HTTP\CURLRequest.php(363): CodeIgniter\HTTP\CURLRequest->sendRequest([...])
+ 3 SYSTEMPATH\HTTP\CURLRequest.php(136): CodeIgniter\HTTP\CURLRequest->send('GET', 'http://localhost/auth/register')
+ 4 APPPATH\Controllers\v1.php(14): CodeIgniter\HTTP\CURLRequest->request('GET', 'http://localhost/auth/register', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\v1->registermember()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\v1))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-26 22:01:21 --> 22 : The requested URL returned error: 404 Not Found
+in SYSTEMPATH\HTTP\CURLRequest.php on line 655.
+ 1 SYSTEMPATH\HTTP\CURLRequest.php(655): CodeIgniter\HTTP\Exceptions\HTTPException::forCurlError('22', 'The requested URL returned error: 404 Not Found')
+ 2 SYSTEMPATH\HTTP\CURLRequest.php(363): CodeIgniter\HTTP\CURLRequest->sendRequest([...])
+ 3 SYSTEMPATH\HTTP\CURLRequest.php(136): CodeIgniter\HTTP\CURLRequest->send('GET', 'http://localhost/auth/register')
+ 4 APPPATH\Controllers\v1.php(14): CodeIgniter\HTTP\CURLRequest->request('GET', 'http://localhost/auth/register', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\v1->registermember()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\v1))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-26 22:04:05 --> 22 : The requested URL returned error: 404 Not Found
+in SYSTEMPATH\HTTP\CURLRequest.php on line 655.
+ 1 SYSTEMPATH\HTTP\CURLRequest.php(655): CodeIgniter\HTTP\Exceptions\HTTPException::forCurlError('22', 'The requested URL returned error: 404 Not Found')
+ 2 SYSTEMPATH\HTTP\CURLRequest.php(363): CodeIgniter\HTTP\CURLRequest->sendRequest([...])
+ 3 SYSTEMPATH\HTTP\CURLRequest.php(136): CodeIgniter\HTTP\CURLRequest->send('GET', 'http://localhost/auth/register')
+ 4 APPPATH\Controllers\v1.php(14): CodeIgniter\HTTP\CURLRequest->request('GET', 'http://localhost/auth/register', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\v1->registermember()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\v1))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-26 22:06:27 --> 22 : The requested URL returned error: 404 Not Found
+in SYSTEMPATH\HTTP\CURLRequest.php on line 655.
+ 1 SYSTEMPATH\HTTP\CURLRequest.php(655): CodeIgniter\HTTP\Exceptions\HTTPException::forCurlError('22', 'The requested URL returned error: 404 Not Found')
+ 2 SYSTEMPATH\HTTP\CURLRequest.php(363): CodeIgniter\HTTP\CURLRequest->sendRequest([...])
+ 3 SYSTEMPATH\HTTP\CURLRequest.php(136): CodeIgniter\HTTP\CURLRequest->send('GET', 'http://localhost/auth/register')
+ 4 APPPATH\Controllers\v1.php(14): CodeIgniter\HTTP\CURLRequest->request('GET', 'http://localhost/auth/register', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\v1->registermember()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\v1))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-26 22:06:29 --> 22 : The requested URL returned error: 404 Not Found
+in SYSTEMPATH\HTTP\CURLRequest.php on line 655.
+ 1 SYSTEMPATH\HTTP\CURLRequest.php(655): CodeIgniter\HTTP\Exceptions\HTTPException::forCurlError('22', 'The requested URL returned error: 404 Not Found')
+ 2 SYSTEMPATH\HTTP\CURLRequest.php(363): CodeIgniter\HTTP\CURLRequest->sendRequest([...])
+ 3 SYSTEMPATH\HTTP\CURLRequest.php(136): CodeIgniter\HTTP\CURLRequest->send('GET', 'http://localhost/auth/register')
+ 4 APPPATH\Controllers\v1.php(14): CodeIgniter\HTTP\CURLRequest->request('GET', 'http://localhost/auth/register', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\v1->registermember()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\v1))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-26 22:06:57 --> Class 'App\Models\ValidateToken' not found
+in APPPATH\Helpers\Preapi_helper.php on line 12.
+ 1 APPPATH\Filters\FilterApi.php(19): validateKey('Bearer:')
+ 2 SYSTEMPATH\Filters\Filters.php(173): App\Filters\FilterApi->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 3 SYSTEMPATH\CodeIgniter.php(431): CodeIgniter\Filters\Filters->run('auth/register', 'before')
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-26 22:06:57 --> 22 : The requested URL returned error: 500 Internal Server Error
+in SYSTEMPATH\HTTP\CURLRequest.php on line 655.
+ 1 SYSTEMPATH\HTTP\CURLRequest.php(655): CodeIgniter\HTTP\Exceptions\HTTPException::forCurlError('22', 'The requested URL returned error: 500 Internal Server Error')
+ 2 SYSTEMPATH\HTTP\CURLRequest.php(363): CodeIgniter\HTTP\CURLRequest->sendRequest([...])
+ 3 SYSTEMPATH\HTTP\CURLRequest.php(136): CodeIgniter\HTTP\CURLRequest->send('GET', 'http://localhost/auth/register')
+ 4 APPPATH\Controllers\v1.php(14): CodeIgniter\HTTP\CURLRequest->request('GET', 'http://localhost/auth/register', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\v1->registermember()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\v1))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-26 22:09:31 --> 22 : The requested URL returned error: 401 Unauthorized
+in SYSTEMPATH\HTTP\CURLRequest.php on line 655.
+ 1 SYSTEMPATH\HTTP\CURLRequest.php(655): CodeIgniter\HTTP\Exceptions\HTTPException::forCurlError('22', 'The requested URL returned error: 401 Unauthorized')
+ 2 SYSTEMPATH\HTTP\CURLRequest.php(363): CodeIgniter\HTTP\CURLRequest->sendRequest([...])
+ 3 SYSTEMPATH\HTTP\CURLRequest.php(136): CodeIgniter\HTTP\CURLRequest->send('GET', 'http://localhost/auth/register')
+ 4 APPPATH\Controllers\v1.php(14): CodeIgniter\HTTP\CURLRequest->request('GET', 'http://localhost/auth/register', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\v1->registermember()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\v1))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-26 22:13:29 --> 22 : The requested URL returned error: 401 Unauthorized
+in SYSTEMPATH\HTTP\CURLRequest.php on line 655.
+ 1 SYSTEMPATH\HTTP\CURLRequest.php(655): CodeIgniter\HTTP\Exceptions\HTTPException::forCurlError('22', 'The requested URL returned error: 401 Unauthorized')
+ 2 SYSTEMPATH\HTTP\CURLRequest.php(363): CodeIgniter\HTTP\CURLRequest->sendRequest([...])
+ 3 SYSTEMPATH\HTTP\CURLRequest.php(136): CodeIgniter\HTTP\CURLRequest->send('GET', 'http://localhost/auth/register')
+ 4 APPPATH\Controllers\v1.php(10): CodeIgniter\HTTP\CURLRequest->request('GET', 'http://localhost/auth/register')
+ 5 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\v1->registermember()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\v1))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-26 22:13:37 --> 22 : The requested URL returned error: 401 Unauthorized
+in SYSTEMPATH\HTTP\CURLRequest.php on line 655.
+ 1 SYSTEMPATH\HTTP\CURLRequest.php(655): CodeIgniter\HTTP\Exceptions\HTTPException::forCurlError('22', 'The requested URL returned error: 401 Unauthorized')
+ 2 SYSTEMPATH\HTTP\CURLRequest.php(363): CodeIgniter\HTTP\CURLRequest->sendRequest([...])
+ 3 SYSTEMPATH\HTTP\CURLRequest.php(136): CodeIgniter\HTTP\CURLRequest->send('GET', 'http://localhost/auth/register')
+ 4 APPPATH\Controllers\v1.php(10): CodeIgniter\HTTP\CURLRequest->request('GET', 'http://localhost/auth/register')
+ 5 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\v1->registermember()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\v1))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-26 22:14:32 --> 22 : The requested URL returned error: 401 Unauthorized
+in SYSTEMPATH\HTTP\CURLRequest.php on line 655.
+ 1 SYSTEMPATH\HTTP\CURLRequest.php(655): CodeIgniter\HTTP\Exceptions\HTTPException::forCurlError('22', 'The requested URL returned error: 401 Unauthorized')
+ 2 SYSTEMPATH\HTTP\CURLRequest.php(363): CodeIgniter\HTTP\CURLRequest->sendRequest([...])
+ 3 SYSTEMPATH\HTTP\CURLRequest.php(136): CodeIgniter\HTTP\CURLRequest->send('GET', 'http://localhost/auth/register')
+ 4 APPPATH\Controllers\v1.php(10): CodeIgniter\HTTP\CURLRequest->request('GET', 'http://localhost/auth/register')
+ 5 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\v1->registermember()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\v1))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-26 22:14:37 --> 22 : The requested URL returned error: 401 Unauthorized
+in SYSTEMPATH\HTTP\CURLRequest.php on line 655.
+ 1 SYSTEMPATH\HTTP\CURLRequest.php(655): CodeIgniter\HTTP\Exceptions\HTTPException::forCurlError('22', 'The requested URL returned error: 401 Unauthorized')
+ 2 SYSTEMPATH\HTTP\CURLRequest.php(363): CodeIgniter\HTTP\CURLRequest->sendRequest([...])
+ 3 SYSTEMPATH\HTTP\CURLRequest.php(136): CodeIgniter\HTTP\CURLRequest->send('GET', 'http://localhost/auth/register')
+ 4 APPPATH\Controllers\v1.php(10): CodeIgniter\HTTP\CURLRequest->request('GET', 'http://localhost/auth/register')
+ 5 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\v1->registermember()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\v1))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-26 22:14:59 --> 22 : The requested URL returned error: 401 Unauthorized
+in SYSTEMPATH\HTTP\CURLRequest.php on line 655.
+ 1 SYSTEMPATH\HTTP\CURLRequest.php(655): CodeIgniter\HTTP\Exceptions\HTTPException::forCurlError('22', 'The requested URL returned error: 401 Unauthorized')
+ 2 SYSTEMPATH\HTTP\CURLRequest.php(363): CodeIgniter\HTTP\CURLRequest->sendRequest([...])
+ 3 SYSTEMPATH\HTTP\CURLRequest.php(136): CodeIgniter\HTTP\CURLRequest->send('GET', 'http://localhost/auth/register')
+ 4 APPPATH\Controllers\v1.php(11): CodeIgniter\HTTP\CURLRequest->request('GET', 'http://localhost/auth/register')
+ 5 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\v1->registermember()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\v1))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-26 22:15:14 --> 22 : The requested URL returned error: 401 Unauthorized
+in SYSTEMPATH\HTTP\CURLRequest.php on line 655.
+ 1 SYSTEMPATH\HTTP\CURLRequest.php(655): CodeIgniter\HTTP\Exceptions\HTTPException::forCurlError('22', 'The requested URL returned error: 401 Unauthorized')
+ 2 SYSTEMPATH\HTTP\CURLRequest.php(363): CodeIgniter\HTTP\CURLRequest->sendRequest([...])
+ 3 SYSTEMPATH\HTTP\CURLRequest.php(136): CodeIgniter\HTTP\CURLRequest->send('GET', 'http://localhost/auth/register')
+ 4 APPPATH\Controllers\v1.php(10): CodeIgniter\HTTP\CURLRequest->request('GET', 'http://localhost/auth/register')
+ 5 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\v1->registermember()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\v1))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-26 22:15:40 --> 22 : The requested URL returned error: 401 Unauthorized
+in SYSTEMPATH\HTTP\CURLRequest.php on line 655.
+ 1 SYSTEMPATH\HTTP\CURLRequest.php(655): CodeIgniter\HTTP\Exceptions\HTTPException::forCurlError('22', 'The requested URL returned error: 401 Unauthorized')
+ 2 SYSTEMPATH\HTTP\CURLRequest.php(363): CodeIgniter\HTTP\CURLRequest->sendRequest([...])
+ 3 SYSTEMPATH\HTTP\CURLRequest.php(136): CodeIgniter\HTTP\CURLRequest->send('GET', 'http://localhost/auth/register')
+ 4 APPPATH\Controllers\v1.php(11): CodeIgniter\HTTP\CURLRequest->request('GET', 'http://localhost/auth/register')
+ 5 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\v1->registermember()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\v1))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-26 22:16:55 --> 22 : The requested URL returned error: 401 Unauthorized
+in SYSTEMPATH\HTTP\CURLRequest.php on line 655.
+ 1 SYSTEMPATH\HTTP\CURLRequest.php(655): CodeIgniter\HTTP\Exceptions\HTTPException::forCurlError('22', 'The requested URL returned error: 401 Unauthorized')
+ 2 SYSTEMPATH\HTTP\CURLRequest.php(363): CodeIgniter\HTTP\CURLRequest->sendRequest([...])
+ 3 SYSTEMPATH\HTTP\CURLRequest.php(136): CodeIgniter\HTTP\CURLRequest->send('GET', 'http://localhost/auth/register')
+ 4 APPPATH\Controllers\v1.php(10): CodeIgniter\HTTP\CURLRequest->request('GET', 'http://localhost/auth/register')
+ 5 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\v1->registermember()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\v1))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-26 22:17:24 --> 22 : The requested URL returned error: 401 Unauthorized
+in SYSTEMPATH\HTTP\CURLRequest.php on line 655.
+ 1 SYSTEMPATH\HTTP\CURLRequest.php(655): CodeIgniter\HTTP\Exceptions\HTTPException::forCurlError('22', 'The requested URL returned error: 401 Unauthorized')
+ 2 SYSTEMPATH\HTTP\CURLRequest.php(363): CodeIgniter\HTTP\CURLRequest->sendRequest([...])
+ 3 SYSTEMPATH\HTTP\CURLRequest.php(136): CodeIgniter\HTTP\CURLRequest->send('GET', 'http://localhost/auth/register')
+ 4 APPPATH\Controllers\v1.php(10): CodeIgniter\HTTP\CURLRequest->request('GET', 'http://localhost/auth/register')
+ 5 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\v1->registermember()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\v1))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-26 22:18:21 --> 22 : The requested URL returned error: 401 Unauthorized
+in SYSTEMPATH\HTTP\CURLRequest.php on line 655.
+ 1 SYSTEMPATH\HTTP\CURLRequest.php(655): CodeIgniter\HTTP\Exceptions\HTTPException::forCurlError('22', 'The requested URL returned error: 401 Unauthorized')
+ 2 SYSTEMPATH\HTTP\CURLRequest.php(363): CodeIgniter\HTTP\CURLRequest->sendRequest([...])
+ 3 SYSTEMPATH\HTTP\CURLRequest.php(136): CodeIgniter\HTTP\CURLRequest->send('GET', 'http://localhost/auth/register')
+ 4 APPPATH\Controllers\v1.php(10): CodeIgniter\HTTP\CURLRequest->request('GET', 'http://localhost/auth/register')
+ 5 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\v1->registermember()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\v1))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-26 22:19:22 --> 22 : The requested URL returned error: 401 Unauthorized
+in SYSTEMPATH\HTTP\CURLRequest.php on line 655.
+ 1 SYSTEMPATH\HTTP\CURLRequest.php(655): CodeIgniter\HTTP\Exceptions\HTTPException::forCurlError('22', 'The requested URL returned error: 401 Unauthorized')
+ 2 SYSTEMPATH\HTTP\CURLRequest.php(363): CodeIgniter\HTTP\CURLRequest->sendRequest([...])
+ 3 SYSTEMPATH\HTTP\CURLRequest.php(136): CodeIgniter\HTTP\CURLRequest->send('GET', 'http://localhost/auth/register')
+ 4 APPPATH\Controllers\v1.php(10): CodeIgniter\HTTP\CURLRequest->request('GET', 'http://localhost/auth/register')
+ 5 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\v1->registermember()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\v1))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-26 22:19:32 --> 22 : The requested URL returned error: 401 Unauthorized
+in SYSTEMPATH\HTTP\CURLRequest.php on line 655.
+ 1 SYSTEMPATH\HTTP\CURLRequest.php(655): CodeIgniter\HTTP\Exceptions\HTTPException::forCurlError('22', 'The requested URL returned error: 401 Unauthorized')
+ 2 SYSTEMPATH\HTTP\CURLRequest.php(363): CodeIgniter\HTTP\CURLRequest->sendRequest([...])
+ 3 SYSTEMPATH\HTTP\CURLRequest.php(136): CodeIgniter\HTTP\CURLRequest->send('GET', 'http://localhost/auth/register')
+ 4 APPPATH\Controllers\v1.php(10): CodeIgniter\HTTP\CURLRequest->request('GET', 'http://localhost/auth/register')
+ 5 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\v1->registermember()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\v1))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-26 22:20:42 --> 22 : The requested URL returned error: 401 Unauthorized
+in SYSTEMPATH\HTTP\CURLRequest.php on line 655.
+ 1 SYSTEMPATH\HTTP\CURLRequest.php(655): CodeIgniter\HTTP\Exceptions\HTTPException::forCurlError('22', 'The requested URL returned error: 401 Unauthorized')
+ 2 SYSTEMPATH\HTTP\CURLRequest.php(363): CodeIgniter\HTTP\CURLRequest->sendRequest([...])
+ 3 SYSTEMPATH\HTTP\CURLRequest.php(136): CodeIgniter\HTTP\CURLRequest->send('GET', 'http://localhost/auth/register')
+ 4 APPPATH\Controllers\v1.php(10): CodeIgniter\HTTP\CURLRequest->request('GET', 'http://localhost/auth/register')
+ 5 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\v1->registermember()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\v1))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-26 22:20:49 --> 22 : The requested URL returned error: 401 Unauthorized
+in SYSTEMPATH\HTTP\CURLRequest.php on line 655.
+ 1 SYSTEMPATH\HTTP\CURLRequest.php(655): CodeIgniter\HTTP\Exceptions\HTTPException::forCurlError('22', 'The requested URL returned error: 401 Unauthorized')
+ 2 SYSTEMPATH\HTTP\CURLRequest.php(363): CodeIgniter\HTTP\CURLRequest->sendRequest([...])
+ 3 SYSTEMPATH\HTTP\CURLRequest.php(136): CodeIgniter\HTTP\CURLRequest->send('GET', 'http://localhost/auth/register')
+ 4 APPPATH\Controllers\v1.php(10): CodeIgniter\HTTP\CURLRequest->request('GET', 'http://localhost/auth/register')
+ 5 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\v1->registermember()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\v1))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-26 22:21:02 --> 22 : The requested URL returned error: 401 Unauthorized
+in SYSTEMPATH\HTTP\CURLRequest.php on line 655.
+ 1 SYSTEMPATH\HTTP\CURLRequest.php(655): CodeIgniter\HTTP\Exceptions\HTTPException::forCurlError('22', 'The requested URL returned error: 401 Unauthorized')
+ 2 SYSTEMPATH\HTTP\CURLRequest.php(363): CodeIgniter\HTTP\CURLRequest->sendRequest([...])
+ 3 SYSTEMPATH\HTTP\CURLRequest.php(136): CodeIgniter\HTTP\CURLRequest->send('GET', 'http://localhost/auth/register')
+ 4 APPPATH\Controllers\v1.php(10): CodeIgniter\HTTP\CURLRequest->request('GET', 'http://localhost/auth/register')
+ 5 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\v1->registermember()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\v1))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-26 22:21:11 --> 22 : The requested URL returned error: 401 Unauthorized
+in SYSTEMPATH\HTTP\CURLRequest.php on line 655.
+ 1 SYSTEMPATH\HTTP\CURLRequest.php(655): CodeIgniter\HTTP\Exceptions\HTTPException::forCurlError('22', 'The requested URL returned error: 401 Unauthorized')
+ 2 SYSTEMPATH\HTTP\CURLRequest.php(363): CodeIgniter\HTTP\CURLRequest->sendRequest([...])
+ 3 SYSTEMPATH\HTTP\CURLRequest.php(136): CodeIgniter\HTTP\CURLRequest->send('GET', 'http://localhost/auth/register')
+ 4 APPPATH\Controllers\v1.php(10): CodeIgniter\HTTP\CURLRequest->request('GET', 'http://localhost/auth/register')
+ 5 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\v1->registermember()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\v1))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-26 22:21:15 --> 22 : The requested URL returned error: 401 Unauthorized
+in SYSTEMPATH\HTTP\CURLRequest.php on line 655.
+ 1 SYSTEMPATH\HTTP\CURLRequest.php(655): CodeIgniter\HTTP\Exceptions\HTTPException::forCurlError('22', 'The requested URL returned error: 401 Unauthorized')
+ 2 SYSTEMPATH\HTTP\CURLRequest.php(363): CodeIgniter\HTTP\CURLRequest->sendRequest([...])
+ 3 SYSTEMPATH\HTTP\CURLRequest.php(136): CodeIgniter\HTTP\CURLRequest->send('GET', 'http://localhost/auth/register')
+ 4 APPPATH\Controllers\v1.php(10): CodeIgniter\HTTP\CURLRequest->request('GET', 'http://localhost/auth/register')
+ 5 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\v1->registermember()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\v1))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-26 22:21:26 --> 22 : The requested URL returned error: 401 Unauthorized
+in SYSTEMPATH\HTTP\CURLRequest.php on line 655.
+ 1 SYSTEMPATH\HTTP\CURLRequest.php(655): CodeIgniter\HTTP\Exceptions\HTTPException::forCurlError('22', 'The requested URL returned error: 401 Unauthorized')
+ 2 SYSTEMPATH\HTTP\CURLRequest.php(363): CodeIgniter\HTTP\CURLRequest->sendRequest([...])
+ 3 SYSTEMPATH\HTTP\CURLRequest.php(136): CodeIgniter\HTTP\CURLRequest->send('GET', 'http://localhost/auth/register')
+ 4 APPPATH\Controllers\v1.php(10): CodeIgniter\HTTP\CURLRequest->request('GET', 'http://localhost/auth/register')
+ 5 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\v1->registermember()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\v1))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-26 22:21:37 --> 22 : The requested URL returned error: 401 Unauthorized
+in SYSTEMPATH\HTTP\CURLRequest.php on line 655.
+ 1 SYSTEMPATH\HTTP\CURLRequest.php(655): CodeIgniter\HTTP\Exceptions\HTTPException::forCurlError('22', 'The requested URL returned error: 401 Unauthorized')
+ 2 SYSTEMPATH\HTTP\CURLRequest.php(363): CodeIgniter\HTTP\CURLRequest->sendRequest([...])
+ 3 SYSTEMPATH\HTTP\CURLRequest.php(136): CodeIgniter\HTTP\CURLRequest->send('GET', 'http://localhost/auth/register')
+ 4 APPPATH\Controllers\v1.php(10): CodeIgniter\HTTP\CURLRequest->request('GET', 'http://localhost/auth/register')
+ 5 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\v1->registermember()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\v1))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-26 22:36:19 --> 35 : OpenSSL SSL_connect: SSL_ERROR_SYSCALL in connection to api.trackless.com:443 
+in SYSTEMPATH/HTTP/CURLRequest.php on line 655.
+ 1 SYSTEMPATH/HTTP/CURLRequest.php(655): CodeIgniter\HTTP\Exceptions\HTTPException::forCurlError('35', 'OpenSSL SSL_connect: SSL_ERROR_SYSCALL in connection to api.trackless.com:443 ')
+ 2 SYSTEMPATH/HTTP/CURLRequest.php(363): CodeIgniter\HTTP\CURLRequest->sendRequest([...])
+ 3 SYSTEMPATH/HTTP/CURLRequest.php(136): CodeIgniter\HTTP\CURLRequest->send('GET', 'https://api.trackless.com/auth/register')
+ 4 APPPATH/Controllers/V1.php(10): CodeIgniter\HTTP\CURLRequest->request('GET', 'https://api.trackless.com/auth/register')
+ 5 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1->registermember()
+ 6 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1))
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-26 22:37:11 --> 35 : OpenSSL SSL_connect: SSL_ERROR_SYSCALL in connection to api.trackless.com:443 
+in SYSTEMPATH/HTTP/CURLRequest.php on line 655.
+ 1 SYSTEMPATH/HTTP/CURLRequest.php(655): CodeIgniter\HTTP\Exceptions\HTTPException::forCurlError('35', 'OpenSSL SSL_connect: SSL_ERROR_SYSCALL in connection to api.trackless.com:443 ')
+ 2 SYSTEMPATH/HTTP/CURLRequest.php(363): CodeIgniter\HTTP\CURLRequest->sendRequest([...])
+ 3 SYSTEMPATH/HTTP/CURLRequest.php(136): CodeIgniter\HTTP\CURLRequest->send('GET', 'https://api.trackless.com/auth/register')
+ 4 APPPATH/Controllers/V1.php(10): CodeIgniter\HTTP\CURLRequest->request('GET', 'https://api.trackless.com/auth/register')
+ 5 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1->registermember()
+ 6 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1))
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-26 22:37:18 --> 35 : OpenSSL SSL_connect: SSL_ERROR_SYSCALL in connection to api.trackless.com:443 
+in SYSTEMPATH/HTTP/CURLRequest.php on line 655.
+ 1 SYSTEMPATH/HTTP/CURLRequest.php(655): CodeIgniter\HTTP\Exceptions\HTTPException::forCurlError('35', 'OpenSSL SSL_connect: SSL_ERROR_SYSCALL in connection to api.trackless.com:443 ')
+ 2 SYSTEMPATH/HTTP/CURLRequest.php(363): CodeIgniter\HTTP\CURLRequest->sendRequest([...])
+ 3 SYSTEMPATH/HTTP/CURLRequest.php(136): CodeIgniter\HTTP\CURLRequest->send('GET', 'https://api.trackless.com/auth/register')
+ 4 APPPATH/Controllers/V1.php(10): CodeIgniter\HTTP\CURLRequest->request('GET', 'https://api.trackless.com/auth/register')
+ 5 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1->registermember()
+ 6 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1))
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-26 22:43:30 --> 35 : OpenSSL SSL_connect: SSL_ERROR_SYSCALL in connection to api.trackless.com:443 
+in SYSTEMPATH/HTTP/CURLRequest.php on line 655.
+ 1 SYSTEMPATH/HTTP/CURLRequest.php(655): CodeIgniter\HTTP\Exceptions\HTTPException::forCurlError('35', 'OpenSSL SSL_connect: SSL_ERROR_SYSCALL in connection to api.trackless.com:443 ')
+ 2 SYSTEMPATH/HTTP/CURLRequest.php(363): CodeIgniter\HTTP\CURLRequest->sendRequest([...])
+ 3 SYSTEMPATH/HTTP/CURLRequest.php(136): CodeIgniter\HTTP\CURLRequest->send('GET', 'https://api.trackless.com/auth/register')
+ 4 APPPATH/Controllers/V1.php(10): CodeIgniter\HTTP\CURLRequest->request('GET', 'https://api.trackless.com/auth/register')
+ 5 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1->registermember()
+ 6 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1))
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-26 22:45:55 --> 35 : OpenSSL SSL_connect: SSL_ERROR_SYSCALL in connection to api.trackless.com:443 
+in SYSTEMPATH/HTTP/CURLRequest.php on line 655.
+ 1 SYSTEMPATH/HTTP/CURLRequest.php(655): CodeIgniter\HTTP\Exceptions\HTTPException::forCurlError('35', 'OpenSSL SSL_connect: SSL_ERROR_SYSCALL in connection to api.trackless.com:443 ')
+ 2 SYSTEMPATH/HTTP/CURLRequest.php(363): CodeIgniter\HTTP\CURLRequest->sendRequest([...])
+ 3 SYSTEMPATH/HTTP/CURLRequest.php(136): CodeIgniter\HTTP\CURLRequest->send('GET', 'https://api.trackless.com/auth/register')
+ 4 APPPATH/Controllers/V1.php(10): CodeIgniter\HTTP\CURLRequest->request('GET', 'https://api.trackless.com/auth/register')
+ 5 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1->registermember()
+ 6 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1))
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-26 22:47:39 --> 35 : OpenSSL SSL_connect: SSL_ERROR_SYSCALL in connection to api.trackless.com:443 
+in SYSTEMPATH/HTTP/CURLRequest.php on line 655.
+ 1 SYSTEMPATH/HTTP/CURLRequest.php(655): CodeIgniter\HTTP\Exceptions\HTTPException::forCurlError('35', 'OpenSSL SSL_connect: SSL_ERROR_SYSCALL in connection to api.trackless.com:443 ')
+ 2 SYSTEMPATH/HTTP/CURLRequest.php(363): CodeIgniter\HTTP\CURLRequest->sendRequest([...])
+ 3 SYSTEMPATH/HTTP/CURLRequest.php(136): CodeIgniter\HTTP\CURLRequest->send('GET', 'https://api.trackless.com/auth/register')
+ 4 APPPATH/Controllers/V1.php(10): CodeIgniter\HTTP\CURLRequest->request('GET', 'https://api.trackless.com/auth/register', [...])
+ 5 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1->registermember()
+ 6 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1))
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-26 22:47:42 --> 35 : OpenSSL SSL_connect: SSL_ERROR_SYSCALL in connection to api.trackless.com:443 
+in SYSTEMPATH/HTTP/CURLRequest.php on line 655.
+ 1 SYSTEMPATH/HTTP/CURLRequest.php(655): CodeIgniter\HTTP\Exceptions\HTTPException::forCurlError('35', 'OpenSSL SSL_connect: SSL_ERROR_SYSCALL in connection to api.trackless.com:443 ')
+ 2 SYSTEMPATH/HTTP/CURLRequest.php(363): CodeIgniter\HTTP\CURLRequest->sendRequest([...])
+ 3 SYSTEMPATH/HTTP/CURLRequest.php(136): CodeIgniter\HTTP\CURLRequest->send('GET', 'https://api.trackless.com/auth/register')
+ 4 APPPATH/Controllers/V1.php(10): CodeIgniter\HTTP\CURLRequest->request('GET', 'https://api.trackless.com/auth/register', [...])
+ 5 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1->registermember()
+ 6 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1))
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-26 22:49:29 --> Undefined variable: postData
+in APPPATH/Controllers/V1.php on line 15.
+ 1 APPPATH/Controllers/V1.php(15): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: postData', 'APPPATH/Controllers/V1.php', 15, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1->registermember()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-26 22:50:46 --> Call to undefined function App\Filters\getToken()
+in APPPATH/Filters/FilterApi.php on line 18.
+ 1 SYSTEMPATH/Filters/Filters.php(173): App\Filters\FilterApi->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 2 SYSTEMPATH/CodeIgniter.php(431): CodeIgniter\Filters\Filters->run('auth/register', 'before')
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-26 22:50:48 --> Call to undefined function App\Filters\getToken()
+in APPPATH/Filters/FilterApi.php on line 18.
+ 1 SYSTEMPATH/Filters/Filters.php(173): App\Filters\FilterApi->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 2 SYSTEMPATH/CodeIgniter.php(431): CodeIgniter\Filters\Filters->run('auth/register', 'before')
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-26 22:54:33 --> Undefined variable: request
+in APPPATH/Controllers/V1.php on line 10.
+ 1 APPPATH/Controllers/V1.php(10): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: request', 'APPPATH/Controllers/V1.php', 10, [])
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1->registermember()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-26 22:57:19 --> Undefined index: Authorization
+in APPPATH/Controllers/V1.php on line 10.
+ 1 APPPATH/Controllers/V1.php(10): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: Authorization', 'APPPATH/Controllers/V1.php', 10, [])
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1->registermember()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-26 22:58:06 --> Undefined index: Authorization
+in APPPATH/Controllers/V1.php on line 10.
+ 1 APPPATH/Controllers/V1.php(10): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: Authorization', 'APPPATH/Controllers/V1.php', 10, [])
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1->registermember()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-26 22:58:08 --> Undefined index: Authorization
+in APPPATH/Controllers/V1.php on line 10.
+ 1 APPPATH/Controllers/V1.php(10): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: Authorization', 'APPPATH/Controllers/V1.php', 10, [])
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1->registermember()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-26 22:58:09 --> Undefined index: Authorization
+in APPPATH/Controllers/V1.php on line 10.
+ 1 APPPATH/Controllers/V1.php(10): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: Authorization', 'APPPATH/Controllers/V1.php', 10, [])
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1->registermember()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-26 22:58:09 --> Undefined index: Authorization
+in APPPATH/Controllers/V1.php on line 10.
+ 1 APPPATH/Controllers/V1.php(10): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: Authorization', 'APPPATH/Controllers/V1.php', 10, [])
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1->registermember()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-26 22:58:09 --> Undefined index: Authorization
+in APPPATH/Controllers/V1.php on line 10.
+ 1 APPPATH/Controllers/V1.php(10): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: Authorization', 'APPPATH/Controllers/V1.php', 10, [])
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1->registermember()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-26 23:26:23 --> ErrorException: SQLite3::query(): Unable to prepare statement: 1, no such table: db_bankmember in /home/piggybankservice/api/api.tracklessbank.com/system/Database/SQLite3/Connection.php:131
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'SQLite3::query(...', '/home/piggybank...', 131, Array)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/SQLite3/Connection.php(131): SQLite3->query('SELECT *\nFROM `...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\SQLite3\Connection->execute('SELECT *\nFROM `...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#4 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#5 /home/piggybankservice/api/api.tracklessbank.com/system/Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/BaseModel.php(622): CodeIgniter\Model->doFirst()
+#7 /home/piggybankservice/api/api.tracklessbank.com/app/Models/ValidateToken.php(16): CodeIgniter\BaseModel->first()
+#8 /home/piggybankservice/api/api.tracklessbank.com/app/Helpers/preapi_helper.php(13): App\Models\ValidateToken->checkAPIkey('Bearer 123')
+#9 /home/piggybankservice/api/api.tracklessbank.com/app/Filters/FilterApi.php(19): validateKey('Bearer 123')
+#10 /home/piggybankservice/api/api.tracklessbank.com/system/Filters/Filters.php(173): App\Filters\FilterApi->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#11 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(431): CodeIgniter\Filters\Filters->run('v1/auth/registe...', 'before')
+#12 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2022-10-26 23:28:12 --> You must set the database table to be used with your query.
+in SYSTEMPATH/Database/BaseConnection.php on line 872.
+ 1 SYSTEMPATH/Model.php(587): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH/Model.php(764): CodeIgniter\Model->builder()
+ 3 APPPATH/Models/ValidateToken.php(19): CodeIgniter\Model->__call('table', [...])
+ 4 APPPATH/Helpers/preapi_helper.php(13): App\Models\ValidateToken->checkAPIkey('Bearer 123')
+ 5 APPPATH/Filters/FilterApi.php(19): validateKey('Bearer 123')
+ 6 SYSTEMPATH/Filters/Filters.php(173): App\Filters\FilterApi->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 7 SYSTEMPATH/CodeIgniter.php(431): CodeIgniter\Filters\Filters->run('v1/auth/register', 'before')
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-26 23:30:41 --> ErrorException: SQLite3::query(): Unable to prepare statement: 1, no such table: bankmember in /home/piggybankservice/api/api.tracklessbank.com/system/Database/SQLite3/Connection.php:131
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'SQLite3::query(...', '/home/piggybank...', 131, Array)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/SQLite3/Connection.php(131): SQLite3->query('SELECT * FROM b...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\SQLite3\Connection->execute('SELECT * FROM b...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM b...')
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Models/ValidateToken.php(21): CodeIgniter\Database\BaseConnection->query('SELECT * FROM b...', Array)
+#5 /home/piggybankservice/api/api.tracklessbank.com/app/Helpers/preapi_helper.php(13): App\Models\ValidateToken->checkAPIkey('Bearer 123')
+#6 /home/piggybankservice/api/api.tracklessbank.com/app/Filters/FilterApi.php(19): validateKey('Bearer 123')
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/Filters/Filters.php(173): App\Filters\FilterApi->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#8 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(431): CodeIgniter\Filters\Filters->run('v1/auth/registe...', 'before')
+#9 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2022-10-26 23:32:42 --> ErrorException: SQLite3::query(): Unable to prepare statement: 1, no such table: bankmember in /home/piggybankservice/api/api.tracklessbank.com/system/Database/SQLite3/Connection.php:131
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'SQLite3::query(...', '/home/piggybank...', 131, Array)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/SQLite3/Connection.php(131): SQLite3->query('SELECT * FROM b...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\SQLite3\Connection->execute('SELECT * FROM b...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM b...')
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Models/ValidateToken.php(21): CodeIgniter\Database\BaseConnection->query('SELECT * FROM b...', Array)
+#5 /home/piggybankservice/api/api.tracklessbank.com/app/Helpers/preapi_helper.php(13): App\Models\ValidateToken->checkAPIkey('Bearer 123')
+#6 /home/piggybankservice/api/api.tracklessbank.com/app/Filters/FilterApi.php(19): validateKey('Bearer 123')
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/Filters/Filters.php(173): App\Filters\FilterApi->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#8 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(431): CodeIgniter\Filters\Filters->run('v1/auth/registe...', 'before')
+#9 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-10-26 23:33:08 --> Your zlib.output_compression ini directive is turned on. This will not work well with output buffers.
+in APPPATH/Config/Events.php on line 28.
+ 1 APPPATH/Config/Events.php(28): CodeIgniter\Exceptions\FrameworkException::forEnabledZlibOutputCompression()
+ 2 SYSTEMPATH/Events/Events.php(149): CodeIgniter\Events\Events::Config\{closure}()
+ 3 SYSTEMPATH/CodeIgniter.php(317): CodeIgniter\Events\Events::trigger('pre_system')
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-26 23:33:37 --> ErrorException: SQLite3::query(): Unable to prepare statement: 1, no such table: bankmember in /home/piggybankservice/api/api.tracklessbank.com/system/Database/SQLite3/Connection.php:131
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'SQLite3::query(...', '/home/piggybank...', 131, Array)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/SQLite3/Connection.php(131): SQLite3->query('SELECT * FROM b...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\SQLite3\Connection->execute('SELECT * FROM b...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM b...')
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Models/ValidateToken.php(21): CodeIgniter\Database\BaseConnection->query('SELECT * FROM b...', Array)
+#5 /home/piggybankservice/api/api.tracklessbank.com/app/Helpers/preapi_helper.php(13): App\Models\ValidateToken->checkAPIkey('Bearer 123')
+#6 /home/piggybankservice/api/api.tracklessbank.com/app/Filters/FilterApi.php(19): validateKey('Bearer 123')
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/Filters/Filters.php(173): App\Filters\FilterApi->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#8 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(431): CodeIgniter\Filters\Filters->run('v1/auth/registe...', 'before')
+#9 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2022-10-26 23:35:21 --> ErrorException: SQLite3::query(): Unable to prepare statement: 1, no such table: bankmember in /home/piggybankservice/api/api.tracklessbank.com/system/Database/SQLite3/Connection.php:131
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'SQLite3::query(...', '/home/piggybank...', 131, Array)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/SQLite3/Connection.php(131): SQLite3->query('SELECT * FROM b...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\SQLite3\Connection->execute('SELECT * FROM b...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM b...')
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Models/ValidateToken.php(21): CodeIgniter\Database\BaseConnection->query('SELECT * FROM b...', Array)
+#5 /home/piggybankservice/api/api.tracklessbank.com/app/Helpers/preapi_helper.php(13): App\Models\ValidateToken->checkAPIkey('Bearer 123')
+#6 /home/piggybankservice/api/api.tracklessbank.com/app/Filters/FilterApi.php(19): validateKey('Bearer 123')
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/Filters/Filters.php(173): App\Filters\FilterApi->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#8 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(431): CodeIgniter\Filters\Filters->run('v1/auth/registe...', 'before')
+#9 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2022-10-26 23:37:10 --> ErrorException: SQLite3::query(): Unable to prepare statement: 1, no such table: bankmember in /home/piggybankservice/api/api.tracklessbank.com/system/Database/SQLite3/Connection.php:131
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'SQLite3::query(...', '/home/piggybank...', 131, Array)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/SQLite3/Connection.php(131): SQLite3->query('SELECT * FROM b...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\SQLite3\Connection->execute('SELECT * FROM b...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM b...')
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Models/ValidateToken.php(21): CodeIgniter\Database\BaseConnection->query('SELECT * FROM b...', Array)
+#5 /home/piggybankservice/api/api.tracklessbank.com/app/Helpers/preapi_helper.php(13): App\Models\ValidateToken->checkAPIkey('Bearer 123')
+#6 /home/piggybankservice/api/api.tracklessbank.com/app/Filters/FilterApi.php(19): validateKey('Bearer 123')
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/Filters/Filters.php(173): App\Filters\FilterApi->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#8 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(431): CodeIgniter\Filters\Filters->run('v1/auth/registe...', 'before')
+#9 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}

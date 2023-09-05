@@ -1,0 +1,30 @@
+CRITICAL - 2023-05-25 00:49:04 --> Cannot use object of type stdClass as array
+in APPPATH/Controllers/V1/Member/Wallet.php on line 1250.
+ 1 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Member\Wallet->topup()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Member\Wallet))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-25 00:50:58 --> Cannot use object of type stdClass as array
+in APPPATH/Controllers/V1/Member/Wallet.php on line 1250.
+ 1 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Member\Wallet->topup()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Member\Wallet))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-25 00:53:12 --> Cannot use object of type stdClass as array
+in APPPATH/Controllers/V1/Member/Wallet.php on line 1250.
+ 1 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Member\Wallet->topup()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Member\Wallet))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-25 00:54:34 --> Cannot use object of type stdClass as array
+in APPPATH/Controllers/V1/Member/Wallet.php on line 1250.
+ 1 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Member\Wallet->topup()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Member\Wallet))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-25 00:56:54 --> Cannot use object of type stdClass as array
+in APPPATH/Controllers/V1/Member/Wallet.php on line 1250.
+ 1 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Member\Wallet->topup()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Member\Wallet))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

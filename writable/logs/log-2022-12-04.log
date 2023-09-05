@@ -1,0 +1,48 @@
+CRITICAL - 2022-12-04 04:08:26 --> Call to undefined function App\Controllers\V1\Trackless\apilive()
+in APPPATH/Controllers/V1/Trackless/Currency.php on line 50.
+ 1 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Trackless\Currency->currencyStatus()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Trackless\Currency))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-04 04:08:36 --> Call to undefined function App\Controllers\V1\Trackless\apilive()
+in APPPATH/Controllers/V1/Trackless/Currency.php on line 50.
+ 1 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Trackless\Currency->currencyStatus()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Trackless\Currency))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-04 04:15:16 --> Call to undefined function App\Controllers\V1\Trackless\apilive()
+in APPPATH/Controllers/V1/Trackless/Currency.php on line 50.
+ 1 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Trackless\Currency->currencyStatus()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Trackless\Currency))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-04 04:16:06 --> Call to undefined function App\Controllers\V1\Trackless\apilive()
+in APPPATH/Controllers/V1/Trackless/Currency.php on line 50.
+ 1 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Trackless\Currency->currencyStatus()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Trackless\Currency))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-04 04:19:07 --> Call to undefined function App\Controllers\V1\Trackless\apilive()
+in APPPATH/Controllers/V1/Trackless/Currency.php on line 50.
+ 1 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Trackless\Currency->currencyStatus()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Trackless\Currency))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-04 04:20:00 --> Call to undefined function App\Controllers\V1\Trackless\apilive()
+in APPPATH/Controllers/V1/Trackless/Currency.php on line 50.
+ 1 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Trackless\Currency->currencyStatus()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Trackless\Currency))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-04 04:30:07 --> Call to undefined function App\Controllers\V1\Trackless\apilive()
+in APPPATH/Controllers/V1/Trackless/Currency.php on line 50.
+ 1 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Trackless\Currency->currencyStatus()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Trackless\Currency))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-04 04:30:15 --> Call to undefined function App\Controllers\V1\Trackless\apilive()
+in APPPATH/Controllers/V1/Trackless/Currency.php on line 50.
+ 1 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Trackless\Currency->currencyStatus()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Trackless\Currency))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

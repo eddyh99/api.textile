@@ -1,0 +1,267 @@
+ERROR - 2022-11-14 02:37:10 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? AND a.currency=? 
+                    UNION ALL
+                    SELECT sum' at line 2 in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT sum(amou...', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT sum(amou...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT sum(amou...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Admin/Mdl_wallet.php(56): CodeIgniter\Database\BaseConnection->query('SELECT sum(amou...', Array)
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Admin/Wallet.php(19): App\Models\Mdl_wallet->get_all('1')
+#5 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(902): App\Controllers\V1\Admin\Wallet->getAll_Balance()
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Admin\Wallet))
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-11-14 02:37:10 --> Call to a member function getRow() on bool
+in APPPATH/Models/V1/Admin/Mdl_wallet.php on line 56.
+ 1 APPPATH/Controllers/V1/Admin/Wallet.php(19): App\Models\Mdl_wallet->get_all('1')
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Admin\Wallet->getAll_Balance()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Admin\Wallet))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-14 03:20:24 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? AND a.currency=? 
+                    UNION ALL
+                    SELECT sum' at line 2 in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT sum(amou...', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT sum(amou...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT sum(amou...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Admin/Mdl_wallet.php(56): CodeIgniter\Database\BaseConnection->query('SELECT sum(amou...', Array)
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Admin/Wallet.php(19): App\Models\Mdl_wallet->get_all('1')
+#5 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(902): App\Controllers\V1\Admin\Wallet->getAll_Balance()
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Admin\Wallet))
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-11-14 03:20:24 --> Call to a member function getRow() on bool
+in APPPATH/Models/V1/Admin/Mdl_wallet.php on line 56.
+ 1 APPPATH/Controllers/V1/Admin/Wallet.php(19): App\Models\Mdl_wallet->get_all('1')
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Admin\Wallet->getAll_Balance()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Admin\Wallet))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-14 03:20:59 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? AND a.currency=? 
+                    
+                ) x' at line 2 in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT sum(amou...', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT sum(amou...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT sum(amou...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Admin/Mdl_wallet.php(39): CodeIgniter\Database\BaseConnection->query('SELECT sum(amou...', Array)
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Admin/Wallet.php(19): App\Models\Mdl_wallet->get_all('1')
+#5 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(902): App\Controllers\V1\Admin\Wallet->getAll_Balance()
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Admin\Wallet))
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-11-14 03:20:59 --> Call to a member function getRow() on bool
+in APPPATH/Models/V1/Admin/Mdl_wallet.php on line 39.
+ 1 APPPATH/Controllers/V1/Admin/Wallet.php(19): App\Models\Mdl_wallet->get_all('1')
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Admin\Wallet->getAll_Balance()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Admin\Wallet))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-14 03:24:47 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? AND a.currency=? 
+                ) x' at line 2 in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT sum(amou...', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT sum(amou...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT sum(amou...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Admin/Mdl_wallet.php(38): CodeIgniter\Database\BaseConnection->query('SELECT sum(amou...', Array)
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Admin/Wallet.php(19): App\Models\Mdl_wallet->get_all('1')
+#5 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(902): App\Controllers\V1\Admin\Wallet->getAll_Balance()
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Admin\Wallet))
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-11-14 03:24:47 --> Call to a member function getRow() on bool
+in APPPATH/Models/V1/Admin/Mdl_wallet.php on line 38.
+ 1 APPPATH/Controllers/V1/Admin/Wallet.php(19): App\Models\Mdl_wallet->get_all('1')
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Admin\Wallet->getAll_Balance()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Admin\Wallet))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-14 03:39:44 --> mysqli_sql_exception: Incorrect parameter count in the call to native function 'ISNULL' in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT ISNULL(s...', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT ISNULL(s...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT ISNULL(s...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Admin/Mdl_wallet.php(41): CodeIgniter\Database\BaseConnection->query('SELECT ISNULL(s...', Array)
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Admin/Wallet.php(19): App\Models\Mdl_wallet->get_all('1')
+#5 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(902): App\Controllers\V1\Admin\Wallet->getAll_Balance()
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Admin\Wallet))
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-11-14 03:39:44 --> Call to a member function getRow() on bool
+in APPPATH/Models/V1/Admin/Mdl_wallet.php on line 41.
+ 1 APPPATH/Controllers/V1/Admin/Wallet.php(19): App\Models\Mdl_wallet->get_all('1')
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Admin\Wallet->getAll_Balance()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Admin\Wallet))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-14 03:42:07 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? AND a.currency=? 
+                    UNION ALL
+                    SELECT sum' at line 2 in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT IFNULL(s...', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT IFNULL(s...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT IFNULL(s...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Admin/Mdl_wallet.php(52): CodeIgniter\Database\BaseConnection->query('SELECT IFNULL(s...', Array)
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Admin/Wallet.php(19): App\Models\Mdl_wallet->get_all('1')
+#5 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(902): App\Controllers\V1\Admin\Wallet->getAll_Balance()
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Admin\Wallet))
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-11-14 03:42:07 --> Call to a member function getRow() on bool
+in APPPATH/Models/V1/Admin/Mdl_wallet.php on line 52.
+ 1 APPPATH/Controllers/V1/Admin/Wallet.php(19): App\Models\Mdl_wallet->get_all('1')
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Admin\Wallet->getAll_Balance()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Admin\Wallet))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-14 03:42:19 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? AND a.currency=? 
+                    UNION ALL
+                    SELECT sum' at line 2 in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT IFNULL(s...', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT IFNULL(s...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT IFNULL(s...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Admin/Mdl_wallet.php(49): CodeIgniter\Database\BaseConnection->query('SELECT IFNULL(s...', Array)
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Admin/Wallet.php(19): App\Models\Mdl_wallet->get_all('1')
+#5 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(902): App\Controllers\V1\Admin\Wallet->getAll_Balance()
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Admin\Wallet))
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-11-14 03:42:19 --> Call to a member function getRow() on bool
+in APPPATH/Models/V1/Admin/Mdl_wallet.php on line 49.
+ 1 APPPATH/Controllers/V1/Admin/Wallet.php(19): App\Models\Mdl_wallet->get_all('1')
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Admin\Wallet->getAll_Balance()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Admin\Wallet))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-14 03:42:46 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? AND a.currency=? 
+                    UNION ALL
+                    SELECT sum' at line 2 in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT IFNULL(s...', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT IFNULL(s...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT IFNULL(s...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Admin/Mdl_wallet.php(53): CodeIgniter\Database\BaseConnection->query('SELECT IFNULL(s...', Array)
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Admin/Wallet.php(19): App\Models\Mdl_wallet->get_all('1')
+#5 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(902): App\Controllers\V1\Admin\Wallet->getAll_Balance()
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Admin\Wallet))
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-11-14 03:42:46 --> Call to a member function getRow() on bool
+in APPPATH/Models/V1/Admin/Mdl_wallet.php on line 53.
+ 1 APPPATH/Controllers/V1/Admin/Wallet.php(19): App\Models\Mdl_wallet->get_all('1')
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Admin\Wallet->getAll_Balance()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Admin\Wallet))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-14 03:44:46 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? AND a.currency=? 
+                    UNION ALL
+                    SELECT sum' at line 2 in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT IFNULL(s...', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT IFNULL(s...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT IFNULL(s...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Admin/Mdl_wallet.php(52): CodeIgniter\Database\BaseConnection->query('SELECT IFNULL(s...', Array)
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Admin/Wallet.php(19): App\Models\Mdl_wallet->get_all('1')
+#5 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(902): App\Controllers\V1\Admin\Wallet->getAll_Balance()
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Admin\Wallet))
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-11-14 03:44:46 --> Call to a member function getRow() on bool
+in APPPATH/Models/V1/Admin/Mdl_wallet.php on line 52.
+ 1 APPPATH/Controllers/V1/Admin/Wallet.php(19): App\Models\Mdl_wallet->get_all('1')
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Admin\Wallet->getAll_Balance()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Admin\Wallet))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-14 03:45:09 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? AND a.currency=? 
+                    UNION ALL
+                    SELECT sum' at line 2 in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT IFNULL(s...', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT IFNULL(s...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT IFNULL(s...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Admin/Mdl_wallet.php(49): CodeIgniter\Database\BaseConnection->query('SELECT IFNULL(s...', Array)
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Admin/Wallet.php(19): App\Models\Mdl_wallet->get_all('1')
+#5 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(902): App\Controllers\V1\Admin\Wallet->getAll_Balance()
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Admin\Wallet))
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-11-14 03:45:09 --> Call to a member function getRow() on bool
+in APPPATH/Models/V1/Admin/Mdl_wallet.php on line 49.
+ 1 APPPATH/Controllers/V1/Admin/Wallet.php(19): App\Models\Mdl_wallet->get_all('1')
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Admin\Wallet->getAll_Balance()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Admin\Wallet))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-14 04:02:42 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? AND a.currency=? 
+                    UNION ALL
+                    SELECT sum' at line 2 in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT IFNULL(s...', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT IFNULL(s...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT IFNULL(s...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Admin/Mdl_wallet.php(49): CodeIgniter\Database\BaseConnection->query('SELECT IFNULL(s...', Array)
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Admin/Wallet.php(19): App\Models\Mdl_wallet->get_all('1')
+#5 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(902): App\Controllers\V1\Admin\Wallet->getAll_Balance()
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Admin\Wallet))
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-11-14 04:02:42 --> Call to a member function getRow() on bool
+in APPPATH/Models/V1/Admin/Mdl_wallet.php on line 49.
+ 1 APPPATH/Controllers/V1/Admin/Wallet.php(19): App\Models\Mdl_wallet->get_all('1')
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Admin\Wallet->getAll_Balance()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Admin\Wallet))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-14 10:00:40 --> Undefined variable: dt
+in APPPATH/Models/V1/Admin/Mdl_wallet.php on line 86.
+ 1 APPPATH/Models/V1/Admin/Mdl_wallet.php(86): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: dt', 'APPPATH/Models/V1/Admin/Mdl_wallet.php', 86, [...])
+ 2 APPPATH/Controllers/V1/Admin/Wallet.php(35): App\Models\Mdl_wallet->balance_bycurrency('1', 'USD')
+ 3 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Admin\Wallet->balance_ByCurrency()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Admin\Wallet))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-14 10:00:40 --> Undefined variable: dt
+in APPPATH/Models/V1/Admin/Mdl_wallet.php on line 86.
+ 1 APPPATH/Models/V1/Admin/Mdl_wallet.php(86): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: dt', 'APPPATH/Models/V1/Admin/Mdl_wallet.php', 86, [...])
+ 2 APPPATH/Controllers/V1/Admin/Wallet.php(35): App\Models\Mdl_wallet->balance_bycurrency('1', 'USD')
+ 3 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Admin\Wallet->balance_ByCurrency()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Admin\Wallet))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-14 10:00:40 --> Undefined variable: dt
+in APPPATH/Models/V1/Admin/Mdl_wallet.php on line 86.
+ 1 APPPATH/Models/V1/Admin/Mdl_wallet.php(86): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: dt', 'APPPATH/Models/V1/Admin/Mdl_wallet.php', 86, [...])
+ 2 APPPATH/Controllers/V1/Admin/Wallet.php(35): App\Models\Mdl_wallet->balance_bycurrency('1', 'USD')
+ 3 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Admin\Wallet->balance_ByCurrency()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Admin\Wallet))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-14 10:02:25 --> Undefined variable: dt
+in APPPATH/Models/V1/Admin/Mdl_wallet.php on line 86.
+ 1 APPPATH/Models/V1/Admin/Mdl_wallet.php(86): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: dt', 'APPPATH/Models/V1/Admin/Mdl_wallet.php', 86, [...])
+ 2 APPPATH/Controllers/V1/Admin/Wallet.php(35): App\Models\Mdl_wallet->balance_bycurrency('1', 'USD')
+ 3 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Admin\Wallet->balance_ByCurrency()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Admin\Wallet))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-14 10:03:34 --> Too few arguments to function App\Models\Mdl_currency::get_single(), 1 passed in /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Admin/Wallet.php on line 43 and exactly 2 expected
+in APPPATH/Models/V1/Mdl_currency.php on line 82.
+ 1 APPPATH/Controllers/V1/Admin/Wallet.php(43): App\Models\Mdl_currency->get_single('USD')
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Admin\Wallet->balance_ByCurrency()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Admin\Wallet))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

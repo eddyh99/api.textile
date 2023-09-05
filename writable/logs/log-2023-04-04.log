@@ -1,0 +1,8 @@
+CRITICAL - 2023-04-04 16:02:43 --> Ciphertext representative too long
+in VENDORPATH/phpseclib/phpseclib/phpseclib/Crypt/RSA/PrivateKey.php on line 366.
+ 1 VENDORPATH/phpseclib/phpseclib/phpseclib/Crypt/RSA/PrivateKey.php(444): phpseclib3\Crypt\RSA\PrivateKey->rsaes_oaep_decrypt('ROOTPATH/public')
+ 2 APPPATH/Controllers/V1/Member/Card.php(305): phpseclib3\Crypt\RSA\PrivateKey->decrypt('ROOTPATH/public')
+ 3 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Member\Card->decodeCard()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Member\Card))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

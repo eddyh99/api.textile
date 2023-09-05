@@ -1,0 +1,449 @@
+CRITICAL - 2022-11-13 00:43:11 --> Undefined variable: date
+in APPPATH/Controllers/V1/Member/History.php on line 74.
+ 1 APPPATH/Controllers/V1/Member/History.php(74): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: date', 'APPPATH/Controllers/V1/Member/History.php', 74, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Member\History->getAll()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Member\History))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-13 00:43:53 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?) AS date_created FROM tbl_member_topup WHERE id_member=? AND currency=? AND DA' at line 1 in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT amount, ...', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT amount, ...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT amount, ...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Mdl_wallet.php(152): CodeIgniter\Database\BaseConnection->query('SELECT amount, ...', Array)
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Member/History.php(74): App\Models\Mdl_wallet->get_history('17', 'USD', '2022-11-01', '2022-11-30', 'Asia/Singapore')
+#5 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(902): App\Controllers\V1\Member\History->getAll()
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Member\History))
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-11-13 03:01:22 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?) AS date_created FROM tbl_member_topup WHERE id_member=? AND currency=? AND DA' at line 1 in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT amount, ...', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT amount, ...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT amount, ...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Mdl_wallet.php(152): CodeIgniter\Database\BaseConnection->query('SELECT amount, ...', Array)
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Member/History.php(74): App\Models\Mdl_wallet->get_history('17', 'USD', '2022-11-01', '2022-11-30', 'Asia/Singapore')
+#5 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(902): App\Controllers\V1\Member\History->getAll()
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Member\History))
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-11-13 03:01:53 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?) AS date_created FROM tbl_member_topup WHERE id_member=? AND currency=? AND DA' at line 1 in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT amount, ...', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT amount, ...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT amount, ...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Mdl_wallet.php(152): CodeIgniter\Database\BaseConnection->query('SELECT amount, ...', Array)
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Member/History.php(74): App\Models\Mdl_wallet->get_history('17', 'USD', '2022-11-01', '2022-11-30', 'Asia/Singapore')
+#5 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(902): App\Controllers\V1\Member\History->getAll()
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Member\History))
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-11-13 03:09:41 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?) AS date_created FROM tbl_member_topup WHERE id_member='17' AND currency='USD'' at line 1 in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT amount, ...', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT amount, ...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT amount, ...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Mdl_wallet.php(112): CodeIgniter\Database\BaseConnection->query('SELECT amount, ...', Array)
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Member/History.php(74): App\Models\Mdl_wallet->get_history('17', 'USD', '2022-11-01', '2022-11-30', 'Asia/Singapore')
+#5 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(902): App\Controllers\V1\Member\History->getAll()
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Member\History))
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-11-13 03:09:41 --> Call to a member function getResult() on bool
+in APPPATH/Models/V1/Mdl_wallet.php on line 112.
+ 1 APPPATH/Controllers/V1/Member/History.php(74): App\Models\Mdl_wallet->get_history('17', 'USD', '2022-11-01', '2022-11-30', 'Asia/Singapore')
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Member\History->getAll()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Member\History))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-13 03:10:42 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?) AS date_created FROM tbl_member_topup WHERE id_member='17' AND currency='USD'' at line 1 in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT amount, ...', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT amount, ...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT amount, ...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Mdl_wallet.php(111): CodeIgniter\Database\BaseConnection->query('SELECT amount, ...', Array)
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Member/History.php(74): App\Models\Mdl_wallet->get_history('17', 'USD', '2022-11-01', '2022-11-30', 'Asia/Singapore')
+#5 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(902): App\Controllers\V1\Member\History->getAll()
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Member\History))
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-11-13 03:10:42 --> Call to a member function getResult() on bool
+in APPPATH/Models/V1/Mdl_wallet.php on line 111.
+ 1 APPPATH/Controllers/V1/Member/History.php(74): App\Models\Mdl_wallet->get_history('17', 'USD', '2022-11-01', '2022-11-30', 'Asia/Singapore')
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Member\History->getAll()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Member\History))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-13 03:12:24 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? AND currency=? AND DATE(convert_tz(date_created, 'Asia/Singapore', '?')) BETWE' at line 1 in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT amount, ...', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT amount, ...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT amount, ...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Mdl_wallet.php(111): CodeIgniter\Database\BaseConnection->query('SELECT amount, ...', Array)
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Member/History.php(74): App\Models\Mdl_wallet->get_history('17', 'USD', '2022-11-01', '2022-11-30', 'Asia/Singapore')
+#5 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(902): App\Controllers\V1\Member\History->getAll()
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Member\History))
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-11-13 03:12:24 --> Call to a member function getResult() on bool
+in APPPATH/Models/V1/Mdl_wallet.php on line 111.
+ 1 APPPATH/Controllers/V1/Member/History.php(74): App\Models\Mdl_wallet->get_history('17', 'USD', '2022-11-01', '2022-11-30', 'Asia/Singapore')
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Member\History->getAll()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Member\History))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-13 03:12:51 --> mysqli_sql_exception: Incorrect DATE value: '?' in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT amount, ...', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT amount, ...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT amount, ...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Mdl_wallet.php(111): CodeIgniter\Database\BaseConnection->query('SELECT amount, ...', Array)
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Member/History.php(74): App\Models\Mdl_wallet->get_history('17', 'USD', '2022-11-01', '2022-11-30', 'Asia/Singapore')
+#5 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(902): App\Controllers\V1\Member\History->getAll()
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Member\History))
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-11-13 03:12:51 --> Call to a member function getResult() on bool
+in APPPATH/Models/V1/Mdl_wallet.php on line 111.
+ 1 APPPATH/Controllers/V1/Member/History.php(74): App\Models\Mdl_wallet->get_history('17', 'USD', '2022-11-01', '2022-11-30', 'Asia/Singapore')
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Member\History->getAll()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Member\History))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-13 03:13:46 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? AND currency='USD' AND DATE(convert_tz(date_created, 'Asia/Singapore', '?')) B' at line 1 in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT amount, ...', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT amount, ...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT amount, ...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Mdl_wallet.php(111): CodeIgniter\Database\BaseConnection->query('SELECT amount, ...', Array)
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Member/History.php(74): App\Models\Mdl_wallet->get_history('17', 'USD', '2022-11-01', '2022-11-30', 'Asia/Singapore')
+#5 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(902): App\Controllers\V1\Member\History->getAll()
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Member\History))
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-11-13 03:13:46 --> Call to a member function getResult() on bool
+in APPPATH/Models/V1/Mdl_wallet.php on line 111.
+ 1 APPPATH/Controllers/V1/Member/History.php(74): App\Models\Mdl_wallet->get_history('17', 'USD', '2022-11-01', '2022-11-30', 'Asia/Singapore')
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Member\History->getAll()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Member\History))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-13 03:14:41 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? AND currency='USD' AND DATE(convert_tz(date_created, 'Asia/Singapore', '?')) B' at line 1 in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT amount, ...', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT amount, ...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT amount, ...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Mdl_wallet.php(111): CodeIgniter\Database\BaseConnection->query('SELECT amount, ...', Array)
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Member/History.php(74): App\Models\Mdl_wallet->get_history('17', 'USD', '2022-11-01', '2022-11-30', 'Asia/Singapore')
+#5 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(902): App\Controllers\V1\Member\History->getAll()
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Member\History))
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-11-13 03:14:41 --> Call to a member function getResult() on bool
+in APPPATH/Models/V1/Mdl_wallet.php on line 111.
+ 1 APPPATH/Controllers/V1/Member/History.php(74): App\Models\Mdl_wallet->get_history('17', 'USD', '2022-11-01', '2022-11-30', 'Asia/Singapore')
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Member\History->getAll()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Member\History))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-13 03:15:36 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? AND '2022-11-30'' at line 1 in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT amount, ...', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT amount, ...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT amount, ...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Mdl_wallet.php(111): CodeIgniter\Database\BaseConnection->query('SELECT amount, ...', Array)
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Member/History.php(74): App\Models\Mdl_wallet->get_history('17', 'USD', '2022-11-01', '2022-11-30', 'Asia/Singapore')
+#5 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(902): App\Controllers\V1\Member\History->getAll()
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Member\History))
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-11-13 03:15:36 --> Call to a member function getResult() on bool
+in APPPATH/Models/V1/Mdl_wallet.php on line 111.
+ 1 APPPATH/Controllers/V1/Member/History.php(74): App\Models\Mdl_wallet->get_history('17', 'USD', '2022-11-01', '2022-11-30', 'Asia/Singapore')
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Member\History->getAll()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Member\History))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-13 03:15:59 --> mysqli_sql_exception: Incorrect DATE value: '?' in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT amount, ...', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT amount, ...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT amount, ...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Mdl_wallet.php(111): CodeIgniter\Database\BaseConnection->query('SELECT amount, ...', Array)
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Member/History.php(74): App\Models\Mdl_wallet->get_history('17', 'USD', '2022-11-01', '2022-11-30', 'Asia/Singapore')
+#5 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(902): App\Controllers\V1\Member\History->getAll()
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Member\History))
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-11-13 03:15:59 --> Call to a member function getResult() on bool
+in APPPATH/Models/V1/Mdl_wallet.php on line 111.
+ 1 APPPATH/Controllers/V1/Member/History.php(74): App\Models\Mdl_wallet->get_history('17', 'USD', '2022-11-01', '2022-11-30', 'Asia/Singapore')
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Member\History->getAll()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Member\History))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-13 03:16:02 --> mysqli_sql_exception: Incorrect DATE value: '?' in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT amount, ...', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT amount, ...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT amount, ...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Mdl_wallet.php(111): CodeIgniter\Database\BaseConnection->query('SELECT amount, ...', Array)
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Member/History.php(74): App\Models\Mdl_wallet->get_history('17', 'USD', '2022-11-01', '2022-11-30', 'Asia/Singapore')
+#5 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(902): App\Controllers\V1\Member\History->getAll()
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Member\History))
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-11-13 03:16:02 --> Call to a member function getResult() on bool
+in APPPATH/Models/V1/Mdl_wallet.php on line 111.
+ 1 APPPATH/Controllers/V1/Member/History.php(74): App\Models\Mdl_wallet->get_history('17', 'USD', '2022-11-01', '2022-11-30', 'Asia/Singapore')
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Member\History->getAll()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Member\History))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-13 03:16:55 --> mysqli_sql_exception: Incorrect DATE value: '?' in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT amount, ...', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT amount, ...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT amount, ...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Mdl_wallet.php(111): CodeIgniter\Database\BaseConnection->query('SELECT amount, ...', Array)
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Member/History.php(74): App\Models\Mdl_wallet->get_history('17', 'USD', '2022-11-01', '2022-11-30', 'Asia/Singapore')
+#5 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(902): App\Controllers\V1\Member\History->getAll()
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Member\History))
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-11-13 03:16:55 --> Call to a member function getResult() on bool
+in APPPATH/Models/V1/Mdl_wallet.php on line 111.
+ 1 APPPATH/Controllers/V1/Member/History.php(74): App\Models\Mdl_wallet->get_history('17', 'USD', '2022-11-01', '2022-11-30', 'Asia/Singapore')
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Member\History->getAll()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Member\History))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-13 03:17:41 --> mysqli_sql_exception: Incorrect DATE value: '?' in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT amount, ...', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT amount, ...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT amount, ...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Mdl_wallet.php(111): CodeIgniter\Database\BaseConnection->query('SELECT amount, ...', Array)
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Member/History.php(74): App\Models\Mdl_wallet->get_history('17', 'USD', '2022-11-01', '2022-11-30', 'Asia/Singapore')
+#5 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(902): App\Controllers\V1\Member\History->getAll()
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Member\History))
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-11-13 03:17:41 --> Call to a member function getResult() on bool
+in APPPATH/Models/V1/Mdl_wallet.php on line 111.
+ 1 APPPATH/Controllers/V1/Member/History.php(74): App\Models\Mdl_wallet->get_history('17', 'USD', '2022-11-01', '2022-11-30', 'Asia/Singapore')
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Member\History->getAll()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Member\History))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-13 03:17:57 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1 in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT amount, ...', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT amount, ...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT amount, ...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Mdl_wallet.php(111): CodeIgniter\Database\BaseConnection->query('SELECT amount, ...', Array)
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Member/History.php(74): App\Models\Mdl_wallet->get_history('17', 'USD', '2022-11-01', '2022-11-30', 'Asia/Singapore')
+#5 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(902): App\Controllers\V1\Member\History->getAll()
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Member\History))
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-11-13 03:17:57 --> Call to a member function getResult() on bool
+in APPPATH/Models/V1/Mdl_wallet.php on line 111.
+ 1 APPPATH/Controllers/V1/Member/History.php(74): App\Models\Mdl_wallet->get_history('17', 'USD', '2022-11-01', '2022-11-30', 'Asia/Singapore')
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Member\History->getAll()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Member\History))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-13 03:18:43 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?) AS date_created FROM tbl_member_topup WHERE id_member='17' AND currency='USD'' at line 1 in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT amount, ...', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT amount, ...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT amount, ...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Mdl_wallet.php(112): CodeIgniter\Database\BaseConnection->query('SELECT amount, ...', Array)
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Member/History.php(74): App\Models\Mdl_wallet->get_history('17', 'USD', '2022-11-01', '2022-11-30', 'Asia/Singapore')
+#5 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(902): App\Controllers\V1\Member\History->getAll()
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Member\History))
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-11-13 03:18:43 --> Call to a member function getResult() on bool
+in APPPATH/Models/V1/Mdl_wallet.php on line 112.
+ 1 APPPATH/Controllers/V1/Member/History.php(74): App\Models\Mdl_wallet->get_history('17', 'USD', '2022-11-01', '2022-11-30', 'Asia/Singapore')
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Member\History->getAll()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Member\History))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-13 03:27:43 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?) AS date_created FROM tbl_member_topup WHERE id_member='17' AND currency='USD'' at line 1 in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT amount, ...', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT amount, ...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT amount, ...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Mdl_wallet.php(112): CodeIgniter\Database\BaseConnection->query('SELECT amount, ...', Array)
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Member/History.php(74): App\Models\Mdl_wallet->get_history('17', 'USD', '2022-11-01', '2022-11-30', 'Asia/Singapore')
+#5 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(902): App\Controllers\V1\Member\History->getAll()
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Member\History))
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-11-13 03:27:43 --> Call to a member function getResult() on bool
+in APPPATH/Models/V1/Mdl_wallet.php on line 112.
+ 1 APPPATH/Controllers/V1/Member/History.php(74): App\Models\Mdl_wallet->get_history('17', 'USD', '2022-11-01', '2022-11-30', 'Asia/Singapore')
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Member\History->getAll()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Member\History))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-13 03:28:26 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? , ?) AS date_created FROM tbl_member_topup WHERE id_member='17' AND currency='' at line 1 in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT amount, ...', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT amount, ...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT amount, ...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Mdl_wallet.php(111): CodeIgniter\Database\BaseConnection->query('SELECT amount, ...', Array)
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Member/History.php(74): App\Models\Mdl_wallet->get_history('17', 'USD', '2022-11-01', '2022-11-30', 'Asia/Singapore')
+#5 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(902): App\Controllers\V1\Member\History->getAll()
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Member\History))
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-11-13 03:28:26 --> Call to a member function getResult() on bool
+in APPPATH/Models/V1/Mdl_wallet.php on line 111.
+ 1 APPPATH/Controllers/V1/Member/History.php(74): App\Models\Mdl_wallet->get_history('17', 'USD', '2022-11-01', '2022-11-30', 'Asia/Singapore')
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Member\History->getAll()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Member\History))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-13 03:30:08 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?, 'Asia/Singapore') AS date_created FROM tbl_member_topup WHERE id_member='17' ' at line 1 in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT amount, ...', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT amount, ...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT amount, ...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Mdl_wallet.php(112): CodeIgniter\Database\BaseConnection->query('SELECT amount, ...', Array)
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Member/History.php(74): App\Models\Mdl_wallet->get_history('17', 'USD', '2022-11-01', '2022-11-30', 'Asia/Singapore')
+#5 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(902): App\Controllers\V1\Member\History->getAll()
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Member\History))
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-11-13 03:30:08 --> Call to a member function getResult() on bool
+in APPPATH/Models/V1/Mdl_wallet.php on line 112.
+ 1 APPPATH/Controllers/V1/Member/History.php(74): App\Models\Mdl_wallet->get_history('17', 'USD', '2022-11-01', '2022-11-30', 'Asia/Singapore')
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Member\History->getAll()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Member\History))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-13 03:31:07 --> mysqli_sql_exception: Incorrect DATE value: '?' in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT amount, ...', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT amount, ...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT amount, ...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Mdl_wallet.php(112): CodeIgniter\Database\BaseConnection->query('SELECT amount, ...', Array)
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Member/History.php(74): App\Models\Mdl_wallet->get_history('17', 'USD', '2022-11-01', '2022-11-30', 'Asia/Singapore')
+#5 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(902): App\Controllers\V1\Member\History->getAll()
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Member\History))
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-11-13 03:31:07 --> Call to a member function getResult() on bool
+in APPPATH/Models/V1/Mdl_wallet.php on line 112.
+ 1 APPPATH/Controllers/V1/Member/History.php(74): App\Models\Mdl_wallet->get_history('17', 'USD', '2022-11-01', '2022-11-30', 'Asia/Singapore')
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Member\History->getAll()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Member\History))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-13 03:36:30 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?, ?) AS date_created FROM tbl_member_topup WHERE id_member=? AND currency=? AND' at line 1 in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT amount, ...', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT amount, ...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT amount, ...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Mdl_wallet.php(111): CodeIgniter\Database\BaseConnection->query('SELECT amount, ...', Array)
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Member/History.php(74): App\Models\Mdl_wallet->get_history('17', 'USD', '2022-11-01', '2022-11-30', 'Asia/Singapore')
+#5 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(902): App\Controllers\V1\Member\History->getAll()
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Member\History))
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-11-13 03:36:30 --> Call to a member function getResult() on bool
+in APPPATH/Models/V1/Mdl_wallet.php on line 111.
+ 1 APPPATH/Controllers/V1/Member/History.php(74): App\Models\Mdl_wallet->get_history('17', 'USD', '2022-11-01', '2022-11-30', 'Asia/Singapore')
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Member\History->getAll()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Member\History))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-13 03:38:19 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?) AS date_created FROM tbl_member_topup WHERE id_member=? AND currency=? AND DA' at line 1 in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT amount, ...', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT amount, ...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT amount, ...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Mdl_wallet.php(152): CodeIgniter\Database\BaseConnection->query('SELECT amount, ...', Array)
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Member/History.php(74): App\Models\Mdl_wallet->get_history('17', 'USD', '2022-11-01', '2022-11-30', 'Asia/Singapore')
+#5 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(902): App\Controllers\V1\Member\History->getAll()
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Member\History))
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-11-13 03:39:08 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?) AS date_created FROM tbl_member_topup WHERE id_member=? AND currency=? AND DA' at line 1 in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT amount, ...', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT amount, ...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT amount, ...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Mdl_wallet.php(152): CodeIgniter\Database\BaseConnection->query('SELECT amount, ...', Array)
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Member/History.php(74): App\Models\Mdl_wallet->get_history('17', 'USD', '2022-11-01', '2022-11-30', 'Asia/Singapore')
+#5 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(902): App\Controllers\V1\Member\History->getAll()
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Member\History))
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-11-13 03:39:58 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?) AS date_created FROM tbl_member_topup WHERE id_member=? AND currency=? AND DA' at line 1 in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT amount, ...', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT amount, ...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT amount, ...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Mdl_wallet.php(152): CodeIgniter\Database\BaseConnection->query('SELECT amount, ...', Array)
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Member/History.php(74): App\Models\Mdl_wallet->get_history('17', 'USD', '2022-11-01', '2022-11-30', 'Asia/Singapore')
+#5 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(902): App\Controllers\V1\Member\History->getAll()
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Member\History))
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-11-13 03:40:23 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?) AS date_created FROM tbl_member_topup WHERE id_member=? AND currency=? AND DA' at line 1 in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT amount, ...', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT amount, ...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT amount, ...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Mdl_wallet.php(119): CodeIgniter\Database\BaseConnection->query('SELECT amount, ...', Array)
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Member/History.php(74): App\Models\Mdl_wallet->get_history('17', 'USD', '2022-11-01', '2022-11-30', 'Asia/Singapore')
+#5 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(902): App\Controllers\V1\Member\History->getAll()
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Member\History))
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-11-13 03:44:51 --> Cannot use empty array elements in arrays
+in APPPATH/Models/V1/Mdl_wallet.php on line 116.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2022-11-13 19:01:06 --> mysqli_sql_exception: Duplicate entry 'mamugeming00@gmail.com' for key 'tbl_member.email' in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(292): mysqli->query('INSERT INTO `tb...', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Mdl_member.php(186): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Auth.php(81): App\Models\Mdl_member->add(Array)
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(902): App\Controllers\V1\Auth->register()
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Auth))
+#8 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}

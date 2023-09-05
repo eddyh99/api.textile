@@ -1,0 +1,7 @@
+CRITICAL - 2023-05-29 01:18:30 --> Invalid argument supplied for foreach()
+in APPPATH/Controllers/V1/Trackless/User.php on line 197.
+ 1 APPPATH/Controllers/V1/Trackless/User.php(197): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argument supplied for foreach()', 'APPPATH/Controllers/V1/Trackless/User.php', 197, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Trackless\User->bulk_activate()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Trackless\User))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

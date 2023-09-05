@@ -1,0 +1,106 @@
+[27-Oct-2022 07:37:01 America/Chicago] PHP Fatal error:  Cannot use ResponseTrait as ResponseTrait because the name is already in use in /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Mdl_member.php on line 7
+[27-Oct-2022 09:47:11 America/Chicago] PHP Warning:  Uncaught ErrorException: require_once(/home/piggybankservice/api/api.tracklessbank.com/app/\ThirdParty\Hashids\HashGenerator.php): failed to open stream: No such file or directory in /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Mdl_member.php:228
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Mdl_member.php(228): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require_once(/h...', '/home/piggybank...', 228, Array)
+#1 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Mdl_member.php(228): require_once()
+#2 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Mdl_member.php(203): App\Models\Mdl_member->generate_ucode(0)
+#3 /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Auth.php(65): App\Models\Mdl_member->add(Array)
+#4 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(902): App\Controllers\V1\Auth->register()
+#5 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(457): CodeIgnite in /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Mdl_member.php on line 228
+[27-Oct-2022 09:47:11 America/Chicago] PHP Fatal error:  App\Models\Mdl_member::generate_ucode(): Failed opening required '/home/piggybankservice/api/api.tracklessbank.com/app/\ThirdParty\Hashids\HashGenerator.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Mdl_member.php on line 228
+[27-Oct-2022 09:51:48 America/Chicago] PHP Warning:  Uncaught ErrorException: require_once(/home/piggybankservice/api/api.tracklessbank.com/app/ThirdParty\Hashids\HashGenerator.php): failed to open stream: No such file or directory in /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Mdl_member.php:228
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Mdl_member.php(228): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require_once(/h...', '/home/piggybank...', 228, Array)
+#1 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Mdl_member.php(228): require_once()
+#2 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Mdl_member.php(203): App\Models\Mdl_member->generate_ucode(0)
+#3 /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Auth.php(65): App\Models\Mdl_member->add(Array)
+#4 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(902): App\Controllers\V1\Auth->register()
+#5 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(457): CodeIgniter in /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Mdl_member.php on line 228
+[27-Oct-2022 09:51:48 America/Chicago] PHP Fatal error:  App\Models\Mdl_member::generate_ucode(): Failed opening required '/home/piggybankservice/api/api.tracklessbank.com/app/ThirdParty\Hashids\HashGenerator.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Mdl_member.php on line 228
+[27-Oct-2022 09:57:02 America/Chicago] PHP Warning:  Uncaught ErrorException: require_once(/home/piggybankservice/api/api.tracklessbank.com/app/ThirdParty\Hashids\HashGenerator.php): failed to open stream: No such file or directory in /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Mdl_member.php:228
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Mdl_member.php(228): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require_once(/h...', '/home/piggybank...', 228, Array)
+#1 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Mdl_member.php(228): require_once()
+#2 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Mdl_member.php(203): App\Models\Mdl_member->generate_ucode(0)
+#3 /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Auth.php(65): App\Models\Mdl_member->add(Array)
+#4 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(902): App\Controllers\V1\Auth->register()
+#5 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(457): CodeIgniter in /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Mdl_member.php on line 228
+[27-Oct-2022 09:57:02 America/Chicago] PHP Fatal error:  App\Models\Mdl_member::generate_ucode(): Failed opening required '/home/piggybankservice/api/api.tracklessbank.com/app/ThirdParty\Hashids\HashGenerator.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Mdl_member.php on line 228
+[27-Oct-2022 09:58:58 America/Chicago] PHP Warning:  Uncaught ErrorException: require_once(/home/piggybankservice/api/api.tracklessbank.com/app/ThirdParty/Hashids\HashGenerator.php): failed to open stream: No such file or directory in /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Mdl_member.php:228
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Mdl_member.php(228): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require_once(/h...', '/home/piggybank...', 228, Array)
+#1 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Mdl_member.php(228): require_once()
+#2 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Mdl_member.php(203): App\Models\Mdl_member->generate_ucode(0)
+#3 /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Auth.php(65): App\Models\Mdl_member->add(Array)
+#4 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(902): App\Controllers\V1\Auth->register()
+#5 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(457): CodeIgniter in /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Mdl_member.php on line 228
+[27-Oct-2022 09:58:58 America/Chicago] PHP Fatal error:  App\Models\Mdl_member::generate_ucode(): Failed opening required '/home/piggybankservice/api/api.tracklessbank.com/app/ThirdParty/Hashids\HashGenerator.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Mdl_member.php on line 228
+[27-Oct-2022 11:05:25 America/Chicago] PHP Fatal error:  Trait 'App\Models\Hashids' not found in /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Mdl_member.php on line 10
+[27-Oct-2022 11:07:15 America/Chicago] PHP Fatal error:  Trait 'App\Models\Hashids' not found in /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Mdl_member.php on line 11
+[27-Oct-2022 11:07:37 America/Chicago] PHP Fatal error:  Trait 'App\Models\Hashids' not found in /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Mdl_member.php on line 10
+[27-Oct-2022 19:43:52 America/Chicago] PHP Fatal error:  During class fetch: Uncaught Error: Interface 'Hashids\HashidsInterface' not found in /home/piggybankservice/api/api.tracklessbank.com/app/ThirdParty/Hashids/Hashids.php:19
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Autoloader/Autoloader.php(282): include_once()
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Autoloader/Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('/home/piggybank...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Autoloader/Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\ThirdParty\\...')
+#3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\ThirdParty\\...')
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Mdl_member.php(12): spl_autoload_call('App\\ThirdParty\\...')
+#5 /home/piggybankservice/api/api.tracklessbank.com/system/Autoloader/Autoloader.php(282): include_once('/home/piggybank...')
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/ in /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Mdl_member.php on line 12
+[27-Oct-2022 19:44:31 America/Chicago] PHP Fatal error:  Trait 'App\ThirdParty\Hashids\HashidsInterface' not found in /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Mdl_member.php on line 12
+[08-Nov-2022 09:22:57 America/Chicago] PHP Fatal error:  Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in /home/piggybankservice/api/api.tracklessbank.com/system/Format/JSONFormatter.php:41
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Format/JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/API/ResponseTrait.php(348): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/API/ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 /home/piggybankservice/api/api.tracklessbank.com/system/Debug/Exceptions.php(132): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown in /home/piggybankservice/api/api.tracklessbank.com/system/Format/JSONFormatter.php on line 41
+[08-Nov-2022 09:28:09 America/Chicago] PHP Fatal error:  Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in /home/piggybankservice/api/api.tracklessbank.com/system/Format/JSONFormatter.php:41
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Format/JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/API/ResponseTrait.php(348): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/API/ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 /home/piggybankservice/api/api.tracklessbank.com/system/Debug/Exceptions.php(132): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown in /home/piggybankservice/api/api.tracklessbank.com/system/Format/JSONFormatter.php on line 41
+[08-Nov-2022 09:35:13 America/Chicago] PHP Fatal error:  Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in /home/piggybankservice/api/api.tracklessbank.com/system/Format/JSONFormatter.php:41
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Format/JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/API/ResponseTrait.php(348): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/API/ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 /home/piggybankservice/api/api.tracklessbank.com/system/Debug/Exceptions.php(132): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown in /home/piggybankservice/api/api.tracklessbank.com/system/Format/JSONFormatter.php on line 41
+[08-Nov-2022 09:36:40 America/Chicago] PHP Fatal error:  Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in /home/piggybankservice/api/api.tracklessbank.com/system/Format/JSONFormatter.php:41
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Format/JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/API/ResponseTrait.php(348): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/API/ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 /home/piggybankservice/api/api.tracklessbank.com/system/Debug/Exceptions.php(132): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown in /home/piggybankservice/api/api.tracklessbank.com/system/Format/JSONFormatter.php on line 41
+[08-Nov-2022 09:38:08 America/Chicago] PHP Fatal error:  Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in /home/piggybankservice/api/api.tracklessbank.com/system/Format/JSONFormatter.php:41
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Format/JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/API/ResponseTrait.php(348): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/API/ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 /home/piggybankservice/api/api.tracklessbank.com/system/Debug/Exceptions.php(132): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown in /home/piggybankservice/api/api.tracklessbank.com/system/Format/JSONFormatter.php on line 41
+[13-Nov-2022 03:44:51 America/Chicago] PHP Fatal error:  Cannot use empty array elements in arrays in /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Mdl_wallet.php on line 116
+[20-Nov-2022 01:18:44 America/Chicago] PHP Fatal error:  Cannot redeclare App\Models\Mdl_currency::get_single() in /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Admin/Mdl_currency.php on line 37
+[26-Nov-2022 04:52:40 America/Chicago] PHP Fatal error:  Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in /home/piggybankservice/api/api.tracklessbank.com/system/Format/JSONFormatter.php:41
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Format/JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/API/ResponseTrait.php(348): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/API/ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 /home/piggybankservice/api/api.tracklessbank.com/system/Debug/Exceptions.php(132): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown in /home/piggybankservice/api/api.tracklessbank.com/system/Format/JSONFormatter.php on line 41

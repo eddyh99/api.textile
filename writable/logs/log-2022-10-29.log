@@ -1,0 +1,13 @@
+ERROR - 2022-10-29 00:22:04 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`piggybankservice_tracklessbank`.`tbl_member_currency`, CONSTRAINT `tbl_member_currency_ibfk_1` FOREIGN KEY (`id_member`) REFERENCES `tbl_member` (`id`)) in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(292): mysqli->query('REPLACE INTO `t...', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('REPLACE INTO `t...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('REPLACE INTO `t...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseBuilder.php(2002): CodeIgniter\Database\BaseConnection->query('REPLACE INTO `t...', Array, false)
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Mdl_currency.php(28): CodeIgniter\Database\BaseBuilder->replace(Array)
+#5 /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Member/Currency.php(68): App\Models\Mdl_currency->set_active(Array)
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(902): App\Controllers\V1\Member\Currency->setCurrency()
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Member\Currency))
+#8 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}

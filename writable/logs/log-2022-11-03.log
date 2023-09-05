@@ -1,0 +1,83 @@
+CRITICAL - 2022-11-03 05:20:53 --> Use of undefined constant FILTER_VALIDATE_STRING - assumed 'FILTER_VALIDATE_STRING' (this will throw an Error in a future version of PHP)
+in APPPATH/Controllers/V1/Admin/Currency.php on line 164.
+ 1 APPPATH/Controllers/V1/Admin/Currency.php(164): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Use of undefined constant FILTER_VALIDATE_STRING - assumed \'FILTER_VALIDATE_STRING\' (this will throw an Error in a future version of PHP)', 'APPPATH/Controllers/V1/Admin/Currency.php', 164, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Admin\Currency->fee()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Admin\Currency))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-03 05:21:35 --> Call to a member function setfee() on null
+in APPPATH/Controllers/V1/Admin/Currency.php on line 184.
+ 1 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Admin\Currency->fee()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Admin\Currency))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-03 05:22:20 --> mysqli_sql_exception: Unknown column 'topup_circuit' in 'field list' in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(292): mysqli->query('REPLACE INTO `t...', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('REPLACE INTO `t...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('REPLACE INTO `t...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseBuilder.php(2002): CodeIgniter\Database\BaseConnection->query('REPLACE INTO `t...', Array, false)
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Admin/Mdl_fee.php(19): CodeIgniter\Database\BaseBuilder->replace(Array)
+#5 /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Admin/Currency.php(184): App\Models\Mdl_fee->setfee(Array)
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(902): App\Controllers\V1\Admin\Currency->fee()
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Admin\Currency))
+#8 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-11-03 05:22:49 --> mysqli_sql_exception: Unknown column 'topup_circuit' in 'field list' in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(292): mysqli->query('REPLACE INTO `t...', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('REPLACE INTO `t...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('REPLACE INTO `t...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseBuilder.php(2002): CodeIgniter\Database\BaseConnection->query('REPLACE INTO `t...', Array, false)
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Admin/Mdl_fee.php(19): CodeIgniter\Database\BaseBuilder->replace(Array)
+#5 /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Admin/Currency.php(184): App\Models\Mdl_fee->setfee(Array)
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(902): App\Controllers\V1\Admin\Currency->fee()
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Admin\Currency))
+#8 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-11-03 05:23:12 --> mysqli_sql_exception: Unknown column 'topup_circuit' in 'field list' in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(292): mysqli->query('REPLACE INTO `t...', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('REPLACE INTO `t...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('REPLACE INTO `t...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseBuilder.php(2002): CodeIgniter\Database\BaseConnection->query('REPLACE INTO `t...', Array, false)
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Admin/Mdl_fee.php(19): CodeIgniter\Database\BaseBuilder->replace(Array)
+#5 /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Admin/Currency.php(184): App\Models\Mdl_fee->setfee(Array)
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(902): App\Controllers\V1\Admin\Currency->fee()
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Admin\Currency))
+#8 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-11-03 05:51:34 --> mysqli_sql_exception: Unknown column 'referral_sender' in 'field list' in /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/piggybankservice/api/api.tracklessbank.com/system/Database/MySQLi/Connection.php(292): mysqli->query('REPLACE INTO `t...', 0)
+#1 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('REPLACE INTO `t...')
+#2 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('REPLACE INTO `t...')
+#3 /home/piggybankservice/api/api.tracklessbank.com/system/Database/BaseBuilder.php(2002): CodeIgniter\Database\BaseConnection->query('REPLACE INTO `t...', Array, false)
+#4 /home/piggybankservice/api/api.tracklessbank.com/app/Models/V1/Admin/Mdl_fee.php(19): CodeIgniter\Database\BaseBuilder->replace(Array)
+#5 /home/piggybankservice/api/api.tracklessbank.com/app/Controllers/V1/Admin/Currency.php(184): App\Models\Mdl_fee->setfee(Array)
+#6 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(902): App\Controllers\V1\Admin\Currency->fee()
+#7 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Admin\Currency))
+#8 /home/piggybankservice/api/api.tracklessbank.com/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home/piggybankservice/api/api.tracklessbank.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-11-03 09:39:24 --> Call to a member function getby_Currency() on null
+in APPPATH/Controllers/V1/Admin/Bank.php on line 32.
+ 1 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Admin\Bank->getBank()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Admin\Bank))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-03 09:40:04 --> Call to a member function getby_currency() on null
+in APPPATH/Controllers/V1/Admin/Bank.php on line 32.
+ 1 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Admin\Bank->getBank()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Admin\Bank))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-03 09:40:34 --> Call to a member function getby_currency() on null
+in APPPATH/Controllers/V1/Admin/Bank.php on line 32.
+ 1 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\V1\Admin\Bank->getBank()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\V1\Admin\Bank))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
