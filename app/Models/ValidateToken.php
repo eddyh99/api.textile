@@ -17,7 +17,7 @@ class ValidateToken extends Model
     
     function checkAPIkey($token)
     {
-        $sql="SELECT * FROM bankmember WHERE apikey=?";
+        $sql="SELECT * FROM settings WHERE deskripsi='apikey' AND setting_value=?";
         $data=$this->db->query($sql,array($token))->getRow();
         if (!$data) {
             throw new Exception("invalid API Key, please check your API Key");
