@@ -49,7 +49,7 @@ class Auth extends BaseController
 		}else{
 			$response=[
 				"code"      => "5051",
-				"error"     => NULL,
+				"error"     => '01',
 				"message"   => "Invalid Login"
 			];
 			return $this->respond($response);
