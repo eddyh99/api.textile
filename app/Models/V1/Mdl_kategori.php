@@ -5,7 +5,7 @@ use CodeIgniter\Model;
 use Exception;
 
 
-class Mdl_sales extends Model
+class Mdl_kategori extends Model
 {
     protected $server_tz = "Asia/Singapore";
 
@@ -15,28 +15,22 @@ class Mdl_sales extends Model
     }
     
     public function get_all(){
-        $sql    = "SELECT a.id, a.nama, a.alamat, a.kota, a.telp, a.tgllahir, a.komisi, b.area  FROM sales a INNER JOIN area b ON a.area=b.id  WHERE a.is_deleted='no'";
+        $sql    = "SELECT a.id, a.namakategori, (SELECT count(1) FROM barang WHERE kategori_id=a.id AND is_deleted='no') as barang FROM kategori a WHERE a.is_deleted='no'";
         $query  = $this->db->query($sql);
         return $query->getResult();
     }
 
-    public function get_byid($id){
-        $sql    = "SELECT a.id, a.nama, a.alamat, a.kota, a.telp, a.tgllahir, a.komisi, b.area  FROM sales a INNER JOIN area b ON a.area=b.id  WHERE a.id=? AND a.is_deleted='no'";
+    public function get_bykategori($id){
+        $sql    = "SELECT a.id, a.namakategori FROM kategori a WHERE a.id=? AND a.is_deleted='no'";
         $query  = $this->db->query($sql,$id);
         return $query->getRow();
     }
+    
 
     public function add($data) {
-        $sales      = $this->db->table("sales");
-        $sql        = $sales->set($data)->getCompiledInsert()." ON DUPLICATE KEY UPDATE nama=?, alamat=?, kota=?, telp=?, komisi=?, area=?, is_deleted='no'";
-        $query      = $this->db->query($sql,[ 
-            $data["nama"],
-            $data["alamat"],
-            $data["kota"],
-            $data["telp"],
-            $data["komisi"],
-            $data["area"],
-        ]);
+        $kategori   = $this->db->table("kategori");
+        $sql        = $kategori->set($data)->getCompiledInsert()." ON DUPLICATE KEY UPDATE namakategori=?, is_deleted='no'";
+        $query      = $this->db->query($sql,$data["namakategori"]); 
         if (!$query){
             $error=[
                 "code"       => "5055",
@@ -48,9 +42,9 @@ class Mdl_sales extends Model
     }
 
     public function updatedata($data, $id){
-        $sales   = $this->db->table("sales");
-        $sales->where("id",$id);
-        if (!$sales->update($data)){
+        $kategori   = $this->db->table("kategori");
+        $kategori->where("id",$id);
+        if (!$kategori->update($data)){
             $error=[
                 "code"       => "5055",
                 "error"      => "10",
@@ -61,11 +55,11 @@ class Mdl_sales extends Model
     }
     
     public function hapus($id){
-        $sales   = $this->db->table("sales");
-        $sales->where("id",$id);
-        $sales->set("is_deleted","yes");
-        $sales->set("updated_at",date("y-m-d H:i:s"));
-        if (!$sales->update()){
+        $kategori   = $this->db->table("kategori");
+        $kategori->where("id",$id);
+        $kategori->set("is_deleted","yes");
+        $kategori->set("updated_at",date("y-m-d H:i:s"));
+        if (!$kategori->update()){
             $error=[
                 "code"       => "5055",
                 "error"      => "10",

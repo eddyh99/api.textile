@@ -4,43 +4,43 @@ namespace App\Controllers\V1;
 use App\Controllers\BaseController;
 use CodeIgniter\API\ResponseTrait;
 
-class Area extends BaseController
+class Kategori extends BaseController
 {
     use ResponseTrait;
     
 
     public function __construct()
     {   
-        $this->area    = model('App\Models\V1\Mdl_area');
+        $this->kategori    = model('App\Models\V1\Mdl_kategori');
 
 	}
 
-    public function getArea(){
+    public function getkategori(){
         $response=[
             "code"      => "200",
             "error"     => NULL,
-            "message"   => $this->area->get_all()
+            "message"   => $this->kategori->get_all()
         ];
         return $this->respond($response);
     }
 
-    public function getby_areaid(){
+    public function getby_kategori(){
         $id  = $this->request->getGet('id', FILTER_SANITIZE_NUMBER_INT);
         $response=[
             "code"      => "200",
             "error"     => NULL,
-            "message"   => $this->area->get_byareaid($id)
+            "message"   => $this->kategori->get_bykategori($id)
         ];
         return $this->respond($response);
     }
 
-    public function add_area(){
+    public function add_kategori(){
         $validation = $this->validation;
         $validation->setRules([					
-					'area' => [
+					'namakategori' => [
 					    'rules'  => 'required',
 					    'errors' =>  [
-					        'required'      => 'Nama area is required',
+					        'required'      => 'Nama kategori is required',
 					    ]
 					],
 
@@ -52,7 +52,7 @@ class Area extends BaseController
         
 	    $data   = $this->request->getJSON();
         $filters = array(
-            'area'      => FILTER_SANITIZE_STRING, 
+            'namakategori'      => FILTER_SANITIZE_STRING, 
         );
 
 	    $filtered = array();
@@ -62,11 +62,11 @@ class Area extends BaseController
         
         $data=(object) $filtered;
         $mdata=array(
-            "area"      => $data->area,
-            "created_at"=> date("y-m-d H:i:s")
+            "namakategori"      => $data->namakategori,
+            "created_at"        => date("y-m-d H:i:s")
         );
 
-        $result=$this->area->add($mdata);
+        $result=$this->kategori->add($mdata);
         if (@$result->code==5055){
             $response=[
 	            "code"     => "5055",
@@ -85,13 +85,13 @@ class Area extends BaseController
 
     }
 
-    public function update_area(){
+    public function update_kategori(){
         $validation = $this->validation;
         $validation->setRules([					
-					'area' => [
+					'namakategori' => [
 					    'rules'  => 'required',
 					    'errors' =>  [
-					        'required'      => 'Nama Area is required',
+					        'required'      => 'Nama kategori is required',
 					    ]
 					],
             ]);
@@ -102,7 +102,7 @@ class Area extends BaseController
         
 	    $data   = $this->request->getJSON();
         $filters = array(
-            'area'    => FILTER_SANITIZE_STRING, 
+            'namakategori'    => FILTER_SANITIZE_STRING, 
         );
 
 	    $filtered = array();
@@ -114,9 +114,9 @@ class Area extends BaseController
 
         $id  = $this->request->getGet('id', FILTER_SANITIZE_NUMBER_INT);
         $mdata=array(
-            "area"  => $data->area            
+            "namakategori"  => $data->namakategori            
         );
-        $result=$this->area->updatedata($mdata,$id);
+        $result=$this->kategori->updatedata($mdata,$id);
         if (@$result->code==5055){
             $response=[
 	            "code"     => "5055",
@@ -135,9 +135,9 @@ class Area extends BaseController
 
     }
 
-    public function delete_area(){
+    public function delete_kategori(){
         $id  = $this->request->getGet('id', FILTER_SANITIZE_NUMBER_INT);
-        $result = $this->area->hapus($id);
+        $result = $this->kategori->hapus($id);
         if (@$result->code==5055){
             $response=[
 	            "code"     => "5055",

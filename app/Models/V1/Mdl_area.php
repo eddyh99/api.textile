@@ -20,6 +20,13 @@ class Mdl_area extends Model
         return $query->getResult();
     }
 
+    public function get_byareaid($id){
+        $sql    = "SELECT a.id, a.area FROM area a WHERE a.id=? AND a.is_deleted='no'";
+        $query  = $this->db->query($sql,$id);
+        return $query->getRow();
+    }
+    
+
     public function add($data) {
         $area   = $this->db->table("area");
         $sql        = $area->set($data)->getCompiledInsert()." ON DUPLICATE KEY UPDATE area=?, is_deleted='no'";

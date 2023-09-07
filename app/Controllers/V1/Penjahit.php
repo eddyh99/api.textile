@@ -4,22 +4,22 @@ namespace App\Controllers\V1;
 use App\Controllers\BaseController;
 use CodeIgniter\API\ResponseTrait;
 
-class Sales extends BaseController
+class Penjahit extends BaseController
 {
     use ResponseTrait;
     
 
     public function __construct()
     {   
-        $this->sales    = model('App\Models\V1\Mdl_sales');
+        $this->penjahit    = model('App\Models\V1\Mdl_penjahit');
 
 	}
 
-    public function get_sales(){
+    public function get_penjahit(){
         $response=[
             "code"      => "200",
             "error"     => NULL,
-            "message"   => $this->sales->get_all()
+            "message"   => $this->penjahit->get_all()
         ];
         return $this->respond($response);
     }
@@ -29,17 +29,17 @@ class Sales extends BaseController
         $response=[
             "code"      => "200",
             "error"     => NULL,
-            "message"   => $this->sales->get_byid($id)
+            "message"   => $this->penjahit->get_byid($id)
         ];
         return $this->respond($response);
     }
-    public function add_sales(){
+    public function add_penjahit(){
         $validation = $this->validation;
         $validation->setRules([
 					'nama' => [
 					    'rules'  => 'required',
 					    'errors' =>  [
-					        'required'      => 'Nama sales is required',
+					        'required'      => 'Nama penjahit is required',
 					    ]
 					],
 					'telp' => [
@@ -51,7 +51,7 @@ class Sales extends BaseController
 					'area' => [
 					    'rules'  => 'required',
 					    'errors' =>  [
-					        'required'      => 'Area Sales is required',
+					        'required'      => 'Area penjahit is required',
 					    ]
 					],
 					'komisi' => [
@@ -96,7 +96,7 @@ class Sales extends BaseController
             "created_at"=> date("y-m-d H:i:s")
         );
 
-        $result=$this->sales->add($mdata);
+        $result=$this->penjahit->add($mdata);
         if (@$result->code==5055){
             $response=[
 	            "code"     => "5055",
@@ -115,7 +115,7 @@ class Sales extends BaseController
 
     }
 
-    public function update_sales(){
+    public function update_penjahit(){
         $validation = $this->validation;
         $validation->setRules([					
 					'nama' => [
@@ -133,7 +133,7 @@ class Sales extends BaseController
 					'area' => [
 					    'rules'  => 'required',
 					    'errors' =>  [
-					        'required'      => 'Area Sales is required',
+					        'required'      => 'Area penjahit is required',
 					    ]
 					],
 					'komisi' => [
@@ -180,7 +180,7 @@ class Sales extends BaseController
             "updated_at"=> date("y-m-d H:i:s")
         );    
 
-        $result=$this->sales->updatedata($mdata,$id);
+        $result=$this->penjahit->updatedata($mdata,$id);
         if (@$result->code==5055){
             $response=[
 	            "code"     => "5055",
@@ -199,9 +199,9 @@ class Sales extends BaseController
 
     }
 
-    public function delete_sales(){
+    public function delete_penjahit(){
         $id  = $this->request->getGet('id', FILTER_SANITIZE_EMAIL);
-        $result = $this->sales->hapus($id);
+        $result = $this->penjahit->hapus($id);
         if (@$result->code==5055){
             $response=[
 	            "code"     => "5055",

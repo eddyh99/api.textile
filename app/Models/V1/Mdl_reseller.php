@@ -20,6 +20,12 @@ class Mdl_reseller extends Model
         return $query->getResult();
     }
 
+    public function get_byemail($email){
+        $sql    = "SELECT email, nama, alamat, kota, telp, tgllahir, plafon FROM resellers WHERE email=? AND is_deleted='no'";
+        $query  = $this->db->query($sql,$email);
+        return $query->getRow();
+    }
+
     public function add($data) {
         $reseller   = $this->db->table("resellers");
         $sql        = $reseller->set($data)->getCompiledInsert()." ON DUPLICATE KEY UPDATE passwd=?, nama=?, alamat=?, kota=?, telp=?, plafon=?, is_deleted='no'";

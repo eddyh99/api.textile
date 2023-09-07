@@ -4,64 +4,57 @@ namespace App\Controllers\V1;
 use App\Controllers\BaseController;
 use CodeIgniter\API\ResponseTrait;
 
-class Sales extends BaseController
+class Pengguna extends BaseController
 {
     use ResponseTrait;
     
 
     public function __construct()
     {   
-        $this->sales    = model('App\Models\V1\Mdl_sales');
+        $this->pengguna    = model('App\Models\V1\Mdl_user');
 
 	}
 
-    public function get_sales(){
+    public function get_pengguna(){
         $response=[
             "code"      => "200",
             "error"     => NULL,
-            "message"   => $this->sales->get_all()
+            "message"   => $this->pengguna->get_all()
         ];
         return $this->respond($response);
     }
 
-    public function getby_id(){
-        $id  = $this->request->getGet('id', FILTER_SANITIZE_NUMBER_INT);
+    public function getby_uname(){
+        $uname  = $this->request->getGet('uname', FILTER_SANITIZE_STRING);
         $response=[
             "code"      => "200",
             "error"     => NULL,
-            "message"   => $this->sales->get_byid($id)
+            "message"   => $this->pengguna->get_byuname($uname)
         ];
         return $this->respond($response);
     }
-    public function add_sales(){
+
+    public function add_pengguna(){
         $validation = $this->validation;
         $validation->setRules([
-					'nama' => [
-					    'rules'  => 'required',
-					    'errors' =>  [
-					        'required'      => 'Nama sales is required',
-					    ]
-					],
-					'telp' => [
-					    'rules'  => 'required',
-					    'errors' =>  [
-					        'required'      => 'Wa/Telp is required',
-					    ]
-					],
-					'area' => [
-					    'rules'  => 'required',
-					    'errors' =>  [
-					        'required'      => 'Area Sales is required',
-					    ]
-					],
-					'komisi' => [
-					    'rules'  => 'required|greater_than[0]',
-					    'errors' =>  [
-					        'required'      => 'Komisi is required',
-					        'greater_than'  => 'Komisi must greater than 0',
-					    ]
-					],
-
+            'uname' => [
+                'rules'  => 'required',
+                'errors' =>  [
+                    'required'      => 'Username is required',
+                ]
+            ],
+            'passwd' => [
+                'rules'  => 'required',
+                'errors' =>  [
+                    'required'      => 'Password is required',
+                ]
+            ],
+            'role' => [
+                'rules'  => 'required',
+                'errors' =>  [
+                    'required'      => 'Role pengguna is required',
+                ]
+            ],
             ]);
         
         if (!$validation->withRequest($this->request)->run()){
@@ -70,13 +63,10 @@ class Sales extends BaseController
         
 	    $data   = $this->request->getJSON();
         $filters = array(
+            'uname'     => FILTER_SANITIZE_STRING, 
+            'passwd'    => FILTER_SANITIZE_STRING, 
             'nama'      => FILTER_SANITIZE_STRING, 
-            'alamat'    => FILTER_SANITIZE_STRING, 
-            'kota'      => FILTER_SANITIZE_STRING, 
-            'tgllahir'  => FILTER_SANITIZE_STRING, 
-            'telp'      => FILTER_SANITIZE_STRING, 
-            'area'      => FILTER_SANITIZE_STRING, 
-            'komisi'    => FILTER_SANITIZE_STRING, 
+            'role'      => FILTER_SANITIZE_STRING, 
         );
 
 	    $filtered = array();
@@ -86,17 +76,14 @@ class Sales extends BaseController
         
         $data=(object) $filtered;
         $mdata=array(
+            "uname"     => $data->uname,
+            "passwd"    => $data->passwd,
             "nama"      => $data->nama,
-            "alamat"    => $data->alamat,
-            "kota"      => $data->kota,
-            "tgllahir"  => $data->tgllahir,
-            "telp"      => $data->telp,
-            "area"      => $data->area,
-            "komisi"    => $data->komisi,
+            "role"      => $data->role,
             "created_at"=> date("y-m-d H:i:s")
         );
 
-        $result=$this->sales->add($mdata);
+        $result=$this->pengguna->add($mdata);
         if (@$result->code==5055){
             $response=[
 	            "code"     => "5055",
@@ -115,35 +102,21 @@ class Sales extends BaseController
 
     }
 
-    public function update_sales(){
+    public function update_pengguna(){
         $validation = $this->validation;
-        $validation->setRules([					
+        $validation->setRules([
 					'nama' => [
 					    'rules'  => 'required',
 					    'errors' =>  [
 					        'required'      => 'Nama is required',
 					    ]
 					],
-					'telp' => [
+					'role' => [
 					    'rules'  => 'required',
 					    'errors' =>  [
 					        'required'      => 'Wa/Telp is required',
 					    ]
 					],
-					'area' => [
-					    'rules'  => 'required',
-					    'errors' =>  [
-					        'required'      => 'Area Sales is required',
-					    ]
-					],
-					'komisi' => [
-					    'rules'  => 'required|greater_than[0]',
-					    'errors' =>  [
-					        'required'      => 'Komisi is required',
-					        'greater_than'  => 'Komisi must greater than 0',
-					    ]
-					],
-
             ]);
         
         if (!$validation->withRequest($this->request)->run()){
@@ -153,12 +126,8 @@ class Sales extends BaseController
 	    $data   = $this->request->getJSON();
         $filters = array(
             'nama'      => FILTER_SANITIZE_STRING, 
-            'alamat'    => FILTER_SANITIZE_STRING, 
-            'kota'      => FILTER_SANITIZE_STRING, 
-            'tgllahir'  => FILTER_SANITIZE_STRING, 
-            'telp'      => FILTER_SANITIZE_STRING, 
-            'area'      => FILTER_SANITIZE_STRING, 
-            'komisi'    => FILTER_SANITIZE_STRING, 
+            'passwd'    => FILTER_SANITIZE_STRING, 
+            'role'      => FILTER_SANITIZE_STRING, 
         );
 
 	    $filtered = array();
@@ -168,19 +137,23 @@ class Sales extends BaseController
         
         $data=(object) $filtered;
 
-        $id  = $this->request->getGet('id', FILTER_SANITIZE_EMAIL);
-        $mdata=array(
-            "nama"      => $data->nama,
-            "alamat"    => $data->alamat,
-            "kota"      => $data->kota,
-            "tgllahir"  => $data->tgllahir,
-            "telp"      => $data->telp,
-            "area"      => $data->area,
-            "komisi"    => $data->komisi,
-            "updated_at"=> date("y-m-d H:i:s")
-        );    
+        $uname  = $this->request->getGet('uname', FILTER_SANITIZE_STRING);
+        if (empty($data->passwd)){
+            $mdata=array(
+                "nama"      => $data->nama,
+                "role"      => $data->role,
+                "updated_at"=> date("y-m-d H:i:s")
+            );    
+        }else{
+            $mdata=array(
+                "passwd"    => $data->passwd,
+                "nama"      => $data->nama,
+                "role"      => $data->role,
+                "updated_at"=> date("y-m-d H:i:s")
+            );    
+        }
 
-        $result=$this->sales->updatedata($mdata,$id);
+        $result=$this->pengguna->updatedata($mdata,$uname);
         if (@$result->code==5055){
             $response=[
 	            "code"     => "5055",
@@ -199,9 +172,17 @@ class Sales extends BaseController
 
     }
 
-    public function delete_sales(){
-        $id  = $this->request->getGet('id', FILTER_SANITIZE_EMAIL);
-        $result = $this->sales->hapus($id);
+    public function delete_pengguna(){
+        $uname  = $this->request->getGet('uname', FILTER_SANITIZE_STRING);
+        if ($uname=='admin'){
+            $response=[
+	            "code"     => "5055",
+	            "error"    => "21",
+	            "message"  => "username 'Admin' can't be deleted"
+	        ];
+            return $this->respond($response);
+        }
+        $result = $this->pengguna->hapus($uname);
         if (@$result->code==5055){
             $response=[
 	            "code"     => "5055",

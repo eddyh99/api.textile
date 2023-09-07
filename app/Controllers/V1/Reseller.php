@@ -24,6 +24,16 @@ class Reseller extends BaseController
         return $this->respond($response);
     }
 
+    public function getby_email(){
+        $email  = $this->request->getGet('email', FILTER_SANITIZE_EMAIL);
+        $response=[
+            "code"      => "200",
+            "error"     => NULL,
+            "message"   => $this->reseller->get_byemail($email)
+        ];
+        return $this->respond($response);
+    }
+
     public function add_reseller(){
         $validation = $this->validation;
         $validation->setRules([

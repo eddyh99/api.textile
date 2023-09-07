@@ -5,7 +5,7 @@ use CodeIgniter\Model;
 use Exception;
 
 
-class Mdl_sales extends Model
+class Mdl_penjahit extends Model
 {
     protected $server_tz = "Asia/Singapore";
 
@@ -15,20 +15,20 @@ class Mdl_sales extends Model
     }
     
     public function get_all(){
-        $sql    = "SELECT a.id, a.nama, a.alamat, a.kota, a.telp, a.tgllahir, a.komisi, b.area  FROM sales a INNER JOIN area b ON a.area=b.id  WHERE a.is_deleted='no'";
+        $sql    = "SELECT a.id, a.nama, a.alamat, a.kota, a.telp, a.tgllahir, a.komisi, b.area  FROM penjahit a INNER JOIN area b ON a.area=b.id  WHERE a.is_deleted='no'";
         $query  = $this->db->query($sql);
         return $query->getResult();
     }
 
     public function get_byid($id){
-        $sql    = "SELECT a.id, a.nama, a.alamat, a.kota, a.telp, a.tgllahir, a.komisi, b.area  FROM sales a INNER JOIN area b ON a.area=b.id  WHERE a.id=? AND a.is_deleted='no'";
+        $sql    = "SELECT a.id, a.nama, a.alamat, a.kota, a.telp, a.tgllahir, a.komisi, b.area  FROM penjahit a INNER JOIN area b ON a.area=b.id  WHERE a.id=? AND a.is_deleted='no'";
         $query  = $this->db->query($sql,$id);
         return $query->getRow();
     }
 
     public function add($data) {
-        $sales      = $this->db->table("sales");
-        $sql        = $sales->set($data)->getCompiledInsert()." ON DUPLICATE KEY UPDATE nama=?, alamat=?, kota=?, telp=?, komisi=?, area=?, is_deleted='no'";
+        $penjahit      = $this->db->table("penjahit");
+        $sql        = $penjahit->set($data)->getCompiledInsert()." ON DUPLICATE KEY UPDATE nama=?, alamat=?, kota=?, telp=?, komisi=?, area=?, is_deleted='no'";
         $query      = $this->db->query($sql,[ 
             $data["nama"],
             $data["alamat"],
@@ -48,9 +48,9 @@ class Mdl_sales extends Model
     }
 
     public function updatedata($data, $id){
-        $sales   = $this->db->table("sales");
-        $sales->where("id",$id);
-        if (!$sales->update($data)){
+        $penjahit   = $this->db->table("penjahit");
+        $penjahit->where("id",$id);
+        if (!$penjahit->update($data)){
             $error=[
                 "code"       => "5055",
                 "error"      => "10",
@@ -61,11 +61,11 @@ class Mdl_sales extends Model
     }
     
     public function hapus($id){
-        $sales   = $this->db->table("sales");
-        $sales->where("id",$id);
-        $sales->set("is_deleted","yes");
-        $sales->set("updated_at",date("y-m-d H:i:s"));
-        if (!$sales->update()){
+        $penjahit   = $this->db->table("penjahit");
+        $penjahit->where("id",$id);
+        $penjahit->set("is_deleted","yes");
+        $penjahit->set("updated_at",date("y-m-d H:i:s"));
+        if (!$penjahit->update()){
             $error=[
                 "code"       => "5055",
                 "error"      => "10",
