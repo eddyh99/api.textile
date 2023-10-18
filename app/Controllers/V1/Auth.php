@@ -4,6 +4,8 @@ namespace App\Controllers\V1;
 use App\Controllers\BaseController;
 use CodeIgniter\API\ResponseTrait;
 
+use App\Models\V1\Mdl_user;
+
 class Auth extends BaseController
 {
     use ResponseTrait;
@@ -11,7 +13,7 @@ class Auth extends BaseController
 
     public function __construct()
     {   
-        $this->user    = model('App\Models\V1\Mdl_user');
+        $this->user    = new Mdl_user();
 
 	}
 	
@@ -43,7 +45,7 @@ class Auth extends BaseController
 			$response=[
 				"code"      => "200",
 				"error"     => NULL,
-				"message"   => "success"
+				"message"   => $result
 			];
 			return $this->respond($response);
 		}else{

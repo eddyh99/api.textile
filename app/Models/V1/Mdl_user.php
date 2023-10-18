@@ -1,5 +1,5 @@
 <?php
-namespace App\Models;
+namespace App\Models\V1;
 
 use CodeIgniter\Model;
 use Exception;
@@ -18,7 +18,9 @@ class Mdl_user extends Model
         $sql="SELECT * FROM users WHERE uname=? AND passwd=?";
         $query=$this->db->query($sql,[$uname,$passwd]);
         if ($query->getNumRows()>0){
-            return true;
+            return $query->getRow();
+        }else{
+            return false;
         }
     }
 

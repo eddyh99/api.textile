@@ -4,6 +4,9 @@ namespace App\Controllers\V1;
 use App\Controllers\BaseController;
 use CodeIgniter\API\ResponseTrait;
 
+use App\Models\V1\Mdl_hotel;
+
+
 class Hotel extends BaseController
 {
     use ResponseTrait;
@@ -11,7 +14,7 @@ class Hotel extends BaseController
 
     public function __construct()
     {   
-        $this->hotel    = model('App\Models\V1\Mdl_hotel');
+        $this->hotel    = new Mdl_hotel();
 
 	}
 

@@ -4,6 +4,8 @@ namespace App\Controllers\V1;
 use App\Controllers\BaseController;
 use CodeIgniter\API\ResponseTrait;
 
+use App\Models\V1\Mdl_user;
+
 class Pengguna extends BaseController
 {
     use ResponseTrait;
@@ -11,7 +13,7 @@ class Pengguna extends BaseController
 
     public function __construct()
     {   
-        $this->pengguna    = model('App\Models\V1\Mdl_user');
+        $this->pengguna    = new Mdl_user();
 
 	}
 

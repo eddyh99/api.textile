@@ -4,48 +4,59 @@ namespace App\Controllers\V1;
 use App\Controllers\BaseController;
 use CodeIgniter\API\ResponseTrait;
 
-use App\Models\V1\Mdl_kategori;
+use App\Models\V1\Mdl_bahanbaku;
 
-class Kategori extends BaseController
+class Bahanbaku extends BaseController
 {
     use ResponseTrait;
     
 
     public function __construct()
     {   
-        $this->kategori    = new Mdl_kategori();
+        $this->bahan    = new Mdl_bahanbaku();
 
 	}
 
-    public function getkategori(){
+    public function getBahanbaku(){
         $response=[
             "code"      => "200",
             "error"     => NULL,
-            "message"   => $this->kategori->get_all()
+            "message"   => $this->bahan->get_all()
         ];
         return $this->respond($response);
     }
 
-    public function getby_kategori(){
+    public function getby_bahanid(){
         $id  = $this->request->getGet('id', FILTER_SANITIZE_NUMBER_INT);
         $response=[
             "code"      => "200",
             "error"     => NULL,
-            "message"   => $this->kategori->get_bykategori($id)
+            "message"   => $this->bahan->getby_bahanid($id)
         ];
         return $this->respond($response);
     }
 
-    public function add_kategori(){
+    public function add_bahanbaku(){
         $validation = $this->validation;
         $validation->setRules([					
-					'namakategori' => [
-					    'rules'  => 'required',
-					    'errors' =>  [
-					        'required'      => 'Nama kategori is required',
-					    ]
-					],
-
+            'namabahan' => [
+                'rules'  => 'required',
+                'errors' =>  [
+                    'required'      => 'Nama Bahan is required',
+                ]
+            ],
+            'satuan' => [
+                'rules'  => 'required',
+                'errors' =>  [
+                    'required'      => 'Satuan is required',
+                ]
+            ],
+            'harga' => [
+                'rules'  => 'required',
+                'errors' =>  [
+                    'required'      => 'Harga is required',
+                ]
+            ],
             ]);
         
         if (!$validation->withRequest($this->request)->run()){
@@ -54,7 +65,9 @@ class Kategori extends BaseController
         
 	    $data   = $this->request->getJSON();
         $filters = array(
-            'namakategori'      => FILTER_SANITIZE_STRING, 
+            'namabahan'     => FILTER_SANITIZE_STRING, 
+            'satuan'        => FILTER_SANITIZE_STRING, 
+            'harga'         => FILTER_SANITIZE_NUMBER_INT
         );
 
 	    $filtered = array();
@@ -64,11 +77,17 @@ class Kategori extends BaseController
         
         $data=(object) $filtered;
         $mdata=array(
-            "namakategori"      => $data->namakategori,
-            "created_at"        => date("y-m-d H:i:s")
+            "namabahan"     => $data->namabahan,
+            "satuan"        => $data->satuan,
+            "created_at"    => date("Y-m-d H:i:s")
         );
 
-        $result=$this->kategori->add($mdata);
+        $harga=array(
+            "tanggal"   => date("Y-m-d H:i:s"),
+            "harga"     => $data->harga
+        );
+
+        $result=$this->bahan->add($mdata,$harga);
         if (@$result->code==5055){
             $response=[
 	            "code"     => "5055",
@@ -87,15 +106,27 @@ class Kategori extends BaseController
 
     }
 
-    public function update_kategori(){
+    public function update_bahan(){
         $validation = $this->validation;
         $validation->setRules([					
-					'namakategori' => [
+					'namabahan' => [
 					    'rules'  => 'required',
 					    'errors' =>  [
-					        'required'      => 'Nama kategori is required',
+					        'required'      => 'Nama Bahan is required',
 					    ]
 					],
+                    'satuan' => [
+					    'rules'  => 'required',
+					    'errors' =>  [
+					        'required'      => 'Nama Bahan is required',
+					    ]
+					],
+                    'harga' => [
+                        'rules'  => 'required',
+                        'errors' =>  [
+                            'required'      => 'Harga is required',
+                        ]
+                    ],                    
             ]);
         
         if (!$validation->withRequest($this->request)->run()){
@@ -104,7 +135,9 @@ class Kategori extends BaseController
         
 	    $data   = $this->request->getJSON();
         $filters = array(
-            'namakategori'    => FILTER_SANITIZE_STRING, 
+            'namabahan'     => FILTER_SANITIZE_STRING, 
+            'satuan'        => FILTER_SANITIZE_STRING, 
+            'harga'         => FILTER_SANITIZE_NUMBER_INT
         );
 
 	    $filtered = array();
@@ -116,9 +149,16 @@ class Kategori extends BaseController
 
         $id  = $this->request->getGet('id', FILTER_SANITIZE_NUMBER_INT);
         $mdata=array(
-            "namakategori"  => $data->namakategori            
+            "namabahan"     => $data->namabahan,
+            "satuan"        => $data->satuan,
+            "created_at"    => date("Y-m-d H:i:s")
         );
-        $result=$this->kategori->updatedata($mdata,$id);
+
+        $harga=array(
+            "tanggal"   => date("Y-m-d H:i:s"),
+            "harga"     => $data->harga
+        );
+        $result=$this->bahan->updatedata($mdata,$harga, $id);
         if (@$result->code==5055){
             $response=[
 	            "code"     => "5055",
@@ -137,9 +177,9 @@ class Kategori extends BaseController
 
     }
 
-    public function delete_kategori(){
+    public function delete_bahan(){
         $id  = $this->request->getGet('id', FILTER_SANITIZE_NUMBER_INT);
-        $result = $this->kategori->hapus($id);
+        $result = $this->bahan->hapus($id);
         if (@$result->code==5055){
             $response=[
 	            "code"     => "5055",

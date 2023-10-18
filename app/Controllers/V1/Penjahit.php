@@ -4,6 +4,8 @@ namespace App\Controllers\V1;
 use App\Controllers\BaseController;
 use CodeIgniter\API\ResponseTrait;
 
+use App\Models\V1\Mdl_penjahit;
+
 class Penjahit extends BaseController
 {
     use ResponseTrait;
@@ -11,7 +13,7 @@ class Penjahit extends BaseController
 
     public function __construct()
     {   
-        $this->penjahit    = model('App\Models\V1\Mdl_penjahit');
+        $this->penjahit    = new Mdl_penjahit();
 
 	}
 

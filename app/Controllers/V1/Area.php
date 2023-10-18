@@ -4,6 +4,8 @@ namespace App\Controllers\V1;
 use App\Controllers\BaseController;
 use CodeIgniter\API\ResponseTrait;
 
+use App\Models\V1\Mdl_area;
+
 class Area extends BaseController
 {
     use ResponseTrait;
@@ -11,7 +13,7 @@ class Area extends BaseController
 
     public function __construct()
     {   
-        $this->area    = model('App\Models\V1\Mdl_area');
+        $this->area    = new Mdl_area();
 
 	}
 

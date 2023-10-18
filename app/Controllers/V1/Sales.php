@@ -4,6 +4,8 @@ namespace App\Controllers\V1;
 use App\Controllers\BaseController;
 use CodeIgniter\API\ResponseTrait;
 
+use App\Models\V1\Mdl_sales;
+
 class Sales extends BaseController
 {
     use ResponseTrait;
@@ -11,7 +13,7 @@ class Sales extends BaseController
 
     public function __construct()
     {   
-        $this->sales    = model('App\Models\V1\Mdl_sales');
+        $this->sales    = new Mdl_sales();
 
 	}
 
