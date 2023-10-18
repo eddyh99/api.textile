@@ -15,29 +15,20 @@ class Mdl_penjahit extends Model
     }
     
     public function get_all(){
-        $sql    = "SELECT a.id, a.nama, a.alamat, a.kota, a.telp, a.tgllahir, a.komisi, b.area  FROM penjahit a INNER JOIN area b ON a.area=b.id  WHERE a.is_deleted='no'";
+        $sql    = "SELECT id, nama, alamat, telp, jenis  FROM penjahit  WHERE is_deleted='no'";
         $query  = $this->db->query($sql);
         return $query->getResult();
     }
 
     public function get_byid($id){
-        $sql    = "SELECT a.id, a.nama, a.alamat, a.kota, a.telp, a.tgllahir, a.komisi, b.area  FROM penjahit a INNER JOIN area b ON a.area=b.id  WHERE a.id=? AND a.is_deleted='no'";
+        $sql    = "SELECT id, nama, alamat, telp, jenis FROM penjahit  WHERE id=? AND is_deleted='no'";
         $query  = $this->db->query($sql,$id);
         return $query->getRow();
     }
 
     public function add($data) {
-        $penjahit      = $this->db->table("penjahit");
-        $sql        = $penjahit->set($data)->getCompiledInsert()." ON DUPLICATE KEY UPDATE nama=?, alamat=?, kota=?, telp=?, komisi=?, area=?, is_deleted='no'";
-        $query      = $this->db->query($sql,[ 
-            $data["nama"],
-            $data["alamat"],
-            $data["kota"],
-            $data["telp"],
-            $data["komisi"],
-            $data["area"],
-        ]);
-        if (!$query){
+        $penjahit   = $this->db->table("penjahit");
+        if (!$penjahit->insert($data)){
             $error=[
                 "code"       => "5055",
                 "error"      => "10",

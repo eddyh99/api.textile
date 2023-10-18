@@ -44,23 +44,22 @@ class Penjahit extends BaseController
 					        'required'      => 'Nama penjahit is required',
 					    ]
 					],
+					'alamat' => [
+					    'rules'  => 'required',
+					    'errors' =>  [
+					        'required'      => 'Alamat is required',
+					    ]
+					],
 					'telp' => [
 					    'rules'  => 'required',
 					    'errors' =>  [
-					        'required'      => 'Wa/Telp is required',
+					        'required'      => 'Wa/Telp penjahit is required',
 					    ]
 					],
-					'area' => [
+					'jenis' => [
 					    'rules'  => 'required',
 					    'errors' =>  [
-					        'required'      => 'Area penjahit is required',
-					    ]
-					],
-					'komisi' => [
-					    'rules'  => 'required|greater_than[0]',
-					    'errors' =>  [
-					        'required'      => 'Komisi is required',
-					        'greater_than'  => 'Komisi must greater than 0',
+					        'required'      => 'Jenis is required',
 					    ]
 					],
 
@@ -74,11 +73,8 @@ class Penjahit extends BaseController
         $filters = array(
             'nama'      => FILTER_SANITIZE_STRING, 
             'alamat'    => FILTER_SANITIZE_STRING, 
-            'kota'      => FILTER_SANITIZE_STRING, 
-            'tgllahir'  => FILTER_SANITIZE_STRING, 
             'telp'      => FILTER_SANITIZE_STRING, 
-            'area'      => FILTER_SANITIZE_STRING, 
-            'komisi'    => FILTER_SANITIZE_STRING, 
+            'jenis'      => FILTER_SANITIZE_STRING, 
         );
 
 	    $filtered = array();
@@ -90,11 +86,8 @@ class Penjahit extends BaseController
         $mdata=array(
             "nama"      => $data->nama,
             "alamat"    => $data->alamat,
-            "kota"      => $data->kota,
-            "tgllahir"  => $data->tgllahir,
             "telp"      => $data->telp,
-            "area"      => $data->area,
-            "komisi"    => $data->komisi,
+            "jenis"     => $data->jenis,
             "created_at"=> date("y-m-d H:i:s")
         );
 
@@ -119,34 +112,33 @@ class Penjahit extends BaseController
 
     public function update_penjahit(){
         $validation = $this->validation;
-        $validation->setRules([					
-					'nama' => [
-					    'rules'  => 'required',
-					    'errors' =>  [
-					        'required'      => 'Nama is required',
-					    ]
-					],
-					'telp' => [
-					    'rules'  => 'required',
-					    'errors' =>  [
-					        'required'      => 'Wa/Telp is required',
-					    ]
-					],
-					'area' => [
-					    'rules'  => 'required',
-					    'errors' =>  [
-					        'required'      => 'Area penjahit is required',
-					    ]
-					],
-					'komisi' => [
-					    'rules'  => 'required|greater_than[0]',
-					    'errors' =>  [
-					        'required'      => 'Komisi is required',
-					        'greater_than'  => 'Komisi must greater than 0',
-					    ]
-					],
+        $validation->setRules([
+            'nama' => [
+                'rules'  => 'required',
+                'errors' =>  [
+                    'required'      => 'Nama penjahit is required',
+                ]
+            ],
+            'alamat' => [
+                'rules'  => 'required',
+                'errors' =>  [
+                    'required'      => 'Alamat is required',
+                ]
+            ],
+            'telp' => [
+                'rules'  => 'required',
+                'errors' =>  [
+                    'required'      => 'Wa/Telp penjahit is required',
+                ]
+            ],
+            'jenis' => [
+                'rules'  => 'required',
+                'errors' =>  [
+                    'required'      => 'Jenis is required',
+                ]
+            ],
 
-            ]);
+    ]);
         
         if (!$validation->withRequest($this->request)->run()){
             return $this->fail($validation->getErrors());
@@ -156,11 +148,8 @@ class Penjahit extends BaseController
         $filters = array(
             'nama'      => FILTER_SANITIZE_STRING, 
             'alamat'    => FILTER_SANITIZE_STRING, 
-            'kota'      => FILTER_SANITIZE_STRING, 
-            'tgllahir'  => FILTER_SANITIZE_STRING, 
             'telp'      => FILTER_SANITIZE_STRING, 
-            'area'      => FILTER_SANITIZE_STRING, 
-            'komisi'    => FILTER_SANITIZE_STRING, 
+            'jenis'      => FILTER_SANITIZE_STRING, 
         );
 
 	    $filtered = array();
@@ -174,13 +163,10 @@ class Penjahit extends BaseController
         $mdata=array(
             "nama"      => $data->nama,
             "alamat"    => $data->alamat,
-            "kota"      => $data->kota,
-            "tgllahir"  => $data->tgllahir,
             "telp"      => $data->telp,
-            "area"      => $data->area,
-            "komisi"    => $data->komisi,
+            "jenis"     => $data->jenis,
             "updated_at"=> date("y-m-d H:i:s")
-        );    
+        );   
 
         $result=$this->penjahit->updatedata($mdata,$id);
         if (@$result->code==5055){
