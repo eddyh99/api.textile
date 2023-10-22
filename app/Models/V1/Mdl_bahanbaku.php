@@ -15,7 +15,7 @@ class Mdl_bahanbaku extends Model
     }
     
     public function get_all(){
-        $sql    = "SELECT a.namabahan, a.satuan, x.harga, x.tanggal 
+        $sql    = "SELECT a.id, a.namabahan, a.satuan, x.harga, x.tanggal 
             FROM bahanbaku a INNER JOIN 
             (SELECT a.harga, a.tanggal ,a.id_bahan 
                 FROM bahan_harga a INNER JOIN (SELECT MAX(tanggal) as tanggal,id_bahan 
@@ -26,7 +26,7 @@ class Mdl_bahanbaku extends Model
     }
 
     public function getby_bahanid($id){
-        $sql    = "SELECT a.namabahan, a.satuan, x.harga, x.tanggal 
+        $sql    = "SELECT a.id, a.namabahan, a.satuan, x.harga, x.tanggal 
             FROM bahanbaku a INNER JOIN 
             (SELECT a.harga, a.tanggal ,a.id_bahan 
                 FROM bahan_harga a INNER JOIN (SELECT MAX(tanggal) as tanggal,id_bahan 

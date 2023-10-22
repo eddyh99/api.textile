@@ -15,7 +15,7 @@ class Mdl_addon extends Model
     }
     
     public function get_all(){
-        $sql    = "SELECT a.namaaddon, x.harga, x.tanggal 
+        $sql    = "SELECT a.id, a.namaaddon, x.harga, x.tanggal 
             FROM addon a INNER JOIN 
             (SELECT a.harga, a.tanggal ,a.id_addon 
                 FROM addon_harga a INNER JOIN (SELECT MAX(tanggal) as tanggal,id_addon 
@@ -26,7 +26,7 @@ class Mdl_addon extends Model
     }
 
     public function getby_addonid($id){
-        $sql    = "SELECT a.namaaddon, x.harga, x.tanggal 
+        $sql    = "SELECT a.id, a.namaaddon, x.harga, x.tanggal 
             FROM addon a INNER JOIN 
             (SELECT a.harga, a.tanggal ,a.id_addon 
                 FROM addon_harga a INNER JOIN (SELECT MAX(tanggal) as tanggal,id_addon 
