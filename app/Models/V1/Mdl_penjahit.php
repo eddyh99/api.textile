@@ -66,7 +66,60 @@ class Mdl_penjahit extends Model
         }
         
     }
- 
-    
+
+    public function get_fee(){
+        $sql    = "SELECT *  FROM penjahit_fee  WHERE is_deleted='no'";
+        $query  = $this->db->query($sql);
+        return $query->getResult();
+    }
+
+    public function getfee_byid($where){
+        $fee   = $this->db->table("penjahit_fee");
+        $fee->where($where);
+        return $fee->get()->getRow();
+
+    }
+
+    public function insert_fee($mdata){
+        $fee=$this->db->table("penjahit_fee");
+        $sql=$fee->set($mdata)->getCompiledInsert()." ON DUPLICATE KEY UPDATE fee=?, is_deleted='no'";
+        $query=$this->db->query($sql,$mdata["fee"]);
+        if (!$query){
+            $error=[
+                "code"       => "5055",
+                "error"      => "10",
+                "message"    => $this->db->error()
+            ];
+            return (object) $error;
+        }
+    }
+
+    public function update_fee($where, $mdata){
+        $fee=$this->db->table("penjahit_fee");
+        $fee->where($where);
+        if (!$fee->update($mdata)){
+            $error=[
+                "code"       => "5055",
+                "error"      => "10",
+                "message"    => $this->db->error()
+            ];
+            return (object) $error;
+        }  
+    }
+
+    public function hapusfee($where){
+        $fee   = $this->db->table("penjahit_fee");
+        $fee->where($where);
+        $fee->set("is_deleted","yes");
+        $fee->set("updated_at",date("y-m-d H:i:s"));
+        if (!$penjahit->update()){
+            $error=[
+                "code"       => "5055",
+                "error"      => "10",
+                "message"    => $this->db->error()
+            ];
+            return (object) $error;
+        }
+    }
 
 }
