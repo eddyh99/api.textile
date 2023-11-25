@@ -197,4 +197,48 @@ class Bahanbaku extends BaseController
         return $this->respond($response);
     }
 
+    public function addstok_bahanbaku(){
+        $validation = $this->validation;
+        $validation->setRules([					
+					'jumlah' => [
+					    'rules'  => 'required',
+					    'errors' =>  [
+					        'required'      => 'Jumlah is required',
+					    ]
+					],
+            ]);
+        
+        if (!$validation->withRequest($this->request)->run()){
+            return $this->fail($validation->getErrors());
+        }
+        
+	    $data   = $this->request->getJSON();
+
+        $id     = $this->request->getGet('id', FILTER_SANITIZE_NUMBER_INT);
+        $mdata  = array(
+            "id_bahanbaku"  => $id,
+            "jumlah"        => $data->jumlah,
+            "tanggal"       => date("Y-m-d H:i:s"),
+            "keterangan"    => "stok awal",
+            "updated_at"    => date("Y-m-d H:i:s")
+        );
+        $result = $this->bahan->insertStok($mdata);
+        if (@$result->code==5055){
+            $response=[
+	            "code"     => "5055",
+	            "error"    => "21",
+	            "message"  => $result->message
+	        ];
+            return $this->respond($response);
+        }
+
+        $response=[
+            "code"     => "200",
+            "error"    => NULL,
+            "message"  => "Data successfully inserted"
+        ];
+        return $this->respond($response);
+
+    }
+
 }
