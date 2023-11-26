@@ -115,7 +115,18 @@ class Mdl_barang extends Model
         }
         
     }
- 
+    
+    public function insertStok($mdata){
+        $stok=$this->db->table("penyesuaian_barang");
+        if (!$stok->insert($mdata)){
+            $error=[
+                "code"       => "5055",
+                "error"      => "10",
+                "message"    => $this->db->error()
+            ];
+            return (object) $error;
+        }
+    }
     
 
 }
